@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .server_time {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello SpringBoot</h1>
+    <p>지금은 <span th:text=${nowtime} class="server_time"></span>입니다.</p>
+</body>
+</html>

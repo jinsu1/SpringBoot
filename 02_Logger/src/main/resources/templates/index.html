@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>02-Logger</h1>
+
+    <h2>Client IP</h2>
+    <p th:text="${clientIp}"></p>
+
+    <h2>UserAgent</h2>
+    <p th:text="${ua}"></p>
+
+    <p th:text="${uac}"></p>
+
+    <h2>브라우저 정보</h2>
+    <ul>
+        <li>browserFamily: <span th:text="${browserFamily}"></span></li>
+        <li>browserMajor: <span th:text="${browserMajor}"></span></li>
+        <li>browserMinor: <span th:text="${browserMinor}"></span></li>
+    </ul>
+
+    <h2>OS 정보</h2>
+    <ul>
+        <li>osFamily: <span th:text="${osFamily}"></span></li>
+        <li>osMajor: <span th:text="${osMajor}"></span></li>
+        <li>osMinor: <span th:text="${osMinor}"></span></li>
+    </ul>
+
+    <h2>디바이스 정보</h2>
+    <ul>
+        <li>deviceFamily: <span th:text="${deviceFamily}"></span></li>
+    </ul>
+
+    <h2>요청 정보</h2>
+    <ul>
+        <li>method: <span th:text=${method}></span></li>
+        <li>url: <span th:text=${url}></span></li>
+    </ul>
+</body>
+</html>

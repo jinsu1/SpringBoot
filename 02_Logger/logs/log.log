@@ -1,0 +1,236 @@
+[INFO ] 24-10-14 15:30:36     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 3920 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:30:36     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:30:36     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-14 15:30:38     [OptionalLiveReloadServer:62] - Unable to start LiveReload server
+[WARN ] 24-10-14 15:30:38     [AnnotationConfigServletWebServerApplicationContext:633] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[ERROR] 24-10-14 15:30:38     [LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 24-10-14 15:31:17     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 10376 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:31:17     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:31:17     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-14 15:31:20     [OptionalLiveReloadServer:62] - Unable to start LiveReload server
+[WARN ] 24-10-14 15:31:20     [AnnotationConfigServletWebServerApplicationContext:633] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[ERROR] 24-10-14 15:31:20     [LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 24-10-14 15:31:31     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 13152 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:31:31     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:31:31     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:31:33     [LoggerApplication:56] - Started LoggerApplication in 2.79 seconds (process running for 3.699)
+[INFO ] 24-10-14 15:39:40     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 15200 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:39:40     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:39:40     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:39:43     [LoggerApplication:56] - Started LoggerApplication in 2.743 seconds (process running for 3.689)
+[INFO ] 24-10-14 15:42:25     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 14236 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:42:25     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:42:25     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:42:27     [LoggerApplication:56] - Started LoggerApplication in 2.497 seconds (process running for 3.365)
+[INFO ] 24-10-14 15:47:28     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 11304 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:47:28     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:47:28     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:47:30     [LoggerApplication:56] - Started LoggerApplication in 2.919 seconds (process running for 3.789)
+[INFO ] 24-10-14 15:47:46     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 988 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:47:46     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:47:46     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:47:48     [LoggerApplication:56] - Started LoggerApplication in 2.619 seconds (process running for 3.21)
+[INFO ] 24-10-14 15:51:13     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 17520 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:51:13     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:51:13     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:51:15     [LoggerApplication:56] - Started LoggerApplication in 2.628 seconds (process running for 3.447)
+[INFO ] 24-10-14 15:53:44     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 17356 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:53:44     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:53:44     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:53:47     [LoggerApplication:56] - Started LoggerApplication in 2.667 seconds (process running for 3.363)
+[INFO ] 24-10-14 15:56:10     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 9384 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:56:10     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:56:10     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:56:12     [LoggerApplication:56] - Started LoggerApplication in 2.649 seconds (process running for 3.461)
+[INFO ] 24-10-14 16:00:59     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 7876 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 16:00:59     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 16:00:59     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 16:01:01     [LoggerApplication:56] - Started LoggerApplication in 2.656 seconds (process running for 3.168)
+[INFO ] 24-10-14 16:03:24     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 14596 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 16:03:24     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 16:03:24     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 16:03:26     [LoggerApplication:56] - Started LoggerApplication in 2.675 seconds (process running for 3.613)
+[INFO ] 24-10-14 16:03:32     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:03:32     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:03:32     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:03:32     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:03:32     [HomeController:42] - >>>>>> Client IP : 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 16:03:32     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.92.0 Chrome/124.0.6367.243 Electron/30.1.2 Safari/537.36
+[DEBUG] 24-10-14 16:03:32     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Electron", "major": "30", "minor": "1", "patch": "2"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:03:32     [HomeController:58] - Electron
+[DEBUG] 24-10-14 16:03:32     [HomeController:59] - 30
+[DEBUG] 24-10-14 16:03:32     [HomeController:60] - 1
+[DEBUG] 24-10-14 16:03:32     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:03:32     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:03:32     [HomeController:67] - null
+[DEBUG] 24-10-14 16:03:32     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:03:35     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:03:35     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:03:35     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:03:35     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:03:35     [HomeController:42] - >>>>>> Client IP : 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 16:03:35     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:03:35     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:03:35     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:03:35     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:03:35     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:03:35     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:03:35     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:03:35     [HomeController:67] - null
+[DEBUG] 24-10-14 16:03:35     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:04:52     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:04:52     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:04:52     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:04:52     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:04:52     [HomeController:42] - >>>>>> Client IP : 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 16:04:52     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:04:53     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:04:53     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:04:53     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:04:53     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:04:53     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:04:53     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:04:53     [HomeController:67] - null
+[DEBUG] 24-10-14 16:04:53     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:05:17     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:05:17     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:05:17     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:05:17     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:05:17     [HomeController:42] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:05:17     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:05:17     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:05:17     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:05:17     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:05:17     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:05:17     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:05:17     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:05:17     [HomeController:67] - null
+[DEBUG] 24-10-14 16:05:17     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:06:12     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:12     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:12     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:06:12     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:06:12     [HomeController:42] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:06:12     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:06:12     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:06:12     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:06:12     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:06:12     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:06:12     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:06:12     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:06:12     [HomeController:67] - null
+[DEBUG] 24-10-14 16:06:12     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:06:13     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:13     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:13     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:06:13     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:06:13     [HomeController:42] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:06:13     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:06:13     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:06:13     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:06:13     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:06:13     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:06:13     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:06:13     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:06:13     [HomeController:67] - null
+[DEBUG] 24-10-14 16:06:13     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:06:13     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:13     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:13     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:06:13     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:06:13     [HomeController:42] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:06:13     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:06:14     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:06:14     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:06:14     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:06:14     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:06:14     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:06:14     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:06:14     [HomeController:67] - null
+[DEBUG] 24-10-14 16:06:14     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:06:14     [HomeController:23] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:14     [HomeController:27] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:14     [HomeController:31] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:06:14     [HomeController:35] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:06:14     [HomeController:42] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:06:14     [HomeController:46] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:06:14     [HomeController:53] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:06:14     [HomeController:58] - Chrome
+[DEBUG] 24-10-14 16:06:14     [HomeController:59] - 129
+[DEBUG] 24-10-14 16:06:14     [HomeController:60] - 0
+[DEBUG] 24-10-14 16:06:14     [HomeController:65] - Windows
+[DEBUG] 24-10-14 16:06:14     [HomeController:66] - 10
+[DEBUG] 24-10-14 16:06:14     [HomeController:67] - null
+[DEBUG] 24-10-14 16:06:14     [HomeController:70] - device.family : Other
+[INFO ] 24-10-14 16:06:22     [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 11536 (D:\jinsu_study\10_SpringBoot\02_Logger\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 16:06:22     [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 16:06:22     [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 16:06:25     [LoggerApplication:56] - Started LoggerApplication in 2.954 seconds (process running for 3.605)
+[INFO ] 24-10-14 16:06:26     [HomeController:22] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:26     [HomeController:26] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:26     [HomeController:30] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:06:26     [HomeController:34] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:06:26     [HomeController:41] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:06:26     [HomeController:45] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:06:26     [HomeController:52] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:06:26     [HomeController:57] - Chrome
+[DEBUG] 24-10-14 16:06:26     [HomeController:58] - 129
+[DEBUG] 24-10-14 16:06:26     [HomeController:59] - 0
+[DEBUG] 24-10-14 16:06:26     [HomeController:64] - Windows
+[DEBUG] 24-10-14 16:06:26     [HomeController:65] - 10
+[DEBUG] 24-10-14 16:06:26     [HomeController:66] - null
+[DEBUG] 24-10-14 16:06:26     [HomeController:69] - device.family : Other
+[INFO ] 24-10-14 16:06:27     [HomeController:22] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:27     [HomeController:26] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:06:27     [HomeController:30] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:06:27     [HomeController:34] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:06:27     [HomeController:41] - >>>>>> Client IP : 192.168.10.116
+[DEBUG] 24-10-14 16:06:27     [HomeController:45] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:06:27     [HomeController:52] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:06:27     [HomeController:57] - Chrome
+[DEBUG] 24-10-14 16:06:27     [HomeController:58] - 129
+[DEBUG] 24-10-14 16:06:27     [HomeController:59] - 0
+[DEBUG] 24-10-14 16:06:27     [HomeController:64] - Windows
+[DEBUG] 24-10-14 16:06:27     [HomeController:65] - 10
+[DEBUG] 24-10-14 16:06:27     [HomeController:66] - null
+[DEBUG] 24-10-14 16:06:27     [HomeController:69] - device.family : Other
+[INFO ] 24-10-14 16:23:43     [HomeController:22] - >>>> Proxy-Client-IP : null
+[INFO ] 24-10-14 16:23:43     [HomeController:26] - >>>> WL-Proxy-Client-IP : null
+[INFO ] 24-10-14 16:23:43     [HomeController:30] - >>>> HTTP_CLIENT_IP : null
+[INFO ] 24-10-14 16:23:43     [HomeController:34] - >>>> HTTP_X_FORWARDED_FOR : null
+[DEBUG] 24-10-14 16:23:43     [HomeController:41] - >>>>>> Client IP : 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 16:23:43     [HomeController:45] - >>>>>> User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 16:23:43     [HomeController:52] - >>>>>> User-Agent : {"user_agent": {"family": "Chrome", "major": "129", "minor": "0", "patch": "0"}, "os": {"family": "Windows", "major": "10", "minor": "", "patch": "", "patch_minor": ""}, "device": {"family": "Other"}}
+[DEBUG] 24-10-14 16:23:43     [HomeController:57] - Chrome
+[DEBUG] 24-10-14 16:23:43     [HomeController:58] - 129
+[DEBUG] 24-10-14 16:23:43     [HomeController:59] - 0
+[DEBUG] 24-10-14 16:23:43     [HomeController:64] - Windows
+[DEBUG] 24-10-14 16:23:43     [HomeController:65] - 10
+[DEBUG] 24-10-14 16:23:43     [HomeController:66] - null
+[DEBUG] 24-10-14 16:23:43     [HomeController:69] - device.family : Other

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>03-Interceptor</h1>
+    <h2>여기는 <span th:text="${where}"></span> 입니다.</h2>
+    <ul>
+        <li><a th:href="@{/}">Index</a></li>
+        <li><a th:href="@{/hello}">Hello</a></li>
+        <li><a th:href="@{/hi}">Hi</a></li>
+        <li><a th:href="@{/bye}">Bye</a></li>
+    </ul>
+</body>
+</html>
