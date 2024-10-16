@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>100+200=?</h2>
+    <ul>
+        <!-- 하드코딩으로 QueryString 파라미터 전달-->
+        <!-- <li><a href="/get/result?answer=100">100</a></li> -->
+
+        <!-- 타임리프로 QueryString 파라미터 전달 -->
+        <li><a th:href=@{/get/result(answer=100)}>100</a></li>
+        <li><a th:href=@{/get/result(answer=200)}>200</a></li>
+        <li><a th:href=@{/get/result(answer=300)}>300</a></li>
+        <li><a th:href=@{/get/result(answer=400)}>400</a></li>
+        <li><a th:href=@{/get/result(answer=500)}>500</a></li>
+    </ul>
+</body>
+</html>

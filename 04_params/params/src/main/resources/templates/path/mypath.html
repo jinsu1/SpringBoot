@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>path1</h2>
+    <ul>
+        <li>txt1 : <span th:text=${txt1} /></li>
+        <li>txt2 : <span th:text=${txt2} /></li>
+        <li>num : <span th:text=${num} /></li>
+    </ul>
+</body>
+</html>

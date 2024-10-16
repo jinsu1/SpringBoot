@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            display: flex;
+
+            div {
+                margin: 10px;
+            }
+
+            label {
+                margin-right: 10px;
+            }
+
+            input {
+                padding: 5px;
+                border: 1px solid #ccc;
+                vertical-align: middle;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    
+    <h2>당신의 이름과 나이를 입력해 주세요.</h2>
+
+    <form name="form" method="post" class="form" th:action="@{/post/answer}">
+        <div>
+            <label for="user_name">이름</label>
+            <input type="text" name="user_name" id="user_name" />
+        </div>
+        <div>
+            <label for="user_age">나이</label>
+            <input type="text" name="user_age" id="user_age" />
+        </div>
+        <div>
+            <button type="submit">전송</button>
+        </div>
+    </form>
+</body>
+</html>

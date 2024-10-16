@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+</head>
+<body>
+    <header th:fragment="my-header">
+        <link rel="stylesheet" th:href="@{/assets/css/header.css}">
+        <h1>04-Params</h1>
+        <nav class="gnb">
+            <a th:href= "@{/cookie/home}">쿠키 테스트</a>
+            <a th:href= "@{/cookie/popup}">팝업 테스트</a>
+            <a th:href= "@{/session/home}">세션 테스트</a>
+            <a th:href= "@{/session/login}">심플 로그인</a>
+        </nav>
+    </header>
+</body>
+</html>

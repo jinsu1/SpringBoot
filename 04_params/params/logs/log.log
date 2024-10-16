@@ -1,0 +1,138 @@
+[INFO ] 24-10-16 09:46:32 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 16404 (D:\jinsu_study\10_SpringBoot\04_params\params\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\04_params\params)
+[DEBUG] 24-10-16 09:46:32 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 09:46:32 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 09:46:36 [ParamsApplication:56] - Started ParamsApplication in 4.006 seconds (process running for 156.156)
+[INFO ] 24-10-16 09:49:40 [ParamsApplication:50] - Starting ParamsApplication using Java 17.0.2 with PID 13428 (D:\jinsu_study\10_SpringBoot\04_params\params\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\04_params\params)
+[DEBUG] 24-10-16 09:49:40 [ParamsApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 09:49:40 [ParamsApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 09:49:42 [ParamsApplication:56] - Started ParamsApplication in 2.781 seconds (process running for 3.499)
+[INFO ] 24-10-16 09:50:06 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:06 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:06 [MyInterceptor:74] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 09:50:06 [MyInterceptor:111] - running time: 195(ms)
+[INFO ] 24-10-16 09:50:08 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:08 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:08 [MyInterceptor:74] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-16 09:50:08 [MyInterceptor:90] -  - REFERER : time = 2108, url = http://localhost:8080/ 
+[INFO ] 24-10-16 09:50:08 [MyInterceptor:111] - running time: 56(ms)
+[INFO ] 24-10-16 09:50:09 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:09 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:09 [MyInterceptor:74] - [GET] http://localhost:8080/get/result?answer=100
+[INFO ] 24-10-16 09:50:09 [MyInterceptor:81] - (param) <-- answer = 100
+[INFO ] 24-10-16 09:50:09 [MyInterceptor:90] -  - REFERER : time = 1327, url = http://localhost:8080/get/home 
+[INFO ] 24-10-16 09:50:09 [MyInterceptor:111] - running time: 58(ms)
+[INFO ] 24-10-16 09:50:11 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:11 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:11 [MyInterceptor:74] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-16 09:50:11 [MyInterceptor:90] -  - REFERER : time = 1166, url = http://localhost:8080/get/result?answer=100 
+[INFO ] 24-10-16 09:50:11 [MyInterceptor:111] - running time: 43(ms)
+[INFO ] 24-10-16 09:50:13 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:13 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:13 [MyInterceptor:74] - [GET] http://localhost:8080/get/result?answer=200
+[INFO ] 24-10-16 09:50:13 [MyInterceptor:81] - (param) <-- answer = 200
+[INFO ] 24-10-16 09:50:13 [MyInterceptor:90] -  - REFERER : time = 1982, url = http://localhost:8080/get/home 
+[INFO ] 24-10-16 09:50:13 [MyInterceptor:111] - running time: 55(ms)
+[INFO ] 24-10-16 09:50:14 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:14 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:14 [MyInterceptor:74] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-16 09:50:14 [MyInterceptor:90] -  - REFERER : time = 850, url = http://localhost:8080/get/result?answer=200 
+[INFO ] 24-10-16 09:50:14 [MyInterceptor:111] - running time: 34(ms)
+[INFO ] 24-10-16 09:50:15 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:15 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:15 [MyInterceptor:74] - [GET] http://localhost:8080/get/result?answer=300
+[INFO ] 24-10-16 09:50:15 [MyInterceptor:81] - (param) <-- answer = 300
+[INFO ] 24-10-16 09:50:15 [MyInterceptor:90] -  - REFERER : time = 1167, url = http://localhost:8080/get/home 
+[INFO ] 24-10-16 09:50:15 [MyInterceptor:111] - running time: 38(ms)
+[INFO ] 24-10-16 09:50:16 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:16 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:16 [MyInterceptor:74] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-16 09:50:16 [MyInterceptor:90] -  - REFERER : time = 1065, url = http://localhost:8080/get/result?answer=300 
+[INFO ] 24-10-16 09:50:16 [MyInterceptor:111] - running time: 30(ms)
+[INFO ] 24-10-16 09:50:17 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:17 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:17 [MyInterceptor:74] - [GET] http://localhost:8080/get/result?answer=400
+[INFO ] 24-10-16 09:50:17 [MyInterceptor:81] - (param) <-- answer = 400
+[INFO ] 24-10-16 09:50:17 [MyInterceptor:90] -  - REFERER : time = 984, url = http://localhost:8080/get/home 
+[INFO ] 24-10-16 09:50:17 [MyInterceptor:111] - running time: 28(ms)
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:74] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:90] -  - REFERER : time = 764, url = http://localhost:8080/get/result?answer=400 
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:111] - running time: 35(ms)
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:74] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:90] -  - REFERER : time = 478, url = http://localhost:8080/get/home 
+[INFO ] 24-10-16 09:50:18 [MyInterceptor:111] - running time: 32(ms)
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:74] - [POST] http://localhost:8080/post/answer
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:81] - (param) <-- user_name = 진돌
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:81] - (param) <-- user_age = 11
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:90] -  - REFERER : time = 4720, url = http://localhost:8080/post/home 
+[INFO ] 24-10-16 09:50:23 [MyInterceptor:111] - running time: 31(ms)
+[INFO ] 24-10-16 09:50:26 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:26 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:26 [MyInterceptor:74] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-16 09:50:26 [MyInterceptor:90] -  - REFERER : time = 3230, url = http://localhost:8080/post/answer 
+[INFO ] 24-10-16 09:50:26 [MyInterceptor:111] - running time: 26(ms)
+[INFO ] 24-10-16 09:50:28 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:28 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:28 [MyInterceptor:74] - [GET] http://localhost:8080/mypath/hello/world/1234
+[INFO ] 24-10-16 09:50:28 [MyInterceptor:90] -  - REFERER : time = 1432, url = http://localhost:8080/path/home 
+[INFO ] 24-10-16 09:50:28 [MyInterceptor:111] - running time: 24(ms)
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:74] - [GET] http://localhost:8080/post/home
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:90] -  - REFERER : time = 2024, url = http://localhost:8080/mypath/hello/world/1234 
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:111] - running time: 25(ms)
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:74] - [GET] http://localhost:8080/path/home
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:90] -  - REFERER : time = 360, url = http://localhost:8080/post/home 
+[INFO ] 24-10-16 09:50:30 [MyInterceptor:111] - running time: 24(ms)
+[INFO ] 24-10-16 09:50:32 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:32 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:32 [MyInterceptor:74] - [GET] http://localhost:8080/mypath/foo/bar/5678
+[INFO ] 24-10-16 09:50:32 [MyInterceptor:90] -  - REFERER : time = 1713, url = http://localhost:8080/path/home 
+[INFO ] 24-10-16 09:50:32 [MyInterceptor:111] - running time: 21(ms)
+[INFO ] 24-10-16 09:50:38 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:38 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:38 [MyInterceptor:74] - [GET] http://localhost:8080/survey
+[INFO ] 24-10-16 09:50:38 [MyInterceptor:90] -  - REFERER : time = 5913, url = http://localhost:8080/mypath/foo/bar/5678 
+[INFO ] 24-10-16 09:50:38 [MyInterceptor:111] - running time: 24(ms)
+[INFO ] 24-10-16 09:50:42 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:42 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:42 [MyInterceptor:74] - [POST] http://localhost:8080/survey/step1
+[INFO ] 24-10-16 09:50:42 [MyInterceptor:81] - (param) <-- name = jinsu
+[INFO ] 24-10-16 09:50:42 [MyInterceptor:90] -  - REFERER : time = 3824, url = http://localhost:8080/survey 
+[INFO ] 24-10-16 09:50:42 [MyInterceptor:111] - running time: 20(ms)
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:74] - [POST] http://localhost:8080/survey/step2
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:81] - (param) <-- name = jinsu
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:81] - (param) <-- age = 3
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:90] -  - REFERER : time = 2963, url = http://localhost:8080/survey/step1 
+[INFO ] 24-10-16 09:50:45 [MyInterceptor:111] - running time: 26(ms)
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:74] - [GET] http://localhost:8080/survey/step3?name=jinsu&age=3&group=student
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:81] - (param) <-- name = jinsu
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:81] - (param) <-- age = 3
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:81] - (param) <-- group = student
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:90] -  - REFERER : time = 4085, url = http://localhost:8080/survey/step2 
+[INFO ] 24-10-16 09:50:49 [MyInterceptor:111] - running time: 22(ms)
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:74] - [GET] http://localhost:8080/survey/step4?name=jinsu&age=3&group=student&glasses=no
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:81] - (param) <-- name = jinsu
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:81] - (param) <-- age = 3
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:81] - (param) <-- group = student
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:81] - (param) <-- glasses = no
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:90] -  - REFERER : time = 8149, url = http://localhost:8080/survey/step3?name=jinsu&age=3&group=student 
+[INFO ] 24-10-16 09:50:57 [MyInterceptor:111] - running time: 30(ms)
+[INFO ] 24-10-16 09:51:11 [MyInterceptor:39] - -------- new client connect ----------
+[INFO ] 24-10-16 09:51:11 [MyInterceptor:56] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-16 09:51:11 [MyInterceptor:74] - [GET] http://localhost:8080/get/home
+[INFO ] 24-10-16 09:51:11 [MyInterceptor:90] -  - REFERER : time = 13657, url = http://localhost:8080/survey/step4?name=jinsu&age=3&group=student&glasses=no 
+[INFO ] 24-10-16 09:51:11 [MyInterceptor:111] - running time: 25(ms)

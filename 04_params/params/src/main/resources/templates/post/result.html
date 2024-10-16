@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .result {
+            font-size: 20px;
+            margin: 20px;
+
+            span {
+                font-weight: bold;
+
+                &.name {
+                    color: blue;
+                }
+
+                &.age-group {
+                    color: red;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <p class="result">
+        <span class="name" th:text=${name}></span>님은
+        <span class="age-group" th:text=${ageGroup}></span>대 입니다.
+    </p>
+</body>
+</html>
