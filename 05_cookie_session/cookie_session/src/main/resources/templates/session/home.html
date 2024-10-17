@@ -8,5 +8,18 @@
 <body>
     <div th:replace="~{fragments/header :: my-header}"></div>
     <h2>Session</h2>
+
+    <form method="post" th:action="@{/session/save}">
+        <input type="text" name="user_name" placeholder="이름을 입력하세요" />
+        <input type="text" name="user_age" placeholder="나이을 입력하세요" />
+        <button type="submit">세션저장</button>
+    </form>
+
+    <hr />
+    <h3>세션에 저장된 값</h3>
+    <ul>
+        <li>이름: <span th:text="${userName}" /></li>
+        <li>나이: <span th:text="${userAge}" /></li>
+    </ul>
 </body>
 </html>
