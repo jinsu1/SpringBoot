@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>주문 완료</h2>
+    <form method="post" :action="@{/order_ok}"></form>
+    <p>
+        주문이 완료되었습니다.
+    </p>
+</body>
+</html>

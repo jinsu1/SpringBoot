@@ -76,7 +76,7 @@
         <appender-ref ref="Error" />
     </logger>
     <!-- 프로젝트 패키지 이름을 지정해야 함 -->
-    <logger name="kr.jinsu.aop" level="DEBUG" additivity="false">
+    <logger name="kr.jinsu.mailer" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />

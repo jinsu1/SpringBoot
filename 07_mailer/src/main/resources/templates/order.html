@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>주문서 작성</h2>
+    <form method="post" th:action="@{/order_ok}">
+        <p>
+            이 페이지는 장바구니에서 구매할 항목을 선택한 후
+            배송지 정보와 결제정보 등을 입력하는 페이지를 가정한 화면
+        </p>
+        <input type="text" name="order-name" placeholder="주문자 이름" />
+        <input type="email" name="order-email" placeholder="주문자 메일주소" />
+        <input type="number" name="order-price" placeholder="결제금액" value="38000" readonly />
+        <p>그 밖의 결제에 필요한 정보등을 입력 받았다고 가정..</p>
+        <button type="submit">주문하기</button>
+    </form>
+</body>
+</html>

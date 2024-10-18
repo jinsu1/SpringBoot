@@ -1,0 +1,1623 @@
+[INFO ] 24-10-18 11:22:54 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 16200 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 11:22:54 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:22:54 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:22:56 [MailApplication:56] - Started MailApplication in 2.887 seconds (process running for 3.595)
+[INFO ] 24-10-18 11:23:41 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 11:23:41 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 11:23:41 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 11:23:41 [MyInterceptor:117] - running time: 220(ms)
+[INFO ] 24-10-18 11:26:09 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 16200 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 11:26:09 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:26:09 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:26:11 [MailApplication:56] - Started MailApplication in 1.965 seconds (process running for 198.841)
+[INFO ] 24-10-18 11:26:43 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 16200 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 11:26:43 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:26:43 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:26:44 [MailApplication:56] - Started MailApplication in 1.155 seconds (process running for 231.781)
+[INFO ] 24-10-18 11:31:04 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 16200 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 11:31:04 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:31:04 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:31:06 [MailApplication:56] - Started MailApplication in 1.994 seconds (process running for 493.815)
+[ERROR] 24-10-18 11:33:19 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problems: 
+	Parser cannot be resolved to a type
+	Parser cannot be resolved to a type
+	Client cannot be resolved to a type
+] with root cause
+java.lang.Error: Unresolved compilation problems: 
+	Parser cannot be resolved to a type
+	Parser cannot be resolved to a type
+	Client cannot be resolved to a type
+
+	at kr.jinsu.mailer.interceptors.MyInterceptor.preHandle(MyInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-18 11:34:52 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 22036 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 11:34:52 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:34:52 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:34:56 [MailApplication:56] - Started MailApplication in 4.035 seconds (process running for 5.267)
+[INFO ] 24-10-18 11:36:39 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 11100 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 11:36:39 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:36:39 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:36:42 [MailApplication:56] - Started MailApplication in 3.642 seconds (process running for 4.424)
+[INFO ] 24-10-18 11:37:19 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 11:37:20 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 11:37:20 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 11:37:20 [MyInterceptor:117] - running time: 235(ms)
+[WARN ] 24-10-18 11:37:26 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-18 12:48:12 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:48:12 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:48:12 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:48:12 [MyInterceptor:117] - running time: 135(ms)
+[INFO ] 24-10-18 12:48:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:48:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:48:13 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:48:13 [MyInterceptor:117] - running time: 65(ms)
+[WARN ] 24-10-18 12:48:43 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[WARN ] 24-10-18 12:48:51 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-18 12:50:35 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 21692 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 12:50:35 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 12:50:35 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 12:50:38 [MailApplication:56] - Started MailApplication in 3.424 seconds (process running for 4.553)
+[INFO ] 24-10-18 12:50:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:50:45 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:50:45 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:50:45 [MyInterceptor:117] - running time: 190(ms)
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:87] - (param) <-- sender-email = wlstn4205@gmail.com
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:87] - (param) <-- receiver-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:87] - (param) <-- subject = 123123
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:87] - (param) <-- content = <p>ㅂㅈㄷㅈㅂㄷㅂ</p>
+[INFO ] 24-10-18 12:50:54 [MyInterceptor:96] -  - REFERER : time = 8492, url = http://localhost:8080/ 
+[DEBUG] 24-10-18 12:50:54 [MailController:39] - ------------------------------------
+[DEBUG] 24-10-18 12:50:54 [MailController:40] - SenderName: 나
+[DEBUG] 24-10-18 12:50:54 [MailController:41] - SenderEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-18 12:50:54 [MailController:42] - receiverName: 너
+[DEBUG] 24-10-18 12:50:54 [MailController:43] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 12:50:54 [MailController:44] - subject: 123123
+[DEBUG] 24-10-18 12:50:54 [MailController:45] - content: <p>ㅂㅈㄷㅈㅂㄷㅂ</p>
+[DEBUG] 24-10-18 12:50:54 [MailController:46] - ------------------------------------
+[ERROR] 24-10-18 12:50:55 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-71ea34ac5c6sm452535b3a.189 - gsmtp
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
+	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
+	at kr.jinsu.mailer.controllers.MailController.postMethodName(MailController.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:87] - (param) <-- subject = 123123
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:87] - (param) <-- content = <p>ㅂㅈㄷㅈㅂㄷㅂ</p>
+[INFO ] 24-10-18 12:51:38 [MyInterceptor:96] -  - REFERER : time = 53002, url = http://localhost:8080/ 
+[DEBUG] 24-10-18 12:51:38 [MailController:39] - ------------------------------------
+[DEBUG] 24-10-18 12:51:38 [MailController:40] - SenderName: 나
+[DEBUG] 24-10-18 12:51:38 [MailController:41] - SenderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 12:51:38 [MailController:42] - receiverName: 너
+[DEBUG] 24-10-18 12:51:38 [MailController:43] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-18 12:51:38 [MailController:44] - subject: 123123
+[DEBUG] 24-10-18 12:51:38 [MailController:45] - content: <p>ㅂㅈㄷㅈㅂㄷㅂ</p>
+[DEBUG] 24-10-18 12:51:38 [MailController:46] - ------------------------------------
+[ERROR] 24-10-18 12:51:40 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-71ea33febd7sm453442b3a.118 - gsmtp
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
+	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
+	at kr.jinsu.mailer.controllers.MailController.postMethodName(MailController.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:87] - (param) <-- subject = 123123
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:87] - (param) <-- content = <p>213213</p>
+[INFO ] 24-10-18 12:52:01 [MyInterceptor:96] -  - REFERER : time = 75849, url = http://localhost:8080/ 
+[DEBUG] 24-10-18 12:52:01 [MailController:39] - ------------------------------------
+[DEBUG] 24-10-18 12:52:01 [MailController:40] - SenderName: 나
+[DEBUG] 24-10-18 12:52:01 [MailController:41] - SenderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 12:52:01 [MailController:42] - receiverName: 너
+[DEBUG] 24-10-18 12:52:01 [MailController:43] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-18 12:52:01 [MailController:44] - subject: 123123
+[DEBUG] 24-10-18 12:52:01 [MailController:45] - content: <p>213213</p>
+[DEBUG] 24-10-18 12:52:01 [MailController:46] - ------------------------------------
+[ERROR] 24-10-18 12:52:03 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-7eacc29c0d7sm380218a12.87 - gsmtp
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
+	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
+	at kr.jinsu.mailer.controllers.MailController.postMethodName(MailController.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:117] - running time: 42(ms)
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:117] - running time: 36(ms)
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:117] - running time: 33(ms)
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:52:08 [MyInterceptor:117] - running time: 24(ms)
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:87] - (param) <-- subject = 테스트 이메일 
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:87] - (param) <-- content = <p>123213123</p>
+[INFO ] 24-10-18 12:52:16 [MyInterceptor:96] -  - REFERER : time = 8037, url = http://localhost:8080/ 
+[DEBUG] 24-10-18 12:52:16 [MailController:39] - ------------------------------------
+[DEBUG] 24-10-18 12:52:16 [MailController:40] - SenderName: 나
+[DEBUG] 24-10-18 12:52:16 [MailController:41] - SenderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 12:52:16 [MailController:42] - receiverName: 너
+[DEBUG] 24-10-18 12:52:16 [MailController:43] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-18 12:52:16 [MailController:44] - subject: 테스트 이메일 
+[DEBUG] 24-10-18 12:52:16 [MailController:45] - content: <p>123213123</p>
+[DEBUG] 24-10-18 12:52:16 [MailController:46] - ------------------------------------
+[ERROR] 24-10-18 12:52:18 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-7eacc28d2cesm376436a12.65 - gsmtp
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
+	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
+	at kr.jinsu.mailer.controllers.MailController.postMethodName(MailController.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-18 12:52:47 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 1536 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 12:52:47 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 12:52:47 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 12:52:50 [MailApplication:56] - Started MailApplication in 2.867 seconds (process running for 3.967)
+[INFO ] 24-10-18 12:52:55 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:52:55 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:52:55 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:52:55 [MyInterceptor:117] - running time: 168(ms)
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:87] - (param) <-- subject = 123123
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:87] - (param) <-- content = <p>12312312</p>
+[INFO ] 24-10-18 12:53:04 [MyInterceptor:96] -  - REFERER : time = 8778, url = http://localhost:8080/ 
+[DEBUG] 24-10-18 12:53:04 [MailController:39] - ------------------------------------
+[DEBUG] 24-10-18 12:53:04 [MailController:40] - SenderName: 나
+[DEBUG] 24-10-18 12:53:04 [MailController:41] - SenderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 12:53:04 [MailController:42] - receiverName: 너
+[DEBUG] 24-10-18 12:53:04 [MailController:43] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-18 12:53:04 [MailController:44] - subject: 123123
+[DEBUG] 24-10-18 12:53:04 [MailController:45] - content: <p>12312312</p>
+[DEBUG] 24-10-18 12:53:04 [MailController:46] - ------------------------------------
+[INFO ] 24-10-18 12:53:08 [MyInterceptor:117] - running time: 4260(ms)
+[INFO ] 24-10-18 12:53:08 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 12:53:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 12:53:08 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:53:08 [MyInterceptor:96] -  - REFERER : time = 9, url = http://localhost:8080/ 
+[INFO ] 24-10-18 12:53:08 [MyInterceptor:117] - running time: 53(ms)
+[INFO ] 24-10-18 16:50:25 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 2148 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 16:50:25 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 16:50:25 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 16:50:29 [MailApplication:56] - Started MailApplication in 4.344 seconds (process running for 5.135)
+[INFO ] 24-10-18 16:51:05 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 11584 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 16:51:05 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 16:51:05 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 16:51:07 [MailApplication:56] - Started MailApplication in 2.9 seconds (process running for 3.867)
+[INFO ] 24-10-18 16:51:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:14 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:14 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 16:51:14 [MyInterceptor:117] - running time: 232(ms)
+[INFO ] 24-10-18 16:51:21 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:21 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:21 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 16:51:21 [MyInterceptor:117] - running time: 61(ms)
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:87] - (param) <-- order-name = 박진수
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:51:34 [MyInterceptor:96] -  - REFERER : time = 13258, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:51:34 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:51:34 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:51:34 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:51:34 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:51:34 [MailHelper:39] - subject: 박진수님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:51:34 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, {{orderName}}님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:51:35 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:87] - (param) <-- order-name = 박진수
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:51:36 [MyInterceptor:96] -  - REFERER : time = 14735, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:51:36 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:51:36 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:51:36 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:51:36 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:51:36 [MailHelper:39] - subject: 박진수님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:51:36 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, {{userName}}님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:51:36 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:117] - running time: 2290(ms)
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:87] - (param) <-- order-name = 박진수
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:51:38 [MyInterceptor:96] -  - REFERER : time = 116, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:51:38 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:51:38 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:51:38 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:51:38 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:51:38 [MailHelper:39] - subject: 박진수님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:51:38 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, {{userName}}님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:51:38 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:87] - (param) <-- order-name = 박진수
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:51:39 [MyInterceptor:96] -  - REFERER : time = 523, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:51:39 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:51:39 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:51:39 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:51:39 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:51:39 [MailHelper:39] - subject: 박진수님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:51:39 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, {{userName}}님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:51:39 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:51:40 [MyInterceptor:117] - running time: 1005(ms)
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:117] - running time: 3799(ms)
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:96] -  - REFERER : time = 7, url = http://localhost:8080/order 
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:117] - running time: 23(ms)
+[INFO ] 24-10-18 16:51:43 [MyInterceptor:117] - running time: 372(ms)
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:87] - (param) <-- order-name = 박진수
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:53:56 [MyInterceptor:96] -  - REFERER : time = 133281, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:53:56 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:53:56 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:53:56 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:53:56 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:53:56 [MailHelper:39] - subject: 박진수님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:53:56 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, {{userName}}님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:53:56 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:54:00 [MyInterceptor:117] - running time: 3391(ms)
+[INFO ] 24-10-18 16:54:00 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:00 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:00 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 16:54:00 [MyInterceptor:96] -  - REFERER : time = 7, url = http://localhost:8080/order 
+[INFO ] 24-10-18 16:54:00 [MyInterceptor:117] - running time: 23(ms)
+[INFO ] 24-10-18 16:54:36 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:36 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:36 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 16:54:36 [MyInterceptor:117] - running time: 30(ms)
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:117] - running time: 24(ms)
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 16:54:37 [MyInterceptor:117] - running time: 24(ms)
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:87] - (param) <-- order-name = 
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:54:43 [MyInterceptor:96] -  - REFERER : time = 6368, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:54:43 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:54:43 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:54:43 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:54:43 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:54:43 [MailHelper:39] - subject: 님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:54:43 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, 님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:54:43 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:87] - (param) <-- order-name = 박진수
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:87] - (param) <-- order-email = jinsu4205@gmail.com
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 16:54:45 [MyInterceptor:96] -  - REFERER : time = 8074, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 16:54:45 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 16:54:45 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 16:54:45 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 16:54:45 [MailHelper:38] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-18 16:54:45 [MailHelper:39] - subject: 박진수님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 16:54:45 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, 박진수님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 16:54:45 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 16:54:47 [MyInterceptor:117] - running time: 1650(ms)
+[INFO ] 24-10-18 16:54:48 [MyInterceptor:117] - running time: 3364(ms)
+[INFO ] 24-10-18 16:54:48 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 16:54:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 16:54:48 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 16:54:48 [MyInterceptor:96] -  - REFERER : time = 6, url = http://localhost:8080/order 
+[INFO ] 24-10-18 16:54:48 [MyInterceptor:117] - running time: 18(ms)
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:87] - (param) <-- order-name = 파워 30cm 전동오나홀
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:87] - (param) <-- order-email = mitshowme@gmail.com
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 17:08:25 [MyInterceptor:96] -  - REFERER : time = 816378, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 17:08:25 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 17:08:25 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 17:08:25 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 17:08:25 [MailHelper:38] - receiverEmail: mitshowme@gmail.com
+[DEBUG] 24-10-18 17:08:25 [MailHelper:39] - subject: 파워 30cm 전동오나홀님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 17:08:25 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, 파워 30cm 전동오나홀님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 17:08:25 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:87] - (param) <-- order-name = 파워 30cm 전동오나홀
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:87] - (param) <-- order-email = mitshowme@gmail.com
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:87] - (param) <-- order-price = 38000
+[INFO ] 24-10-18 17:08:26 [MyInterceptor:96] -  - REFERER : time = 817747, url = http://localhost:8080/order 
+[DEBUG] 24-10-18 17:08:26 [OrderController:67] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 17:08:26 [MailHelper:36] - ------------------------------------
+[DEBUG] 24-10-18 17:08:26 [MailHelper:37] - receiverName: null
+[DEBUG] 24-10-18 17:08:26 [MailHelper:38] - receiverEmail: mitshowme@gmail.com
+[DEBUG] 24-10-18 17:08:26 [MailHelper:39] - subject: 파워 30cm 전동오나홀님의 주문이 완료되었습니다.
+[DEBUG] 24-10-18 17:08:26 [MailHelper:40] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, 파워 30cm 전동오나홀님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180078</p>
+                <p><strong>주문 상품:</strong> 내가 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년 10월 18일</p>
+                <p><strong>총 결제 금액:</strong> 38000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 17:08:26 [MailHelper:41] - ------------------------------------
+[INFO ] 24-10-18 17:08:29 [MyInterceptor:117] - running time: 2679(ms)
+[INFO ] 24-10-18 17:08:30 [MyInterceptor:117] - running time: 3880(ms)
+[INFO ] 24-10-18 17:08:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:08:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:08:30 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 17:08:30 [MyInterceptor:96] -  - REFERER : time = 8, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:08:30 [MyInterceptor:117] - running time: 18(ms)
