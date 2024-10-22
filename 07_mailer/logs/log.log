@@ -1621,3 +1621,174 @@ jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not 
 [INFO ] 24-10-18 17:08:30 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
 [INFO ] 24-10-18 17:08:30 [MyInterceptor:96] -  - REFERER : time = 8, url = http://localhost:8080/order 
 [INFO ] 24-10-18 17:08:30 [MyInterceptor:117] - running time: 18(ms)
+[INFO ] 24-10-18 17:46:21 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:21 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:21 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:46:21 [MyInterceptor:117] - running time: 31(ms)
+[INFO ] 24-10-18 17:46:23 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:23 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:23 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:46:23 [MyInterceptor:117] - running time: 19(ms)
+[INFO ] 24-10-18 17:46:24 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:24 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:24 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:46:24 [MyInterceptor:117] - running time: 18(ms)
+[INFO ] 24-10-18 17:46:27 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:27 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:27 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:27 [MyInterceptor:117] - running time: 22(ms)
+[INFO ] 24-10-18 17:46:29 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:29 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:29 [MyInterceptor:117] - running time: 18(ms)
+[INFO ] 24-10-18 17:46:29 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:117] - running time: 21(ms)
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:117] - running time: 15(ms)
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:117] - running time: 22(ms)
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:117] - running time: 20(ms)
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:30 [MyInterceptor:117] - running time: 16(ms)
+[INFO ] 24-10-18 17:46:40 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:40 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:40 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:46:40 [MyInterceptor:117] - running time: 29(ms)
+[INFO ] 24-10-18 17:46:43 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:46:43 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:46:43 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:46:43 [MyInterceptor:117] - running time: 23(ms)
+[INFO ] 24-10-18 17:47:06 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 6324 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 17:47:06 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:47:06 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:47:09 [MailApplication:56] - Started MailApplication in 2.805 seconds (process running for 3.716)
+[INFO ] 24-10-18 17:47:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:47:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:47:13 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:47:13 [MyInterceptor:117] - running time: 179(ms)
+[INFO ] 24-10-18 17:47:17 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:47:17 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:47:17 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:47:17 [MyInterceptor:117] - running time: 52(ms)
+[WARN ] 24-10-18 17:47:19 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[WARN ] 24-10-18 17:47:21 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[INFO ] 24-10-18 17:49:16 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 12488 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 17:49:16 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:49:16 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:49:18 [MailApplication:56] - Started MailApplication in 2.737 seconds (process running for 3.552)
+[INFO ] 24-10-18 17:49:22 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:49:22 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:49:22 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:49:22 [MyInterceptor:117] - running time: 181(ms)
+[INFO ] 24-10-18 17:49:24 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:49:24 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:49:24 [MyInterceptor:80] - [GET] http://localhost:8080/index
+[INFO ] 24-10-18 17:49:24 [MyInterceptor:96] -  - REFERER : time = 1431, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:49:28 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:49:28 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:49:28 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:49:28 [MyInterceptor:96] -  - REFERER : time = 5605, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:49:28 [MyInterceptor:117] - running time: 61(ms)
+[INFO ] 24-10-18 17:49:29 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:49:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:49:29 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:49:29 [MyInterceptor:96] -  - REFERER : time = 1482, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:49:29 [MyInterceptor:117] - running time: 48(ms)
+[INFO ] 24-10-18 17:50:28 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 7188 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 17:50:28 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:50:28 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:50:30 [MailApplication:56] - Started MailApplication in 3.023 seconds (process running for 3.873)
+[INFO ] 24-10-18 17:50:33 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:50:33 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:50:33 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:50:33 [MyInterceptor:117] - running time: 207(ms)
+[INFO ] 24-10-18 17:50:37 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:50:37 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:50:37 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:50:37 [MyInterceptor:117] - running time: 54(ms)
+[INFO ] 24-10-18 17:50:38 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:50:38 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:50:38 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:50:38 [MyInterceptor:96] -  - REFERER : time = 1061, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:50:38 [MyInterceptor:117] - running time: 53(ms)
+[INFO ] 24-10-18 17:50:41 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:50:41 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:50:41 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:50:41 [MyInterceptor:96] -  - REFERER : time = 3044, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:50:41 [MyInterceptor:117] - running time: 39(ms)
+[INFO ] 24-10-18 17:50:42 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:50:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:50:42 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:50:42 [MyInterceptor:96] -  - REFERER : time = 1231, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:50:42 [MyInterceptor:117] - running time: 34(ms)
+[INFO ] 24-10-18 17:50:43 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:50:43 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:50:43 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:50:43 [MyInterceptor:96] -  - REFERER : time = 928, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:50:43 [MyInterceptor:117] - running time: 40(ms)
+[INFO ] 24-10-18 17:50:55 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 7188 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 17:50:55 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:50:55 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:50:59 [MailApplication:56] - Started MailApplication in 4.398 seconds (process running for 32.623)
+[INFO ] 24-10-18 17:51:11 [MailApplication:50] - Starting MailApplication using Java 17.0.2 with PID 7188 (D:\jinsu_study\10_SpringBoot\07_mailer\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\07_mailer)
+[DEBUG] 24-10-18 17:51:11 [MailApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:51:11 [MailApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:51:13 [MailApplication:56] - Started MailApplication in 2.162 seconds (process running for 46.616)
+[INFO ] 24-10-18 17:54:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:117] - running time: 179(ms)
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:117] - running time: 181(ms)
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:117] - running time: 181(ms)
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:96] -  - REFERER : time = -181, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:96] -  - REFERER : time = -181, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:117] - running time: 305(ms)
+[INFO ] 24-10-18 17:54:46 [MyInterceptor:117] - running time: 308(ms)
+[INFO ] 24-10-18 17:54:47 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:47 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:47 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:54:47 [MyInterceptor:96] -  - REFERER : time = 1271, url = http://localhost:8080/ 
+[INFO ] 24-10-18 17:54:47 [MyInterceptor:117] - running time: 40(ms)
+[INFO ] 24-10-18 17:54:48 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:48 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:48 [MyInterceptor:96] -  - REFERER : time = 653, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:54:48 [MyInterceptor:117] - running time: 191(ms)
+[INFO ] 24-10-18 17:54:49 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:49 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:49 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:49 [MyInterceptor:96] -  - REFERER : time = 740, url = http://localhost:8080/ 
+[INFO ] 24-10-18 17:54:49 [MyInterceptor:117] - running time: 58(ms)
+[INFO ] 24-10-18 17:54:50 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:50 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:50 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:54:50 [MyInterceptor:96] -  - REFERER : time = 1176, url = http://localhost:8080/ 
+[INFO ] 24-10-18 17:54:50 [MyInterceptor:117] - running time: 38(ms)
+[INFO ] 24-10-18 17:54:51 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-18 17:54:51 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-18 17:54:51 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:54:51 [MyInterceptor:96] -  - REFERER : time = 606, url = http://localhost:8080/order 
+[INFO ] 24-10-18 17:54:51 [MyInterceptor:117] - running time: 63(ms)

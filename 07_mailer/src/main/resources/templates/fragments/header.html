@@ -8,8 +8,10 @@
 <body>
     <header th:fragment="my-header">
         <link rel="stylesheet" th:href="@{/assets/css/header.css}">
-        <h1>order</h1>
+        <h1>04-Params</h1>
         <nav class="gnb">
+            <a th:href= "@{/}">메일보내기</a>
+            <a th:href= "@{/order}">주문하기</a>
 
         </nav>
     </header>

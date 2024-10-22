@@ -1,0 +1,121 @@
+[INFO ] 24-10-22 14:53:12 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 8844 (started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-22 14:53:12 [MembersServiceTest:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-22 14:53:12 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-22 14:53:13 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-22 14:53:14 [MembersServiceTest:56] - Started MembersServiceTest in 2.534 seconds (process running for 3.62)
+[DEBUG] 24-10-22 14:53:15 [insert:135] - ==>  Preparing: insert into members (user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date ) values (?, MD5(?), ?, ?, ?, ?, ?, ?, ?, ?, ?, 'N', 'N', now(), now(), now())
+[DEBUG] 24-10-22 14:53:15 [insert:135] - ==> Parameters: jinsu5(String), aaa111(String), 박진수5(String), wlstn4205@naver.com(String), 010-3306-4205(String), 1996-09-05(String), M(String), 16125(String), 경기도 수원시5(String), 우만동5(String), photo(String)
+[INFO ] 24-10-22 14:53:15 [sqlonly:228] - insert into members (user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date ) values ('jinsu5', MD5('aaa111'), '박진수5', 'wlstn4205@naver.com', '010-3306-4205', '1996-09-05', 'M', '16125', '경기도 수원시5', '우만동5', 'photo', 'N', 'N', now(), now(), now())
+
+[DEBUG] 24-10-22 14:53:15 [insert:135] - <==    Updates: 1
+[INFO ] 24-10-22 14:53:15 [resultsettable:610] - 
+|--------------|
+|generated_key |
+|--------------|
+|12            |
+|--------------|
+
+[DEBUG] 24-10-22 14:53:15 [selectItem:135] - ==>  Preparing: select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=?
+[DEBUG] 24-10-22 14:53:15 [selectItem:135] - ==> Parameters: 12(Integer)
+[INFO ] 24-10-22 14:53:15 [sqlonly:228] - select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=12
+
+[INFO ] 24-10-22 14:53:15 [resultsettable:610] - 
+|--------|---------------------------------|----------|--------------------|--------------|-----------|-------|---------|---------|------|------|-------|---------|--------------------|--------------------|--------------------|
+|user_id |user_pw                          |user_name |email               |phone         |birthday   |gender |postcode |addr1    |addr2 |photo |is_out |is_admin |login_date          |reg_date            |edit_date           |
+|--------|---------------------------------|----------|--------------------|--------------|-----------|-------|---------|---------|------|------|-------|---------|--------------------|--------------------|--------------------|
+|jinsu5  |eabd8ce9404507aa8c22714d3f5eada9 |박진수5      |wlstn4205@naver.com |010-3306-4205 |1996-09-05 |M      |16125    |경기도 수원시5 |우만동5  |photo |N      |N        |2024-10-22 14:53:15 |2024-10-22 14:53:15 |2024-10-22 14:53:15 |
+|--------|---------------------------------|----------|--------------------|--------------|-----------|-------|---------|---------|------|------|-------|---------|--------------------|--------------------|--------------------|
+
+[DEBUG] 24-10-22 14:53:15 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-10-22 14:53:15 [MembersServiceTest:48] - output: Members(id=0, userId=jinsu5, userPw=eabd8ce9404507aa8c22714d3f5eada9, userName=박진수5, email=wlstn4205@naver.com, phone=010-3306-4205, birthday=1996-09-05, gender=M, postcode=16125, addr1=경기도 수원시5, addr2=우만동5, photo=photo, isOut=N, isAdmin=N, loginDate=2024-10-22 14:53:15, regDate=2024-10-22 14:53:15, editDate=2024-10-22 14:53:15)
+
+************************************************************** 
+
+[INFO ] 24-10-22 14:53:19 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 5272 (started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-22 14:53:19 [MembersServiceTest:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-22 14:53:19 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-22 14:53:20 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-22 14:53:21 [MembersServiceTest:56] - Started MembersServiceTest in 2.587 seconds (process running for 3.845)
+[DEBUG] 24-10-22 14:53:22 [update:135] - ==>  Preparing: update members set user_id=?, user_pw=?, user_name=?, email=?, phone=?, birthday=?, gender=?, postcode=?, addr1=?, addr2=?, photo=?, edit_date=now() where id=?
+[DEBUG] 24-10-22 14:53:22 [update:135] - ==> Parameters: 수정된 jinsu2(String), 42051234(String), 수정된 진수2(String), 수정된4205@naver.com(String), photo2(String), 1996-09-06(String), F(String), 15026(String), 수정된 수원시 팔달구2(String), 수정된 우만2동(String), null, 6(Integer)
+[INFO ] 24-10-22 14:53:22 [sqlonly:228] - update members set user_id='수정된 jinsu2', user_pw='42051234', user_name='수정된 진수2', email='수정된4205@naver.com', phone='photo2', birthday='1996-09-06', gender='F', postcode='15026', addr1='수정된 수원시 팔달구2', addr2='수정된 우만2동', photo=NULL, edit_date=now() where id=6
+
+[DEBUG] 24-10-22 14:53:22 [update:135] - <==    Updates: 1
+[DEBUG] 24-10-22 14:53:22 [selectItem:135] - ==>  Preparing: select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=?
+[DEBUG] 24-10-22 14:53:22 [selectItem:135] - ==> Parameters: 6(Integer)
+[INFO ] 24-10-22 14:53:22 [sqlonly:228] - select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=6
+
+[INFO ] 24-10-22 14:53:23 [resultsettable:610] - 
+|-----------|---------|----------|------------------|-------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+|user_id    |user_pw  |user_name |email             |phone  |birthday   |gender |postcode |addr1        |addr2    |photo |is_out |is_admin |login_date          |reg_date            |edit_date           |
+|-----------|---------|----------|------------------|-------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+|수정된 jinsu2 |42051234 |수정된 진수2   |수정된4205@naver.com |photo2 |1996-09-06 |F      |15026    |수정된 수원시 팔달구2 |수정된 우만2동 |null  |N      |N        |2024-10-21 15:00:50 |2024-10-21 15:00:50 |2024-10-22 14:53:22 |
+|-----------|---------|----------|------------------|-------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+
+[DEBUG] 24-10-22 14:53:23 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-10-22 14:53:23 [MembersServiceTest:81] - output: Members(id=0, userId=수정된 jinsu2, userPw=42051234, userName=수정된 진수2, email=수정된4205@naver.com, phone=photo2, birthday=1996-09-06, gender=F, postcode=15026, addr1=수정된 수원시 팔달구2, addr2=수정된 우만2동, photo=null, isOut=N, isAdmin=N, loginDate=2024-10-21 15:00:50, regDate=2024-10-21 15:00:50, editDate=2024-10-22 14:53:22)
+
+**************************************************************
+
+[INFO ] 24-10-22 14:54:02 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 11180 (started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-22 14:54:02 [MembersServiceTest:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-22 14:54:02 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-22 14:54:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-22 14:54:04 [MembersServiceTest:56] - Started MembersServiceTest in 2.55 seconds (process running for 3.74)
+[DEBUG] 24-10-22 14:54:05 [delete:135] - ==>  Preparing: delete from members where id=?
+[DEBUG] 24-10-22 14:54:05 [delete:135] - ==> Parameters: 10(Integer)
+[INFO ] 24-10-22 14:54:05 [sqlonly:228] - delete from members where id=10
+
+[DEBUG] 24-10-22 14:54:05 [delete:135] - <==    Updates: 1
+
+**************************************************************
+
+[INFO ] 24-10-22 14:55:04 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 14056 (started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-22 14:55:04 [MembersServiceTest:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-22 14:55:04 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-22 14:55:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-22 14:55:06 [MembersServiceTest:56] - Started MembersServiceTest in 2.607 seconds (process running for 3.677)
+[DEBUG] 24-10-22 14:55:07 [selectItem:135] - ==>  Preparing: select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=?
+[DEBUG] 24-10-22 14:55:07 [selectItem:135] - ==> Parameters: 6(Integer)
+[INFO ] 24-10-22 14:55:07 [sqlonly:228] - select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=6
+
+[INFO ] 24-10-22 14:55:07 [resultsettable:610] - 
+|-----------|---------|----------|------------------|-------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+|user_id    |user_pw  |user_name |email             |phone  |birthday   |gender |postcode |addr1        |addr2    |photo |is_out |is_admin |login_date          |reg_date            |edit_date           |
+|-----------|---------|----------|------------------|-------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+|수정된 jinsu2 |42051234 |수정된 진수2   |수정된4205@naver.com |photo2 |1996-09-06 |F      |15026    |수정된 수원시 팔달구2 |수정된 우만2동 |null  |N      |N        |2024-10-21 15:00:50 |2024-10-21 15:00:50 |2024-10-22 14:53:22 |
+|-----------|---------|----------|------------------|-------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+
+[DEBUG] 24-10-22 14:55:07 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-10-22 14:55:07 [MembersServiceTest:118] - output: Members(id=0, userId=수정된 jinsu2, userPw=42051234, userName=수정된 진수2, email=수정된4205@naver.com, phone=photo2, birthday=1996-09-06, gender=F, postcode=15026, addr1=수정된 수원시 팔달구2, addr2=수정된 우만2동, photo=null, isOut=N, isAdmin=N, loginDate=2024-10-21 15:00:50, regDate=2024-10-21 15:00:50, editDate=2024-10-22 14:53:22)
+
+**************************************************************
+
+[INFO ] 24-10-22 14:58:06 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 4252 (started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-22 14:58:06 [MembersServiceTest:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-22 14:58:06 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-22 14:58:07 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-22 14:58:08 [MembersServiceTest:56] - Started MembersServiceTest in 2.406 seconds (process running for 3.501)
+[DEBUG] 24-10-22 14:58:10 [selectList:135] - ==>  Preparing: select id, user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members order by id desc
+[DEBUG] 24-10-22 14:58:10 [selectList:135] - ==> Parameters: 
+[INFO ] 24-10-22 14:58:10 [sqlonly:228] - select id, user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members order by id desc
+
+[INFO ] 24-10-22 14:58:10 [resultsettable:610] - 
+|---|-----------|---------------------------------|----------|--------------------|--------------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+|id |user_id    |user_pw                          |user_name |email               |phone         |birthday   |gender |postcode |addr1        |addr2    |photo |is_out |is_admin |login_date          |reg_date            |edit_date           |
+|---|-----------|---------------------------------|----------|--------------------|--------------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+|12 |jinsu5     |eabd8ce9404507aa8c22714d3f5eada9 |박진수5      |wlstn4205@naver.com |010-3306-4205 |1996-09-05 |M      |16125    |경기도 수원시5     |우만동5     |photo |N      |N        |2024-10-22 14:53:15 |2024-10-22 14:53:15 |2024-10-22 14:53:15 |
+|11 |jinsu5     |eabd8ce9404507aa8c22714d3f5eada9 |박진수5      |wlstn4205@naver.com |010-3306-4205 |1996-09-05 |M      |16125    |경기도 수원시5     |우만동5     |photo |N      |N        |2024-10-22 14:50:57 |2024-10-22 14:50:57 |2024-10-22 14:50:57 |
+|9  |jinsu5     |eabd8ce9404507aa8c22714d3f5eada9 |박진수5      |wlstn4205@naver.com |010-3306-4205 |1996-09-05 |M      |16125    |경기도 수원시5     |우만동5     |photo |N      |N        |2024-10-22 14:48:45 |2024-10-22 14:48:45 |2024-10-22 14:48:45 |
+|8  |jinsu      |eabd8ce9404507aa8c22714d3f5eada9 |박진수       |wlstn4205@naver.com |010-3306-4205 |1996-09-05 |M      |16125    |경기도 수원시      |우만동      |photo |N      |N        |2024-10-21 15:05:39 |2024-10-21 15:05:39 |2024-10-21 15:05:39 |
+|7  |jinsu      |eabd8ce9404507aa8c22714d3f5eada9 |박진수       |wlstn4205@naver.com |010-3306-4205 |1996-09-05 |M      |16125    |경기도 수원시      |우만동      |photo |N      |N        |2024-10-21 15:02:33 |2024-10-21 15:02:33 |2024-10-21 15:02:33 |
+|6  |수정된 jinsu2 |42051234                         |수정된 진수2   |수정된4205@naver.com   |photo2        |1996-09-06 |F      |15026    |수정된 수원시 팔달구2 |수정된 우만2동 |null  |N      |N        |2024-10-21 15:00:50 |2024-10-21 15:00:50 |2024-10-22 14:53:22 |
+|---|-----------|---------------------------------|----------|--------------------|--------------|-----------|-------|---------|-------------|---------|------|-------|---------|--------------------|--------------------|--------------------|
+
+[DEBUG] 24-10-22 14:58:10 [selectList:135] - <==      Total: 6
+[DEBUG] 24-10-22 14:58:10 [MembersServiceTest:141] - output: Members(id=12, userId=jinsu5, userPw=eabd8ce9404507aa8c22714d3f5eada9, userName=박진수5, email=wlstn4205@naver.com, phone=010-3306-4205, birthday=1996-09-05, gender=M, postcode=16125, addr1=경기도 수원시5, addr2=우만동5, photo=photo, isOut=N, isAdmin=N, loginDate=2024-10-22 14:53:15, regDate=2024-10-22 14:53:15, editDate=2024-10-22 14:53:15)
+[DEBUG] 24-10-22 14:58:10 [MembersServiceTest:141] - output: Members(id=11, userId=jinsu5, userPw=eabd8ce9404507aa8c22714d3f5eada9, userName=박진수5, email=wlstn4205@naver.com, phone=010-3306-4205, birthday=1996-09-05, gender=M, postcode=16125, addr1=경기도 수원시5, addr2=우만동5, photo=photo, isOut=N, isAdmin=N, loginDate=2024-10-22 14:50:57, regDate=2024-10-22 14:50:57, editDate=2024-10-22 14:50:57)
+[DEBUG] 24-10-22 14:58:10 [MembersServiceTest:141] - output: Members(id=9, userId=jinsu5, userPw=eabd8ce9404507aa8c22714d3f5eada9, userName=박진수5, email=wlstn4205@naver.com, phone=010-3306-4205, birthday=1996-09-05, gender=M, postcode=16125, addr1=경기도 수원시5, addr2=우만동5, photo=photo, isOut=N, isAdmin=N, loginDate=2024-10-22 14:48:45, regDate=2024-10-22 14:48:45, editDate=2024-10-22 14:48:45)
+[DEBUG] 24-10-22 14:58:10 [MembersServiceTest:141] - output: Members(id=8, userId=jinsu, userPw=eabd8ce9404507aa8c22714d3f5eada9, userName=박진수, email=wlstn4205@naver.com, phone=010-3306-4205, birthday=1996-09-05, gender=M, postcode=16125, addr1=경기도 수원시, addr2=우만동, photo=photo, isOut=N, isAdmin=N, loginDate=2024-10-21 15:05:39, regDate=2024-10-21 15:05:39, editDate=2024-10-21 15:05:39)
+[DEBUG] 24-10-22 14:58:10 [MembersServiceTest:141] - output: Members(id=7, userId=jinsu, userPw=eabd8ce9404507aa8c22714d3f5eada9, userName=박진수, email=wlstn4205@naver.com, phone=010-3306-4205, birthday=1996-09-05, gender=M, postcode=16125, addr1=경기도 수원시, addr2=우만동, photo=photo, isOut=N, isAdmin=N, loginDate=2024-10-21 15:02:33, regDate=2024-10-21 15:02:33, editDate=2024-10-21 15:02:33)
+[DEBUG] 24-10-22 14:58:10 [MembersServiceTest:141] - output: Members(id=6, userId=수정된 jinsu2, userPw=42051234, userName=수정된 진수2, email=수정된4205@naver.com, phone=photo2, birthday=1996-09-06, gender=F, postcode=15026, addr1=수정된 수원시 팔달구2, addr2=수정된 우만2동, photo=null, isOut=N, isAdmin=N, loginDate=2024-10-21 15:00:50, regDate=2024-10-21 15:00:50, editDate=2024-10-22 14:53:22)
