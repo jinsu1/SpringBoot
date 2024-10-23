@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>교수관리</h2>
+    <hr />
+    <table class="mytable">
+        <thead>
+            <tr>
+                <th>교수번호</th>
+                <th>교수이름</th>
+                <th>교수아이디</th>
+                <th>직위</th>
+                <th>월급</th>
+                <th>입사일</th>
+                <th>추가수당</th>
+                <th>학과번호</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="professor : ${professors}">
+                <td th:text="${professor.profno}"></td>
+                <!--
+                    QueryString 파라미터 설정
+                    @{/hello/(param1=${변수1}, params2=#{변수2})}
+                    => /hello/?param1=변수1&param2=변수2
+
+                    path 파라미터 설정
+                    @{/hello/{param1}/{param2}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1/변수2
+
+                    path 파라미터 + 쿼리 파라미터가 포함된 URL
+                    @{/hello/{param1}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1?param2=변수2
+                -->
+                <td><a th:href="@{/professor/detail/{profno}(profno=${professor.profno})}"
+                    th:text="${professor.name}" /></td>
+                <td th:text="${professor.userid}"></td>
+                <td th:text="${professor.position}"></td>
+                <td th:text="${professor.sal}"></td>
+                <td th:text="${professor.hiredate}"></td>
+                <td th:text="${professor.comm}"></td>
+                <td th:text="${professor.deptno}"></td>
+                <td>
+                    <a href="#">수정</a>
+                    <a href="#">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

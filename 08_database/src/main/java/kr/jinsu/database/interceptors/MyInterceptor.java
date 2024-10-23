@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import kr.jinsu.database.helpers.UtilHelper;
+import kr.jinsu.database.helpers.WebHelper;
 import lombok.extern.slf4j.Slf4j;
 import ua_parser.Client;
 import ua_parser.Parser;
@@ -26,9 +26,9 @@ public class MyInterceptor implements HandlerInterceptor {
      /** 페이지의 실행 완료 시각을 저장할 변수 */
      long endTime = 0;
 
-     /** UtilHelper 객체를 자동 주입 받는다. */
+     /** WebHelper 객체를 자동 주입 받는다. */
      @Autowired
-     private UtilHelper utilHelper;
+     private WebHelper webHelper;
      /**
       * Controller 실행 전에 수행되는 메서드
       * 클라이언트(웹브라우저)의 요청을 컨트롤러에 전달 하기 전에 호출된다.
@@ -53,8 +53,8 @@ public class MyInterceptor implements HandlerInterceptor {
 
           String fmt = "[Client] %s, %s, %s %s, %s %s";
 
-        //   String ipAddr = UtilHelper.getInstance().getClientIp(request);
-          String ipAddr = utilHelper.getClientIp(request);
+        //   String ipAddr = WebHelper.getInstance().getClientIp(request);
+          String ipAddr = webHelper.getClientIp();
           String osVersion = c.os.major + (c.os.minor != null ? "." + c.os.minor : "");
           String uaVersion = c.userAgent.major + (c.userAgent.minor != null ? "." + c.userAgent.minor : "");
           String clientInfo = String.format(fmt, ipAddr, c.device.family, c.os.family, osVersion, c.userAgent.family, uaVersion);

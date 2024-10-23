@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>학과관리</h2>
+    <hr />
+    <table class="mytable">
+        <thead>
+            <tr>
+                <th>학과번호</th>
+                <th>학과이름</th>
+                <th>학과위치</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="department : ${departments}">
+                <td th:text="${department.deptno}"></td>
+                <!--
+                    QueryString 파라미터 설정
+                    @{/hello/(param1=${변수1}, params2=#{변수2})}
+                    => /hello/?param1=변수1&param2=변수2
+
+                    path 파라미터 설정
+                    @{/hello/{param1}/{param2}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1/변수2
+
+                    path 파라미터 + 쿼리 파라미터가 포함된 URL
+                    @{/hello/{param1}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1?param2=변수2
+                -->
+                <td><a th:href="@{/department/detail/{deptno}(deptno=${department.deptno})}"
+                    th:text="${department.dname}" /></td>
+                <td th:text="${department.loc}"></td>
+                <td>
+                    <a href="#">수정</a>
+                    <a href="#">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

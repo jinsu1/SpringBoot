@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+</head>
+<body>
+    <header th:fragment="my-header">
+        <link rel="stylesheet" th:href="@{/assets/css/header.css}">
+        <h1>08-Database</h1>
+        <nav class="gnb">
+            <a th:href= "@{/department}">학과관리</a>
+            <a th:href= "@{/professor}">교수관리</a>
+            <a th:href= "@{/student}">학생관리</a>
+
+        </nav>
+    </header>
+</body>
+</html>

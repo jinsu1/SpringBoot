@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>교수관리</h2>
+    <hr />
+    <table class="mytable">
+        <colgroup>
+            <col width="150" />
+            <col />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>교수번호</th>
+                <td class="text-left" th:text="${professor.profno}"></td>
+            </tr>
+            <tr>
+                <th>교수이름</th>
+                <td class="text-left" th:text="${professor.name}"></td>
+            </tr>
+            <tr>
+                <th>교수아이디</th>
+                <td class="text-left" th:text="${professor.userid}"></td>
+            </tr>
+            <tr>
+                <th>직위</th>
+                <td class="text-left" th:text="${professor.position}"></td>
+            </tr>
+            <tr>
+                <th>월급</th>
+                <td class="text-left" th:text="${professor.sal}"></td>
+            </tr>
+            <tr>
+                <th>입사일</th>
+                <td class="text-left" th:text="${professor.hiredate}"></td>
+            </tr>
+            <tr>
+                <th>추가수당</th>
+                <td class="text-left" th:text="${professor.comm}"></td>
+            </tr>
+            <tr>
+                <th>학과번호</th>
+                <td class="text-left" th:text="${professor.deptno}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-container">
+        <a th:href="@{/professor}" class="mybutton green">목록보기</a>
+    </div>
+    
+</body>
+</html>
