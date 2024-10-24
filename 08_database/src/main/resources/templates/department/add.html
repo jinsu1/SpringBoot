@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>학과관리</h2>
+    <hr />
+    <form method="POST" th:action="@{/department/add_ok}">
+        <table class="mytable">
+            <colgroup>
+                <col width="150" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>학과이름</th>
+                    <td class="text-left field">
+                        <input type="text" name="dname" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>학과위치</th>
+                    <td class="text-left field">
+                        <input type="text" name="loc" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button type="submit" class="mybutton green">등록</button>
+            <a th:href="@{/department}" class="mybutton red">취소</a>
+        </div>
+    </form>
+</body>
+</html>

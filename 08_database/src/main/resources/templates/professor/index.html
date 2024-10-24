@@ -11,6 +11,9 @@
 
     <h2>교수관리</h2>
     <hr />
+    <div class="button-container">
+        <a th:href="@{/professor/add}" class="mybutton blue">새 교수 등록</a>
+    </div>
     <table class="mytable">
         <thead>
             <tr>
@@ -50,8 +53,8 @@
                 <td th:text="${professor.comm}"></td>
                 <td th:text="${professor.deptno}"></td>
                 <td>
-                    <a href="#">수정</a>
-                    <a href="#">삭제</a>
+                    <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
+                    <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>                    
                 </td>
             </tr>
         </tbody>

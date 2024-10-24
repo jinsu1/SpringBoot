@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>학생관리</h2>
+    <hr />
+    <form method="POST" th:action="@{/student/edit_ok/{studno}(studno=${student.studno})}">
+        <table class="mytable">
+            <colgroup>
+                <col width="150" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>학생이름</th>
+                    <td class="text-left field">
+                        <input type="text" name="name" th:value="${student.name}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td class="text-left field">
+                        <input type="text" name="userid" th:value="${student.userid}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>학년</th>
+                    <td class="text-left field">
+                        <input type="number" name="grade" th:value="${student.grade}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>주민번호</th>
+                    <td class="text-left field">
+                        <input type="number" name="idnum" th:value="${student.idnum}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td class="text-left field">
+                        <input type="datetime-local" name="birthdate" th:value="${student.birthdate}" style="width:auto"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td class="text-left field">
+                        <input type="text" name="tel" th:value="${student.tel}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>신장</th>
+                    <td class="text-left field">
+                        <input type="number" name="height" th:value="${student.height}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>체중</th>
+                    <td class="text-left field">
+                        <input type="number" name="weight" th:value="${student.weight}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>학과번호</th>
+                    <td class="text-left field">
+                        <input type="number" name="deptno" th:value="${student.deptno}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>담당 교수번호</th>
+                    <td class="text-left field">
+                        <input type="number" name="profno" th:value="${student.profno}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button type="submit" class="mybutton green">등록</button>
+            <a th:href="@{/professor}" class="mybutton red">취소</a>
+        </div>
+
+
+    </form>
+</body>
+</html>

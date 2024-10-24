@@ -53,6 +53,8 @@
     </table>
     <div class="button-container">
         <a th:href="@{/professor}" class="mybutton green">목록보기</a>
+        <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}" class="mybutton blue">수정</a>
+        <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}" class="mybutton red">삭제</a>
     </div>
     
 </body>

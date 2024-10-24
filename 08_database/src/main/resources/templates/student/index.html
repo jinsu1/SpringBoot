@@ -11,6 +11,9 @@
 
     <h2>학생관리</h2>
     <hr />
+    <div class="button-container">
+        <a th:href="@{/student/add}" class="mybutton blue">새 학생 등록</a>
+    </div>
     <table class="mytable">
         <thead>
             <tr>
@@ -56,8 +59,8 @@
                 <td th:text="${student.deptno}"></td>
                 <td th:text="${student.profno}"></td>
                 <td>
-                    <a href="#">수정</a>
-                    <a href="#">삭제</a>
+                    <a th:href="@{/student/edit/{studno}(studno=${student.studno})}">수정</a>
+                    <a th:href="@{/student/delete/{studno}(studno=${student.studno})}">삭제</a>        
                 </td>
             </tr>
         </tbody>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>학생관리</h2>
+    <hr />
+    <form method="POST" th:action="@{/student/add_ok}">
+        <table class="mytable">
+            <colgroup>
+                <col width="150" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>학생이름</th>
+                    <td class="text-left field">
+                        <input type="text" name="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td class="text-left field">
+                        <input type="text" name="userid" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>학년</th>
+                    <td class="text-left field">
+                        <input type="number" name="grade" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>주민번호</th>
+                    <td class="text-left field">
+                        <input type="text" name="idnum" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td class="text-left field">
+                        <input type="datetime-local" name="birthdate" style="width:auto"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td class="text-left field">
+                        <input type="text" name="tel" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>신장</th>
+                    <td class="text-left field">
+                        <input type="number" name="height" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>체중</th>
+                    <td class="text-left field">
+                        <input type="number" name="weight" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>학과 번호</th>
+                    <td class="text-left field">
+                        <input type="number" name="deptno" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>담당 교수 번호</th>
+                    <td class="text-left field">
+                        <input type="number" name="profno" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button type="submit" class="mybutton green">등록</button>
+            <a th:href="@{/student}" class="mybutton red">취소</a>
+        </div>
+    </form>
+</body>
+</html>
