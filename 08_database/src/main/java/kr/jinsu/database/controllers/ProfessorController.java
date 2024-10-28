@@ -6,9 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
-import kr.jinsu.database.exceptions.ServiceNoResultException;
+import kr.jinsu.database.helpers.Pagination;
 import kr.jinsu.database.helpers.WebHelper;
+
 import kr.jinsu.database.models.Professor;
+
 import kr.jinsu.database.services.ProfessorService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,20 +39,41 @@ public class ProfessorController {
      * @return  교수 목록 화면을 구현한 View 경로
      */
     @GetMapping("/professor")
-    public String index(Model model) {
+    public String index(Model model,
+        @RequestParam(value = "keyword", required = false) String keyword,
+        @RequestParam(value = "page", defaultValue = "1") int nowPage) {
+
+        int totalCount = 0; // 전체 게시글 수
+        int listcount = 10; // 한 페이지당 표시할 목록 수
+        int pageCount = 5; //한 그룹당 표시할 페이지 번호 수
+
+        Pagination pagination = null;
+            
+        Professor input = new Professor();
+        input.setName(keyword);
+        input.setUserid(keyword);
+
         List<Professor> professors = null;
 
         try {
-            professors = professorService.getList(null);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
-            return null;
+            //전체 게시글 수 조회
+            totalCount = professorService.getCount(input);
+            //페이지 번호 계산 ==> 계산 결과가 로그로 출력될 것이다.
+            pagination = new Pagination(nowPage, totalCount, listcount, pageCount);
+
+            Professor.setOffset(pagination.getOffset());
+            Professor.setListCount(pagination.getListCount());
+  
+            professors = professorService.getList(input);
         } catch (Exception e) {
             webHelper.serverError(e);
             return null;
         }
         
         model.addAttribute("professors", professors);
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("pagination", pagination);
+        
         return "/professor/index";
     }
 
@@ -68,8 +91,6 @@ public class ProfessorController {
         try {
             //데이터 조회
             professor = professorService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -84,7 +105,17 @@ public class ProfessorController {
      * @return  교수 등록 화면을 구현한 View 경로
      */
     @GetMapping("professor/add")
-    public String add() {
+    public String add(Model model) {
+        // 모든 교수 목록을 조회하여 View에 전달한다.
+        List<Professor> output = null;
+
+        try {
+            output = professorService.getList(null);
+        } catch (Exception e) {
+            webHelper.serverError(e);
+        }
+
+        model.addAttribute("professors", output);
         return "/professor/add";
     }
     
@@ -126,8 +157,6 @@ public class ProfessorController {
 
         try {
             professorService.addItem(professor);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -155,8 +184,6 @@ public class ProfessorController {
 
         try {
             professorService.deleteItem(professor);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -181,17 +208,18 @@ public class ProfessorController {
 
         //수정할 데이터의 현재 값을 조회
         Professor professor = null;
+        List<Professor> professor2 = null;
 
         try {
             professor = professorService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            professor2 = professorService.getList(null);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
         //View에 데이터 전달
         model.addAttribute("professor", professor);
+        model.addAttribute("professors", professor2);
 
 
         return "/professor/edit";
@@ -221,8 +249,6 @@ public class ProfessorController {
 
         try {
             professorService.editItem(professor);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }

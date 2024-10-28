@@ -1,6 +1,8 @@
 package kr.jinsu.database.models;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 public class Professor {
@@ -12,4 +14,13 @@ public class Professor {
     private String hiredate;
     private Integer comm;
     private int deptno;
+    private String dname; // (조인을 통해 조회된 값)
+
+    @Getter
+    @Setter
+    private static int listCount = 0;
+
+    @Getter
+    @Setter
+    private static int offset = 0;
 }

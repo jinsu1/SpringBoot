@@ -61,4 +61,12 @@ public interface DepartmentService {
      * @throws Exception
      */
     public List<Department> getList(Department params) throws ServiceNoResultException, Exception;
+
+    /**
+     * 학과 목록에 대한 카운트 결과를 반환한다.
+     * @param input - 조회할 학과의 학과번호를 담고 있는 Beans
+     * @return  Department - 조회된 데이터
+     * @throws Exception    - SQL처리에 실패한 경우
+     */
+    public int getCount(Department input) throws Exception;
 } 

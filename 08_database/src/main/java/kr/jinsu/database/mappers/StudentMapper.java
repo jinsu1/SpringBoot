@@ -9,7 +9,6 @@ import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Results;
-
 import kr.jinsu.database.models.Student;
 import java.util.List;
 
@@ -39,11 +38,14 @@ public interface StudentMapper {
     @Update("UPDATE student SET profno = null WHERE profno = #{profno}")
     int updateByProfno(Student input);
 
-    @Select("SELECT " + 
-    "studno, name, userid, grade, idnum, "+
+    @Select("select " + 
+    "studno, s.name as name, s.userid as userid, grade, idnum, "+
     "DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, " +
-    "tel, height, weight, deptno, profno " + 
-    "FROM student WHERE studno = #{studno}")
+    "tel, height, weight, d.deptno as deptno, dname, p.name as pname " + 
+    "FROM student s " + 
+    "inner join department d on s.deptno = d.deptno " + 
+    "inner join professor p on s.profno =  p.profno " + 
+    "WHERE studno = #{studno}")
     @Results(id = "studentMap", value = {
         @Result(property = "studno", column = "studno"),
         @Result(property = "name", column = "name"),
@@ -55,18 +57,47 @@ public interface StudentMapper {
         @Result(property = "height", column = "height"),
         @Result(property = "weight", column = "weight"),
         @Result(property = "deptno", column = "deptno"),
-        @Result(property = "profno", column = "profno")
+        @Result(property = "profno", column = "profno"),
+        @Result(property = "dname", column = "dname"),
+        @Result(property = "pname", column = "pname")
+
     })
     Student selectItem(Student input);
 
 
 
-    @Select("SELECT " +
-    "studno, name, userid, grade, idnum, "+
-    "DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, " +
-    "tel, height, weight, deptno, profno " +
-    "FROM Student")
+    @Select("<script>" +
+            "select " +
+            "studno, s.name as name, s.userid as userid, grade, idnum, " +
+            "DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, " +
+            "tel, height, weight,  d.deptno as deptno, dname, p.name as pname " +
+            "FROM Student s " +
+            "inner join department d on s.deptno = d.deptno " + 
+            "inner join professor p on s.profno =  p.profno " + 
+            "<where>" +
+            "<if test='name != null'>s.name like concat('%', #{name}, '%')</if> " +
+            "<if test='userid != null'>or s.userid like concat('%', #{userid}, '%')</if> " +
+            "</where>" +
+            "order by studno desc " +
+            "</script>")
     @ResultMap("studentMap")
     List<Student> selectList(Student input);
+
+    /**
+     * 검색 결과의 수를 조회하는 메서드
+     * 목록 조회와 동일한 검색 조건을 적용해야 한다.
+     * @param input - 조회 조건을 담고 있는 객체
+     * @return  조회 결과 수
+     */
+    @Select("<script>" +
+            "select count(*) as cnt from student s " +
+            "inner join department d on s.deptno = d.deptno " + 
+            "inner join professor p on s.profno =  p.profno " + 
+            "<where>" +
+            "<if test='name != null'>s.name like concat('%', #{name}, '%')</if>" +
+            "<if test='userid != null'>or userid like concat('%', #{userid}, '%')</if> " +
+            "</where>" +
+            "</script>")
+    public int selectCount(Student input);
 
 }

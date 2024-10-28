@@ -11,7 +11,11 @@
 
     <h2>교수관리</h2>
     <hr />
-    <div class="button-container">
+    <div class="button-container search-field">
+        <form method="get" th:action="@{/professor}">
+            <input type="search" name="keyword" placeholder="이름 or 아이디 검색" th:value="${keyword}" />
+            <button type="submit" class="mybutton gray">검색</button>
+        </form>
         <a th:href="@{/professor/add}" class="mybutton blue">새 교수 등록</a>
     </div>
     <table class="mytable">
@@ -24,7 +28,7 @@
                 <th>월급</th>
                 <th>입사일</th>
                 <th>추가수당</th>
-                <th>학과번호</th>
+                <th>학과이름</th>
                 <th>-</th>
             </tr>
         </thead>
@@ -48,10 +52,10 @@
                     th:text="${professor.name}" /></td>
                 <td th:text="${professor.userid}"></td>
                 <td th:text="${professor.position}"></td>
-                <td th:text="${professor.sal}"></td>
+                <td th:text="${#numbers.formatInteger(professor.sal, 1, 'COMMA')}"></td>
                 <td th:text="${professor.hiredate}"></td>
-                <td th:text="${professor.comm}"></td>
-                <td th:text="${professor.deptno}"></td>
+                <td th:text="${#numbers.formatInteger(professor.comm, 1, 'COMMA')}"></td>
+                <td th:text="${professor.dname}"></td>
                 <td>
                     <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
                     <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>                    
@@ -59,5 +63,26 @@
             </tr>
         </tbody>
     </table>
+
+     <!-- 페이지 번호 -->
+     <ul class="pagination">
+        <li th:if="${pagination.prevPage > 0}">
+            <a th:href="@{/professor(keyword=${keyword}, page=${pagination.prevPage})}">&laquo;</a>
+        </li>
+        <li th:unless="${pagination.prevPage > 0}"><a>&laquo;</a></li>
+
+        <!-- 페이지 번호 링크 -->
+        <li th:each="i : ${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+            <a th:if="${i == pagination.nowPage}" class="active" th:text="${i}" />
+            <a th:unless="${i == pagination.nowPage}" th:text="${i}"
+                th:href="@{/professor(keyword=${keyword}, page=${i})}" />
+        </li>
+
+        <!-- 다음 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.nextPage > 0}">
+            <a th:href="@{professor(keyword=${keyword}, page=${pagination.nextPage})}">&raquo;</a>
+        </li>
+        <li th:unless="${pagination.nextPage > 0}"><a>&raquo;</a></li>
+    </ul>
 </body>
 </html>

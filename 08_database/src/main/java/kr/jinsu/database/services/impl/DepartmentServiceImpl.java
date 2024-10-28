@@ -90,4 +90,9 @@ public class DepartmentServiceImpl implements DepartmentService {
     public List<Department> getList(Department input) throws ServiceNoResultException, Exception {
         return departmentMapper.selectList(input);
     }
+
+    @Override
+    public int getCount(Department input) throws Exception {
+        return departmentMapper.selectCount(input);
+    }
 }

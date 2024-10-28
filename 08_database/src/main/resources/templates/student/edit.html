@@ -45,7 +45,7 @@
                 <tr>
                     <th>생년월일</th>
                     <td class="text-left field">
-                        <input type="datetime-local" name="birthdate" th:value="${student.birthdate}" style="width:auto"/>
+                        <input type="datetime" name="birthdate" th:value="${student.birthdate}" style="width:auto"/>
                     </td>
                 </tr>
                 <tr>
@@ -67,15 +67,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>학과번호</th>
+                    <th>소속 학과</th>
                     <td class="text-left field">
-                        <input type="number" name="deptno" th:value="${student.deptno}" />
+                        <select name="deptno" style="width: 200px;">
+                            <option value="">----- 소속학과 선택 -----</option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptno}"
+                                    th:text="${dept.dname}" th:selected="${dept.dname == student.dname}"></option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
-                    <th>담당 교수번호</th>
+                    <th>담당 교수</th>
                     <td class="text-left field">
-                        <input type="number" name="profno" th:value="${student.profno}" />
+                        <select name="pname" style="width: 200px;">
+                            <option value="">----- 담당교수 선택 -----</option>
+                            <option th:each="prof : ${professors}" th:value="${prof.profno}"
+                                    th:text="${prof.name}" th:selected="${prof.name == student.pname}"></option>
+                        </select>
                     </td>
                 </tr>
             </tbody>

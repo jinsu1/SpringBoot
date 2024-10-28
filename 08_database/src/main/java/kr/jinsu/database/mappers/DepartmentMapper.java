@@ -55,8 +55,37 @@ public interface DepartmentMapper {
     })
     Department selectItem(Department input);
 
-    @Select("select deptno, dname, loc from department " +
-            "order by deptno desc")
+
+    /**
+     * 다중행 조회를 수행하는 메서드 정의
+     * @param input - 조회 조건을 담고 있는 객체
+     * @return  조회 결과를 담은 컬렉션
+     */
+    @Select("<script>" +
+        "select deptno, dname, loc from department " +
+        "<where>" +
+        "<if test='dname != null'>dname like concat('%', #{dname}, '%')</if> " +
+        "<if test='loc != null'>or loc like concat('%', #{loc}, '%')</if> " +
+        "</where>" +
+        "order by deptno desc " +
+        "<if test='listCount > 0'>limit #{offset}, #{listCount}</if>" +
+        "</script>")
+    //조회 결과와 Model의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙을 재사용
     @ResultMap("departmentMap")
     List<Department> selectList(Department input);
+
+    /**
+     * 검색 결과의 수를 조회하는 메서드
+     * 목록 조회와 동일한 검색 조건을 적용해야 한다.
+     * @param input - 조회 조건을 담고 있는 객체
+     * @return  조회 결과 수
+     */
+    @Select("<script>" +
+            "select count(*) as cnt from department" +
+            "<where>" +
+            "<if test='dname != null'>dname like concat('%', #{dname}, '%')</if>" +
+            "<if test='loc != null'>or loc like concat('%', #{loc}, '%')</if> " +
+            "</where>" +
+            "</script>")
+    public int selectCount(Department input);
 }

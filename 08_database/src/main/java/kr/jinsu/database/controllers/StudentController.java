@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
 import kr.jinsu.database.exceptions.ServiceNoResultException;
+import kr.jinsu.database.helpers.Pagination;
 import kr.jinsu.database.helpers.WebHelper;
+import kr.jinsu.database.models.Professor;
 import kr.jinsu.database.models.Student;
 import kr.jinsu.database.services.StudentService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,11 +39,31 @@ public class StudentController {
      * @return  학생 목록 화면을 구현한 View 경로
      */
     @GetMapping("/student")
-    public String index(Model model) {
+    public String index(Model model,
+        @RequestParam(value = "keyword", required = false) String keyword,
+        @RequestParam(value = "page", defaultValue = "1") int nowPage) {
+
+        int totalCount = 0; // 전체 게시글 수
+        int listcount = 10; // 한 페이지당 표시할 목록 수
+        int pageCount = 5; //한 그룹당 표시할 페이지 번호 수
+
+        Pagination pagination = null;
+        
+        Student input = new Student();
+        input.setName(keyword);
+        input.setUserid(keyword);
+
         List<Student> students = null;
 
         try {
-            students = studentService.getList(null);
+            totalCount = studentService.getCount(input);
+            //페이지 번호 계산 ==> 계산 결과가 로그로 출력될 것이다.
+            pagination = new Pagination(nowPage, totalCount, listcount, pageCount);
+
+            Professor.setOffset(pagination.getOffset());
+            Professor.setListCount(pagination.getListCount());
+  
+            students = studentService.getList(input);
         } catch (ServiceNoResultException e) {
             webHelper.serverError(e);
             return null;
@@ -51,6 +73,9 @@ public class StudentController {
         }
         
         model.addAttribute("students", students);
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("pagination", pagination);
+
         return "/student/index";
     }
 
@@ -68,8 +93,6 @@ public class StudentController {
         try {
             //데이터 조회
             student = studentService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -84,7 +107,17 @@ public class StudentController {
      * @return  학생 등록 화면을 구현한 View 경로
      */
     @GetMapping("student/add")
-    public String add() {
+    public String add(Model model) {
+           // 모든 교수 목록을 조회하여 View에 전달한다.
+           List<Student> output = null;
+
+           try {
+               output = studentService.getList(null);
+           } catch (Exception e) {
+               webHelper.serverError(e);
+           }
+   
+           model.addAttribute("students", output);
         return "/student/add";
     }
     
@@ -100,7 +133,7 @@ public class StudentController {
         @RequestParam("height") int height,
         @RequestParam("weight") int weight,
         @RequestParam("deptno") int deptno,
-        @RequestParam("profno") int profno
+        @RequestParam(value="profno", required = false) Integer profno
         ) {
 
         //정상적인 경로로 접근한 경우 이전 페이지 주소는
@@ -125,12 +158,13 @@ public class StudentController {
         student.setHeight(height);
         student.setWeight(weight);
         student.setDeptno(deptno);
-        student.setProfno(profno);
+        if(profno != null) {
+            student.setProfno(profno);
+        }
+        student.setProfno(null);
 
         try {
             studentService.addItem(student);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -158,8 +192,6 @@ public class StudentController {
 
         try {
             studentService.deleteItem(student);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -185,18 +217,18 @@ public class StudentController {
 
         //수정할 데이터의 현재 값을 조회
         Student student = null;
+        List<Student> student2 = null;
 
         try {
             student = studentService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            student2 = studentService.getList(null);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
         //View에 데이터 전달
         model.addAttribute("student", student);
-
+        model.addAttribute("students", student2);
 
         return "/student/edit";
     }
@@ -231,8 +263,6 @@ public class StudentController {
 
         try {
             studentService.editItem(student);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }

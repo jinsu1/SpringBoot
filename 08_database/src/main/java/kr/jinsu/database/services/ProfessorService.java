@@ -3,7 +3,6 @@ package kr.jinsu.database.services;
 import java.util.List;
 
 import kr.jinsu.database.exceptions.MyBatisException;
-import kr.jinsu.database.exceptions.ServiceNoResultException;
 import kr.jinsu.database.models.Professor;
 
 /**
@@ -18,47 +17,50 @@ import kr.jinsu.database.models.Professor;
 
 public interface ProfessorService {
     /**
-     * 학과 정보를 새로 저장하고 저장된 정보를 조회하여 리턴한다.
+     * 교수 정보를 새로 저장하고 저장된 정보를 조회하여 리턴한다.
      * @param params    - 저장할 정보를 담고 있는 Beans
      * @return  Professor - 저장된 데이터
      * @throws MyBatisException - SQL처리에 실패한 경우
-     * @throws ServiceNoResultException - 저장된 데이터가 없는 경우
      */
-    public Professor addItem(Professor params) throws ServiceNoResultException, Exception;
+    public Professor addItem(Professor params) throws Exception;
 
     /**
-     *  학과 정보를 수정하고 수정된 정보를 조회하여 리턴한다. 
+     *  교수 정보를 수정하고 수정된 정보를 조회하여 리턴한다. 
      * @param params    - 수정할 정보를 담고 있는 Beans
      * @return  Professor - 수정된 데이터
      * @throws MyBatisException  - SQL처리에 실패한 경우
-     * @throws ServiceNoResultException - 수정된 데이터가 없는 경우
      */
-    public Professor editItem(Professor params) throws ServiceNoResultException, Exception;
+    public Professor editItem(Professor params) throws Exception;
 
     /**
-     * 학과 정보를 삭제한다
+     * 교수 정보를 삭제한다
      * @param params    - 삭제할 정보를 담고 있는 Beans
      * @return int  - 삭제할 정보의 개수
      * @throws MyBatisException - SQL처리에 실패한 경우
-     * @throws ServiceNoResultException - 삭제된 데이터가 없는 경우
      */
-    public int deleteItem(Professor params) throws ServiceNoResultException, Exception;
+    public int deleteItem(Professor params) throws Exception;
 
     /**
-     * 단일 학과 정보 조회
+     * 단일 교수 정보 조회
      * @param params
      * @return
      * @throws MyBatisException
-     * @throws ServiceNoResultException
      */
-    public Professor getItem(Professor params) throws ServiceNoResultException, Exception;
+    public Professor getItem(Professor params) throws Exception;
 
     /**
-     * 전체 학과 정보 조회
+     * 전체 교수 정보 조회
      * @param params
      * @return
-     * @throws ServiceNoResultException
      * @throws Exception
      */
-    public List<Professor> getList(Professor params) throws ServiceNoResultException, Exception;
+    public List<Professor> getList(Professor params) throws Exception;
+
+    /**
+     * 교수 목록에 대한 카운트 결과를 반환한다.
+     * @param input - 조회할 교수의 교수번호를 담고 있는 Beans
+     * @return  Department - 조회된 데이터
+     * @throws Exception    - SQL처리에 실패한 경우
+     */
+    public int getCount(Professor input) throws Exception;
 } 

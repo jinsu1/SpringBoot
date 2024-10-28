@@ -33,7 +33,18 @@
                 <tr>
                     <th>직위</th>
                     <td class="text-left field">
-                        <input type="text" name="position" th:value="${professor.position}" />
+                        <label>
+                            <input type="radio" name="position" value="교수" th:checked="${professor.position == '교수'}" />
+                            교수
+                        </label>
+                        <label>
+                            <input type="radio" name="position" value="부교수" th:checked="${professor.position == '부교수'}" />
+                            부교수
+                        </label>
+                        <label>
+                            <input type="radio" name="position" value="조교" th:checked="${professor.position == '조교'}" />
+                            조교
+                        </label>
                     </td>
                 </tr>
                 <tr>
@@ -45,7 +56,7 @@
                 <tr>
                     <th>입사일</th>
                     <td class="text-left field">
-                        <input type="datetime-local" name="hiredate" th:value="${professor.hiredate}" style="width:auto"/>
+                        <input type="date" name="hiredate" th:value="${professor.hiredate}" style="width:auto"/>
                     </td>
                 </tr>
                 <tr>
@@ -55,9 +66,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>학과 번호</th>
+                    <th>소속 학과</th>
                     <td class="text-left field">
-                        <input type="number" name="deptno" th:value="${professor.deptno}" />
+                        <select name="deptno">
+                            <option value="">----- 소속학과 선택 -----</option>
+                            <option th:each="prof : ${professors}" th:value="${prof.deptno}"
+                                    th:text="${prof.dname}" th:selected="${prof.deptno == professor.deptno}"></option>
+                        </select>
                     </td>
                 </tr>
             </tbody>

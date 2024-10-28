@@ -45,7 +45,7 @@
                 <tr>
                     <th>입사일</th>
                     <td class="text-left field">
-                        <input type="datetime-local" name="hiredate" style="width:auto"/>
+                        <input type="datetime" name="hiredate" style="width:auto"/>
                     </td>
                 </tr>
                 <tr>
@@ -55,9 +55,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>학과 번호</th>
+                    <th>소속 학과</th>
                     <td class="text-left field">
-                        <input type="number" name="deptno" />
+                        <select name="deptno">
+                            <option value="">----- 소속학과 선택 -----</option>
+                            <option th:each="prof : ${professors}" th:value="${prof.deptno}"
+                                    th:text="${prof.dname}"></option>
+                        </select>
                     </td>
                 </tr>
             </tbody>

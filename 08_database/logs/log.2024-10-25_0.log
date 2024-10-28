@@ -1,0 +1,86 @@
+[INFO ] 24-10-25 16:01:37 [DatabaseApplication:50] - Starting DatabaseApplication using Java 17.0.2 with PID 20552 (D:\jinsu_study\10_SpringBoot\08_database\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-25 16:01:37 [DatabaseApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-25 16:01:37 [DatabaseApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-25 16:01:40 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-25 16:01:43 [DatabaseApplication:56] - Started DatabaseApplication in 6.502 seconds (process running for 7.638)
+[INFO ] 24-10-25 16:02:56 [DatabaseApplication:50] - Starting DatabaseApplication using Java 17.0.2 with PID 20980 (D:\jinsu_study\10_SpringBoot\08_database\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\08_database)
+[DEBUG] 24-10-25 16:02:56 [DatabaseApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-25 16:02:56 [DatabaseApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-25 16:02:57 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-25 16:02:59 [DatabaseApplication:56] - Started DatabaseApplication in 3.552 seconds (process running for 4.115)
+[INFO ] 24-10-25 16:03:06 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-25 16:03:06 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-25 16:03:06 [MyInterceptor:80] - [GET] http://localhost:8080/department
+[DEBUG] 24-10-25 16:03:07 [selectList:135] - ==>  Preparing: select deptno, dname, loc from department order by deptno desc
+[DEBUG] 24-10-25 16:03:07 [selectList:135] - ==> Parameters: 
+[INFO ] 24-10-25 16:03:07 [sqlonly:228] - select deptno, dname, loc from department order by deptno desc
+
+[INFO ] 24-10-25 16:03:07 [resultsettable:610] - 
+|-------|-------------|---------|
+|deptno |dname        |loc      |
+|-------|-------------|---------|
+|314    |수정 소프트웨어 학과  |수정 A강의실  |
+|313    |스프링학과        |G강의실     |
+|312    |스프링학과        |G강의실     |
+|311    |스프링학과        |G강의실     |
+|310    |스프링학과        |G강의실     |
+|308    |소프트웨어 학과     |205호     |
+|306    |웹 IT         |산악협력관    |
+|103    |토목과          |3호관      |
+|102    |수정된 소프트웨어 학과 |수정된 A강의실 |
+|101    |컴퓨터공학과       |1호관      |
+|-------|-------------|---------|
+
+[DEBUG] 24-10-25 16:03:07 [selectList:135] - <==      Total: 10
+[INFO ] 24-10-25 16:03:07 [MyInterceptor:117] - running time: 674(ms)
+[INFO ] 24-10-25 16:03:11 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-25 16:03:11 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-25 16:03:11 [MyInterceptor:80] - [GET] http://localhost:8080/professor
+[INFO ] 24-10-25 16:03:11 [MyInterceptor:96] -  - REFERER : time = 4000, url = http://localhost:8080/department 
+[DEBUG] 24-10-25 16:03:11 [selectList:135] - ==>  Preparing: select profno, name, userid, position, sal, hiredate, comm, deptno from professor order by profno desc
+[DEBUG] 24-10-25 16:03:11 [selectList:135] - ==> Parameters: 
+[INFO ] 24-10-25 16:03:11 [sqlonly:228] - select profno, name, userid, position, sal, hiredate, comm, deptno from professor order by profno desc
+
+[INFO ] 24-10-25 16:03:11 [resultsettable:610] - 
+|-------|---------|----------|---------|-----|--------------------|-------|-------|
+|profno |name     |userid    |position |sal  |hiredate            |comm   |deptno |
+|-------|---------|----------|---------|-----|--------------------|-------|-------|
+|9919   |jinsu112 |112       |교수       |1221 |2024-10-10 02:02:00 |0      |102    |
+|9916   |진수보      |jinsu2222 |부교수      |500  |2024-10-23 14:02:00 |200    |102    |
+|9907   |전은지      |totoro    |전임강사     |210  |2001-05-12 00:00:00 |233    |101    |
+|9906   |이만식      |pocari    |부교수      |420  |1988-07-11 00:00:00 |[null] |101    |
+|9905   |권혁일      |refresh   |교수       |450  |1986-02-11 00:00:00 |25     |102    |
+|9904   |염일웅      |blue77    |전임강사     |240  |1998-10-11 00:00:00 |[null] |102    |
+|9903   |성연희      |pascal    |조교수      |360  |1993-03-17 00:00:00 |15     |101    |
+|-------|---------|----------|---------|-----|--------------------|-------|-------|
+
+[DEBUG] 24-10-25 16:03:11 [selectList:135] - <==      Total: 7
+[INFO ] 24-10-25 16:03:11 [MyInterceptor:117] - running time: 78(ms)
+[INFO ] 24-10-25 16:03:14 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-25 16:03:14 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-25 16:03:14 [MyInterceptor:80] - [GET] http://localhost:8080/student
+[INFO ] 24-10-25 16:03:14 [MyInterceptor:96] -  - REFERER : time = 2882, url = http://localhost:8080/professor 
+[DEBUG] 24-10-25 16:03:14 [selectList:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, tel, height, weight, deptno, profno FROM Student
+[DEBUG] 24-10-25 16:03:14 [selectList:135] - ==> Parameters: 
+[INFO ] 24-10-25 16:03:14 [sqlonly:228] - SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, tel, height, weight, deptno, profno FROM Student
+
+[INFO ] 24-10-25 16:03:14 [resultsettable:610] - 
+|-------|-------|------------|------|--------------|-----------|--------------|-------|-------|-------|-------|
+|studno |name   |userid      |grade |idnum         |birthdate  |tel           |height |weight |deptno |profno |
+|-------|-------|------------|------|--------------|-----------|--------------|-------|-------|-------|-------|
+|10103  |김영균    |mandu       |3     |8103211063421 |2024-10-11 |051)824-9637  |17021  |88     |101    |9906   |
+|10104  |지은경    |gomo00      |2     |8004122298371 |1980-04-12 |055)418-9627  |161    |42     |101    |9907   |
+|10105  |임유진    |youjin12    |2     |8301212196482 |1983-01-21 |02)312-9838   |171    |54     |101    |9907   |
+|10106  |서재진    |seolly      |1     |8511291186273 |1985-11-29 |051)239-4861  |186    |72     |101    |[null] |
+|10107  |이광훈    |huriky      |4     |8109131276431 |1981-09-13 |055)736-4981  |175    |92     |101    |9903   |
+|10108  |류민정    |cleansky    |2     |8108192157498 |1981-08-19 |055)248-3679  |162    |72     |101    |9907   |
+|10201  |김진영    |simply      |2     |8206062186327 |1982-06-06 |055)419-6328  |164    |48     |102    |9905   |
+|10202  |오유석    |yousuk      |4     |7709121128379 |1977-09-12 |051)724-9618  |177    |92     |102    |9905   |
+|10203  |하나리    |hanal       |1     |8501092378641 |1985-01-09 |055)296-3784  |160    |68     |102    |[null] |
+|20109  |박진수2   |jinsu2      |3     |9609051111111 |2024-10-10 |010-1234-1234 |175    |100    |102    |9905   |
+|20114  |진수보    |insu1221    |4     |9690001313122 |1996-09-05 |01001000000   |175    |70     |102    |9916   |
+|20115  |수정 진수보 |수정 insu1221 |4     |9690001313122 |2024-10-09 |01001000000   |175    |70     |102    |9916   |
+|-------|-------|------------|------|--------------|-----------|--------------|-------|-------|-------|-------|
+
+[DEBUG] 24-10-25 16:03:14 [selectList:135] - <==      Total: 12
+[INFO ] 24-10-25 16:03:14 [MyInterceptor:117] - running time: 60(ms)
