@@ -69,20 +69,20 @@
                 <tr>
                     <th>소속 학과</th>
                     <td class="text-left field">
-                        <select name="deptno">
+                        <select name="deptno" style="width: 200px;">
                             <option value="">----- 소속학과 선택 -----</option>
-                            <option th:each="stud : ${students}" th:value="${stud.deptno}"
-                                    th:text="${stud.dname}"></option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptno}"
+                                    th:text="${dept.dname}"></option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <th>담당 교수</th>
                     <td class="text-left field">
-                        <select name="pname">
+                        <select name="profno" style="width: 200px;">
                             <option value="">----- 담당교수 선택 -----</option>
-                            <option th:each="stud : ${students}" th:value="${stud.profno}"
-                                    th:text="${stud.pname}"></option>
+                            <option th:each="prof : ${professors}" th:value="${prof.profno}"
+                                    th:text="${prof.name}"></option>
                         </select>
                     </td>
                 </tr>

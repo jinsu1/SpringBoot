@@ -41,7 +41,7 @@ public interface StudentMapper {
     @Select("select " + 
     "studno, s.name as name, s.userid as userid, grade, idnum, "+
     "DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, " +
-    "tel, height, weight, d.deptno as deptno, dname, p.name as pname " + 
+    "tel, height, weight, d.deptno as deptno,p.profno as profno, dname, p.name as pname " + 
     "FROM student s " + 
     "inner join department d on s.deptno = d.deptno " + 
     "inner join professor p on s.profno =  p.profno " + 
@@ -70,7 +70,7 @@ public interface StudentMapper {
             "select " +
             "studno, s.name as name, s.userid as userid, grade, idnum, " +
             "DATE_FORMAT(birthdate, '%Y-%m-%d') as birthdate, " +
-            "tel, height, weight,  d.deptno as deptno, dname, p.name as pname " +
+            "tel, height, weight,  d.deptno as deptno,p.profno as profno, dname, p.name as pname " +
             "FROM Student s " +
             "inner join department d on s.deptno = d.deptno " + 
             "inner join professor p on s.profno =  p.profno " + 
@@ -95,7 +95,7 @@ public interface StudentMapper {
             "inner join professor p on s.profno =  p.profno " + 
             "<where>" +
             "<if test='name != null'>s.name like concat('%', #{name}, '%')</if>" +
-            "<if test='userid != null'>or userid like concat('%', #{userid}, '%')</if> " +
+            "<if test='userid != null'>or s.userid like concat('%', #{userid}, '%')</if> " +
             "</where>" +
             "</script>")
     public int selectCount(Student input);

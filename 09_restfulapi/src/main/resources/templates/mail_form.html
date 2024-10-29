@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ajax 메일 발송 연습</h2>
+    <form id="mailform" method="post" th:action="@{/sendmail}">
+        <div>
+            <label for="sender-name">발신인: </label>
+            <input type="text" name="sender-name" id="sender-name" />
+        </div>
+        <div>
+            <label for="sender-email">발신이메일: </label>
+            <input type="email" name="sender-email" id="sender-email" />
+        </div>
+        <div>
+            <label for="receiver-name">수신인: </label>
+            <input type="text" name="receiver-name" id="receiver-name" />
+        </div>
+        <div>
+            <label for="receiver-email">수신이메일: </label>
+            <input type="email" name="receiver-email" id="receiver-email" />
+        </div>
+        <div>
+            <label for="subject">메일제목: </label>
+            <input type="text" name="subject" id="subject" />
+        </div>
+        <hr />
+        <textarea name="content" id="content"></textarea>
+        <hr />
+        <input type="submit" value="메일보내기" />
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor.create( document.querySelector('#content') );
+
+        document.querySelector("#mailform").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const form = e.target;
+
+            const backend = e.currentTarget.getAttribute("action");
+
+            let response = null;
+
+            //가상의 Form 데이터를 생성하여 Axios로 전송
+            const formData = new FormData(form);
+
+            try{
+                response = await axios.post(backend, formData);
+            } catch(error) {
+                ///axios의 기본 에러 메세지를 추출하여 문자열로 구성
+                console.error(`[Error Code] $(error.code)`);
+                console.error(`[Error Message] $(error.message)`);
+                let alertMsg = error.messaage;
+
+                //Http 상태메세지가 포함되어 있다면 해당 내용을 에러 문자열에 추가
+                if (error.response !== undefined) {
+                    const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
+                    console.error(`[HTTP Status] ${errorMsg}`);
+                    alertMsg += `\n${errorMsg}`;
+                }
+
+                //메세지 박스로 에러 내용 표시
+                alert(alertMsg);
+
+                //catch에서 return을 하더라도 finally가 수행된 후 실행이 취소된다.
+                return;
+            }
+
+            alert("메일이 발송되었습니다.");
+
+            //이후 다른 페이지로 이동하거나 다른 작업을 수행한다.
+        });
+    </script>
+</body>
+</html>

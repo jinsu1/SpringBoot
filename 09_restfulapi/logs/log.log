@@ -1,0 +1,281 @@
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:87] - (param) <-- subject = 123123
+[INFO ] 24-10-29 14:47:26 [MyInterceptor:96] -  - REFERER : time = 14960, url = http://localhost:8080/mail_form 
+[WARN ] 24-10-29 14:47:26 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'content' for method parameter type String is not present]
+[INFO ] 24-10-29 14:54:12 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 1872 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 14:54:12 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 14:54:12 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 14:54:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 14:54:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 14:54:15 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.198 seconds (process running for 3.751)
+[INFO ] 24-10-29 14:54:19 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 14:54:19 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 14:54:19 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 14:54:19 [MyInterceptor:117] - running time: 188(ms)
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:87] - (param) <-- subject = 1231231
+[INFO ] 24-10-29 14:54:26 [MyInterceptor:96] -  - REFERER : time = 6878, url = http://localhost:8080/mail_form 
+[WARN ] 24-10-29 14:54:26 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'content' for method parameter type String is not present]
+[INFO ] 24-10-29 14:57:37 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 6312 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 14:57:37 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 14:57:37 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 14:57:39 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 14:57:39 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 14:57:40 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.042 seconds (process running for 3.782)
+[INFO ] 24-10-29 14:57:46 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-29 14:57:47 [MyInterceptor:87] - (param) <-- subject = 1231231
+[WARN ] 24-10-29 14:57:47 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'content' for method parameter type String is not present]
+[INFO ] 24-10-29 14:57:48 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 14:57:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 14:57:48 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 14:57:48 [MyInterceptor:117] - running time: 52(ms)
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:87] - (param) <-- subject = 테스트 이메일 1
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:87] - (param) <-- content = <p>123123</p>
+[INFO ] 24-10-29 14:57:58 [MyInterceptor:96] -  - REFERER : time = 9886, url = http://localhost:8080/mail_form 
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:128] - ------------------------------------
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:129] - senderName: 나
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:130] - senderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:131] - receiverName: 너
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:132] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:133] - subject: 테스트 이메일 1
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:134] - content: <p>123123</p>
+[DEBUG] 24-10-29 14:57:58 [SimpleRestfulController:135] - ------------------------------------
+[INFO ] 24-10-29 14:58:02 [MyInterceptor:117] - running time: 4471(ms)
+[INFO ] 24-10-29 15:12:34 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 24452 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 15:12:34 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:12:34 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:12:35 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:12:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:12:37 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.029 seconds (process running for 3.679)
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:87] - (param) <-- subject = 테스트 이메일 1
+[INFO ] 24-10-29 15:12:45 [MyInterceptor:87] - (param) <-- content = <p>123123</p>
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:128] - ------------------------------------
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:129] - senderName: 나
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:130] - senderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:131] - receiverName: 너
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:132] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:133] - subject: 테스트 이메일 1
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:134] - content: <p>123123</p>
+[DEBUG] 24-10-29 15:12:45 [SimpleRestfulController:135] - ------------------------------------
+[INFO ] 24-10-29 15:12:49 [MyInterceptor:117] - running time: 3753(ms)
+[WARN ] 24-10-29 15:12:58 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[INFO ] 24-10-29 15:16:32 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:16:32 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 15:16:32 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department
+[INFO ] 24-10-29 15:16:32 [MyInterceptor:117] - running time: 68(ms)
+[INFO ] 24-10-29 15:16:42 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:16:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 15:16:42 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department_list
+[INFO ] 24-10-29 15:16:42 [MyInterceptor:117] - running time: 54(ms)
+[INFO ] 24-10-29 15:21:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 5132 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 15:21:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:21:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:21:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:21:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:21:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.25 seconds (process running for 3.964)
+[INFO ] 24-10-29 15:21:51 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:21:51 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 15:21:51 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:21:51 [MyInterceptor:117] - running time: 184(ms)
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:87] - (param) <-- sender-name = 나
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:87] - (param) <-- sender-email = jinsu4205@gmail.com
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:87] - (param) <-- receiver-name = 너
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:87] - (param) <-- receiver-email = wlstn4205@gmail.com
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:87] - (param) <-- subject = 123123
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:87] - (param) <-- content = <p>123</p>
+[INFO ] 24-10-29 15:21:59 [MyInterceptor:96] -  - REFERER : time = 7642, url = http://localhost:8080/mail_form 
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:128] - ------------------------------------
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:129] - senderName: 나
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:130] - senderEmail: jinsu4205@gmail.com
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:131] - receiverName: 너
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:132] - receiverEmail: wlstn4205@gmail.com
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:133] - subject: 123123
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:134] - content: <p>123</p>
+[DEBUG] 24-10-29 15:21:59 [SimpleRestfulController:135] - ------------------------------------
+[INFO ] 24-10-29 15:22:03 [MyInterceptor:117] - running time: 4237(ms)
+[INFO ] 24-10-29 15:53:40 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11956 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 15:53:40 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:53:40 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:53:41 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:53:41 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:53:43 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.262 seconds (process running for 3.79)
+[INFO ] 24-10-29 15:53:45 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:53:45 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 15:53:45 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-29 15:53:45 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 15:53:45 [MyInterceptor:87] - (param) <-- y = 2
+[WARN ] 24-10-29 15:53:45 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'result' for method parameter type int is not present]
+[INFO ] 24-10-29 15:54:20 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11608 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 15:54:20 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:54:20 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:54:21 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:54:21 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:54:22 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.109 seconds (process running for 3.834)
+[INFO ] 24-10-29 15:54:28 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:54:29 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 15:54:29 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-29 15:54:29 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 15:54:29 [MyInterceptor:87] - (param) <-- y = 2
+[WARN ] 24-10-29 15:54:29 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'result' for method parameter type int is not present]
+[INFO ] 24-10-29 15:55:13 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 8232 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 15:55:13 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:55:13 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:55:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:55:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:55:16 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.145 seconds (process running for 3.754)
+[INFO ] 24-10-29 15:55:17 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:55:17 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 15:55:17 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-29 15:55:17 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 15:55:17 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 15:55:17 [MyInterceptor:117] - running time: 198(ms)
+[WARN ] 24-10-29 15:56:20 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-29 15:56:40 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 21268 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 15:56:40 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:56:40 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:56:42 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:56:42 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:56:43 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.059 seconds (process running for 3.601)
+[INFO ] 24-10-29 15:56:46 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 15:56:46 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 15:56:46 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc
+[INFO ] 24-10-29 15:56:46 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 15:56:46 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 15:56:46 [MyInterceptor:117] - running time: 192(ms)
+[INFO ] 24-10-29 16:05:42 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 22636 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 16:05:42 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 16:05:42 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 16:05:43 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 16:05:43 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 16:05:44 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.15 seconds (process running for 3.715)
+[INFO ] 24-10-29 16:05:47 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:05:47 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:05:47 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:05:47 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:05:47 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:05:47 [MyInterceptor:117] - running time: 218(ms)
+[INFO ] 24-10-29 16:05:51 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:05:51 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:05:51 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:05:51 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:05:51 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:05:51 [MyInterceptor:117] - running time: 57(ms)
+[INFO ] 24-10-29 16:05:55 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:05:55 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:05:55 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:05:55 [MyInterceptor:87] - (param) <-- x = 0
+[INFO ] 24-10-29 16:05:56 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:05:56 [MyInterceptor:117] - running time: 44(ms)
+[INFO ] 24-10-29 16:06:18 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 5228 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 16:06:18 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 16:06:18 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 16:06:19 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 16:06:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 16:06:20 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.897 seconds (process running for 3.468)
+[INFO ] 24-10-29 16:06:27 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:06:27 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:06:27 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:06:27 [MyInterceptor:87] - (param) <-- x = 0
+[INFO ] 24-10-29 16:06:27 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:06:27 [MyInterceptor:117] - running time: 198(ms)
+[INFO ] 24-10-29 16:07:00 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16552 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 16:07:00 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 16:07:00 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 16:07:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 16:07:01 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 16:07:02 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.225 seconds (process running for 3.786)
+[INFO ] 24-10-29 16:07:03 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:07:03 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:07:03 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:07:03 [MyInterceptor:87] - (param) <-- x = 0
+[INFO ] 24-10-29 16:07:03 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:07:03 [MyInterceptor:117] - running time: 199(ms)
+[INFO ] 24-10-29 16:07:07 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:07:07 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:07:07 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:07:07 [MyInterceptor:87] - (param) <-- x = 7
+[INFO ] 24-10-29 16:07:07 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:07:07 [MyInterceptor:117] - running time: 55(ms)
+[INFO ] 24-10-29 16:07:32 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16052 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-29 16:07:32 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 16:07:32 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 16:07:33 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 16:07:33 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 16:07:34 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.944 seconds (process running for 3.486)
+[INFO ] 24-10-29 16:07:35 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:07:35 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:07:35 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:07:35 [MyInterceptor:87] - (param) <-- x = 7
+[INFO ] 24-10-29 16:07:35 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:07:35 [MyInterceptor:117] - running time: 197(ms)
+[INFO ] 24-10-29 16:08:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:08:13 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:08:13 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:08:13 [MyInterceptor:87] - (param) <-- x = 7
+[INFO ] 24-10-29 16:08:13 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:08:13 [MyInterceptor:117] - running time: 57(ms)
+[INFO ] 24-10-29 16:08:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:08:31 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:08:31 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:08:31 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:08:31 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:08:31 [MyInterceptor:117] - running time: 37(ms)
+[INFO ] 24-10-29 16:09:01 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:09:01 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:09:01 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:09:01 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:09:01 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:09:01 [MyInterceptor:117] - running time: 51(ms)
+[INFO ] 24-10-29 16:09:17 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:09:17 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:09:17 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:09:17 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:09:17 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:09:17 [MyInterceptor:117] - running time: 46(ms)
+[INFO ] 24-10-29 16:09:34 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:09:34 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:09:34 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:09:34 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:09:34 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-29 16:09:34 [MyInterceptor:117] - running time: 37(ms)
+[INFO ] 24-10-29 16:09:48 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-29 16:09:48 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Other null, Other null
+[INFO ] 24-10-29 16:09:48 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-29 16:09:48 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-29 16:09:48 [MyInterceptor:87] - (param) <-- y = 0
+[INFO ] 24-10-29 16:09:48 [MyInterceptor:117] - running time: 27(ms)

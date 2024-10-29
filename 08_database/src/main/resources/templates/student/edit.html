@@ -72,17 +72,17 @@
                         <select name="deptno" style="width: 200px;">
                             <option value="">----- 소속학과 선택 -----</option>
                             <option th:each="dept : ${departments}" th:value="${dept.deptno}"
-                                    th:text="${dept.dname}" th:selected="${dept.dname == student.dname}"></option>
+                                    th:text="${dept.dname}" th:selected="${dept.deptno == student.deptno}"></option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <th>담당 교수</th>
                     <td class="text-left field">
-                        <select name="pname" style="width: 200px;">
+                        <select name="profno" style="width: 200px;">
                             <option value="">----- 담당교수 선택 -----</option>
                             <option th:each="prof : ${professors}" th:value="${prof.profno}"
-                                    th:text="${prof.name}" th:selected="${prof.name == student.pname}"></option>
+                                    th:text="${prof.name}" th:selected="${prof.profno == student.profno}"></option>
                         </select>
                     </td>
                 </tr>

@@ -9,8 +9,11 @@ import org.springframework.ui.Model;
 import kr.jinsu.database.exceptions.ServiceNoResultException;
 import kr.jinsu.database.helpers.Pagination;
 import kr.jinsu.database.helpers.WebHelper;
+import kr.jinsu.database.models.Department;
 import kr.jinsu.database.models.Professor;
 import kr.jinsu.database.models.Student;
+import kr.jinsu.database.services.DepartmentService;
+import kr.jinsu.database.services.ProfessorService;
 import kr.jinsu.database.services.StudentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +31,12 @@ public class StudentController {
     /** 학생 관리 서비스 객체 주입 */
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private DepartmentService departmentService;
+
+    @Autowired
+    private ProfessorService professorService;
 
     /** WebHelper 주입 */
     @Autowired
@@ -48,12 +57,18 @@ public class StudentController {
         int pageCount = 5; //한 그룹당 표시할 페이지 번호 수
 
         Pagination pagination = null;
-        
+
         Student input = new Student();
+        Professor input2 = new Professor();
+        Department input3 = new Department();
+
         input.setName(keyword);
         input.setUserid(keyword);
 
         List<Student> students = null;
+        List<Professor> professors = null;
+        List<Department> departments = null;
+
 
         try {
             totalCount = studentService.getCount(input);
@@ -64,6 +79,8 @@ public class StudentController {
             Professor.setListCount(pagination.getListCount());
   
             students = studentService.getList(input);
+            professors = professorService.getList(input2);
+            departments = departmentService.getList(input3);
         } catch (ServiceNoResultException e) {
             webHelper.serverError(e);
             return null;
@@ -73,6 +90,9 @@ public class StudentController {
         }
         
         model.addAttribute("students", students);
+        model.addAttribute("departments", professors);
+        model.addAttribute("professors", departments);
+
         model.addAttribute("keyword", keyword);
         model.addAttribute("pagination", pagination);
 
@@ -108,16 +128,19 @@ public class StudentController {
      */
     @GetMapping("student/add")
     public String add(Model model) {
-           // 모든 교수 목록을 조회하여 View에 전달한다.
-           List<Student> output = null;
+           List<Professor> professors = null;
+           List<Department> departments = null;
 
            try {
-               output = studentService.getList(null);
+               professors = professorService.getList(null);
+               departments = departmentService.getList(null);
            } catch (Exception e) {
                webHelper.serverError(e);
            }
    
-           model.addAttribute("students", output);
+           model.addAttribute("professors", professors);
+           model.addAttribute("departments", departments);
+
         return "/student/add";
     }
     
@@ -133,7 +156,7 @@ public class StudentController {
         @RequestParam("height") int height,
         @RequestParam("weight") int weight,
         @RequestParam("deptno") int deptno,
-        @RequestParam(value="profno", required = false) Integer profno
+        @RequestParam("profno") Integer profno
         ) {
 
         //정상적인 경로로 접근한 경우 이전 페이지 주소는
@@ -158,10 +181,7 @@ public class StudentController {
         student.setHeight(height);
         student.setWeight(weight);
         student.setDeptno(deptno);
-        if(profno != null) {
-            student.setProfno(profno);
-        }
-        student.setProfno(null);
+        student.setProfno(profno);  
 
         try {
             studentService.addItem(student);
@@ -217,18 +237,22 @@ public class StudentController {
 
         //수정할 데이터의 현재 값을 조회
         Student student = null;
-        List<Student> student2 = null;
+        List<Department> departments = null;
+        List<Professor> professors = null;
+        
 
         try {
             student = studentService.getItem(params);
-            student2 = studentService.getList(null);
+            departments = departmentService.getList(null);
+            professors = professorService.getList(null);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
         //View에 데이터 전달
         model.addAttribute("student", student);
-        model.addAttribute("students", student2);
+        model.addAttribute("departments", departments);
+        model.addAttribute("professors", professors);
 
         return "/student/edit";
     }

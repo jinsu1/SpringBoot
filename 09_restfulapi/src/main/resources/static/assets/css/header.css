@@ -1,0 +1,36 @@
+.gnb {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+
+    a {
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        padding-bottom: 2px;
+        color: #222;
+
+        &:hover {
+            color: #22b8cf;
+        }
+
+        &:after {
+            content: '|';
+            display: inline-block;
+            padding: 0 7px;
+            color: #ccc;
+        }
+
+        &:last-child {
+            &:after {
+                color: #fff;
+            }
+        }
+
+        &.active {
+            text-decoration: underline;
+            color: #22b8cf;
+        }
+    }
+}
