@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ajax 계산기</h1>
+    <form id="calcform" action="/my_calc">
+        <input type="text" name="x" placeholer="x" />
+        <select name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="y" placeholer="y" />
+        <input type="submit" value="계산" />
+    </form>
+    <ul id="result">
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.querySelector("#calcform").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const target = e.currentTarget;
+
+            // 백엔드 주소
+            const backend = target.getAttribute("action");
+
+            // 응답결과가 저장될 객체
+            let response = null;
+
+            // 선택된 연산자만 추출
+            const operator = target.querySelector("select[name=operator]").value;
+
+            // 가상의 Form 데이터를 생성하여 Axios로 전송
+            const formData = new FormData(target);
+
+            try {
+                // 연산자에 따라 get,post,put,delete 선택
+                // 전송방식에 따라 axios에서 파라미터를 처리하는 방법이 다름
+
+                switch (operator) {
+                    case "+":
+                        response = await axios.get(backend, {
+                            //GET 방식으로 전송할 때는 params 속성을 사용하여 JSON 객체로 구성해야함
+                            params: Object.fromEntries(formData)
+                        });
+                        break;
+
+                    case "-":
+                        response = await axios.post(backend, formData);
+                        break;
+
+                    case "*":
+                        response = await axios.put(backend, formData);
+                        break;
+
+                    case "/":
+                        response = await axios.delete(backend, {
+                            // Delete 방식으로 전송할 때는 data 속성을 사용하여 FormData 객체를 그대로 전달해야함.
+                            data: formData
+                        });
+                        break;
+                } 
+            } catch (error) {
+                let alertMsg = null;
+                console.log(error);
+
+                //SpringBoot로 부터 전달받은 에러 메세지가 있다면?
+                if(error.response?.data) {
+                    const data = error.response.data;
+
+                    //메세지 창에 표시할 내용
+                    alertMsg = data.message;
+
+                    //백엔드에서 발생한 상세 에러 내용을 브라우저 콘솔에 출력
+                    //보안에 취약하므로 실무에서는 제거할 것
+                    console.error("Error occurred in the backend server");
+                    console.error(`[${data.status}] ${data.error}`);
+                    console.error(data.trace);
+                } else {
+                    //SpringBoot로 부터 전달받은 에러 메세지가 없다면?
+                    //Axios의 에러 메세지를 그대로 사용
+
+                    //메세지 창에 표시할 내용
+                    alertMsg = error.message;
+
+                    //Axios의 기본 에러 메세지를 추출하여 문자열로 구성
+                    console.error("Error occurred in the Axios");
+                    console.error(`[${error.code}] ${error.message}`);
+                }
+
+                //메세지 박스로 에러 내용 표시
+                alert(alertMsg);
+
+                //catch에서 return을 하더라도 finally가 수행된 후 실행이 취소된다.
+                return;
+            }
+
+            //결과처리
+            const resultJson = response.data;
+
+            //결과를 화면에 출력
+            const li = document.createElement("li");
+            li.textContent = `${resultJson.x} ${operator} ${resultJson.y} = ${resultJson.result}`;
+            
+            document.querySelector("#result").appendChild(li);
+        });
+    </script>
+  </body>
+</html>
