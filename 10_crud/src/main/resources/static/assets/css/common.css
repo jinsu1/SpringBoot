@@ -1,0 +1,140 @@
+.mytable {
+    border-collapse: collapse;
+    border-top: 3px solid #168;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+
+    th{
+        color: #168;
+        background: #f0f6f9;
+        padding: 10px;
+        border: 1px solid #ddd;
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        &.field {
+            padding: 0;
+            position: relative;
+
+            input:not([type="radio"]), select {
+                box-sizing: border-box;
+                padding: 5px 10px;
+                border: 0;
+
+                position:absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            input[type='date'] {
+                width: auto;
+            }
+        }
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+
+    &.search-field {
+        justify-content: space-between;
+
+        input {
+            border: 1px solid #ddd;
+            padding: 4px 15px;
+            height: 27px;
+            font-size: 14px;
+            width:250px;
+        }
+    }
+}
+
+.mybutton {
+    border:none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        filter: brightness(70%);
+    }
+
+    &.green {
+        background-color: #04aa6d;
+    }
+
+    &.blue {
+        background-color: #008cba;
+    }
+
+    &.red {
+        background-color: #f44336;
+    }
+
+    &.black {
+        background-color: #555;
+    }
+
+    &.gray {
+        background-color: #e7e7e7;
+        color: black;
+    }
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+
+    a{
+        display: block;
+        font-size: 14px;
+        padding: 6px 12px;
+        color: black;
+        text-decoration: none;
+
+        &.active {
+            background-color: #168;
+            color: white;
+        }
+
+        &[href]:hover {
+            background-color: #f0f6f9;
+        }
+    }
+}

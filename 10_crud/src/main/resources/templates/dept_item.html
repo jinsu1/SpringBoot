@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loading {
+            width: 100px;
+            height: 100px;
+            background: url(img/loading.gif) no-repeat center/cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 999999999;
+            display:none;
+        }
+
+        #loading.active {
+            display:block;
+        }
+
+        dt {
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        dt:before {
+            content: "";
+            padding-right: 5px;
+        }
+
+        dd {
+            font-weight: normal;
+            margin-bottom: 30px;
+            border-left: 5px solid #d5d5d5;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading"></div>
+    <h1>Department Item</h1>
+    
+    <dl>
+        <dt>학과번호</dt>
+        <dd class="id"></dd>
+        <dt>학과명</dt>
+        <dd class="dname"></dd>
+        <dt>학과위치</dt>
+        <dd class="loc"></dd>
+    </dl>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        (async () => {
+            const loading = document.querySelector("#loading");
+            loading.classList.add('active');
+
+            let response = null;
+
+            try {
+                response = await axios.get(`http://localhost:8080/api/department/101`);
+                console.log(response.data);
+            } catch (error) {
+                let alertMsg = null;
+                console.log(error);
+
+                //SpringBoot로 부터 전달받은 에러 메세지가 있다면?
+                if(error.response?.data) {
+                    const data = error.response.data;
+
+                    //메세지 창에 표시할 내용
+                    alertMsg = data.message;
+
+                    //백엔드에서 발생한 상세 에러 내용을 브라우저 콘솔에 출력
+                    //보안에 취약하므로 실무에서는 제거할 것
+                    console.error("Error occurred in the backend server");
+                    console.error(`[${data.status}] ${data.error}`);
+                    console.error(data.trace);
+                } else {
+                    //SpringBoot로 부터 전달받은 에러 메세지가 없다면?
+                    //Axios의 에러 메세지를 그대로 사용
+
+                    //메세지 창에 표시할 내용
+                    alertMsg = error.message;
+
+                    //Axios의 기본 에러 메세지를 추출하여 문자열로 구성
+                    console.error("Error occurred in the Axios");
+                    console.error(`[${error.code}] ${error.message}`);
+                }
+
+                //메세지 박스로 에러 내용 표시
+                alert(alertMsg);
+
+                //catch에서 return을 하더라도 finally가 수행된 후 실행이 취소된다.
+                return;
+            } finally {
+                loading.classList.remove('active');
+            }
+
+            //Ajax의 응답결과를 구조분해하여 개별 변수로 추출
+            const { deptno, dname, loc } = response.data.item;
+
+            //추출한 결과를 미리 준비한 HTML 구조에 출력하고 컨테이너를 화면에 표시함
+            document.querySelector('.id').innerHTML = deptno;
+            document.querySelector('.dname').innerHTML = dname;
+            document.querySelector('.loc').innerHTML = loc;
+        })();
+    </script>
+</body>
+</html>

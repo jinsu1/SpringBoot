@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loading {
+            width: 100px;
+            height: 100px;
+            background: url(img/loading.gif) no-repeat center/cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 999999999;
+            display:none;
+        }
+
+        #loading.active {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading"></div>
+    <h1>Dept List</h1>
+    
+    <button id="btn" type="button">데이터 가져오기</button>
+
+    <hr />
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>학과번호</th>
+                <th>학과명</th>
+                <th>학과위치</th>
+            </tr>
+        </thead>
+        <tbody id="list-body"></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+
+        // 요청할 페이지 번호
+        let page = 0;
+
+        // 전체 페이지 수 ( 백엔드에게 받아온 값을 저장 )
+        let totalPage = 0;
+
+        document.querySelector('#btn').addEventListener("click", async (e) => {
+            // 요청 전 totalPage가 page보다 작다면 중단
+            if (totalPage > 0 && totalPage <= page) {
+                return;
+            }
+
+            // 요청 페이지 번호 1증가
+            page++;
+
+            const loading = document.querySelector("#loading");
+            loading.classList.add('active');
+
+            let response = null;
+
+            try {
+                response = await axios.get(`http://localhost:8080/api/department`, {
+                    params: {
+                        page: page,
+                    },
+                });
+                console.log(response.data);
+            } catch (error) {
+                let alertMsg = null;
+                console.log(error);
+
+                //SpringBoot로 부터 전달받은 에러 메세지가 있다면?
+                if(error.response?.data) {
+                    const data = error.response.data;
+
+                    //메세지 창에 표시할 내용
+                    alertMsg = data.message;
+
+                    //백엔드에서 발생한 상세 에러 내용을 브라우저 콘솔에 출력
+                    //보안에 취약하므로 실무에서는 제거할 것
+                    console.error("Error occurred in the backend server");
+                    console.error(`[${data.status}] ${data.error}`);
+                    console.error(data.trace);
+                } else {
+                    //SpringBoot로 부터 전달받은 에러 메세지가 없다면?
+                    //Axios의 에러 메세지를 그대로 사용
+
+                    //메세지 창에 표시할 내용
+                    alertMsg = error.message;
+
+                    //Axios의 기본 에러 메세지를 추출하여 문자열로 구성
+                    console.error("Error occurred in the Axios");
+                    console.error(`[${error.code}] ${error.message}`);
+                }
+
+                //메세지 박스로 에러 내용 표시
+                alert(alertMsg);
+
+                //catch에서 return을 하더라도 finally가 수행된 후 실행이 취소된다.
+                return;
+            } finally {
+                loading.classList.remove('active');
+            }
+
+            // 전체 페이지 수를 저장
+            totalPage = response.data.pagination.totalPage;
+
+            const listBody = document.querySelector("#list-body");
+
+            response.data.item.forEach((v, i) => {
+                const tr = document.createElement("tr");
+
+                const td1 = document.createElement("td");
+                td1.innerHTML = v.deptno;
+
+                const td2 = document.createElement("td");
+                td2.innerHTML = v.dname;
+
+                const td3 = document.createElement("td");
+                td3.innerHTML = v.loc;
+
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tr.appendChild(td3);
+
+                listBody.appendChild(tr);
+            });
+            
+        });
+    </script>
+</body>
+</html>

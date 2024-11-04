@@ -1,4 +1,4 @@
-package kr.jinsu.restfulapi.helpers;
+package kr.jinsu.crud.helpers;
 
 import java.io.IOException;
 import java.io.PrintWriter;

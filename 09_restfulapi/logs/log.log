@@ -234,3 +234,55 @@
 [INFO ] 24-10-30 14:56:34 [MyInterceptor:87] - (param) <-- y = 2
 [INFO ] 24-10-30 14:56:34 [MyInterceptor:96] -  - REFERER : time = 2058, url = http://localhost:8080/calc 
 [INFO ] 24-10-30 14:56:34 [MyInterceptor:117] - running time: 41(ms)
+[INFO ] 24-10-30 14:58:21 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 23068 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-30 14:58:21 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:58:21 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:58:22 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:58:22 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:58:24 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.925 seconds (process running for 3.62)
+[INFO ] 24-10-30 14:58:29 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-30 14:58:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-30 14:58:29 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 14:58:29 [MyInterceptor:117] - running time: 170(ms)
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=10&operator=%2B&y=2
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:87] - (param) <-- operator = +
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:96] -  - REFERER : time = 3740, url = http://localhost:8080/calc 
+[INFO ] 24-10-30 14:58:33 [MyInterceptor:117] - running time: 85(ms)
+[INFO ] 24-10-30 14:58:34 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-30 14:58:34 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-30 14:58:34 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc
+[INFO ] 24-10-30 14:58:35 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-30 14:58:35 [MyInterceptor:87] - (param) <-- operator = -
+[INFO ] 24-10-30 14:58:35 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-30 14:58:35 [MyInterceptor:96] -  - REFERER : time = 1426, url = http://localhost:8080/calc 
+[INFO ] 24-10-30 14:58:35 [MyInterceptor:117] - running time: 44(ms)
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:87] - (param) <-- operator = *
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:96] -  - REFERER : time = 1749, url = http://localhost:8080/calc 
+[INFO ] 24-10-30 14:58:36 [MyInterceptor:117] - running time: 48(ms)
+[INFO ] 24-10-30 14:58:38 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:87] - (param) <-- x = 10
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:87] - (param) <-- operator = /
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:87] - (param) <-- y = 2
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:96] -  - REFERER : time = 2191, url = http://localhost:8080/calc 
+[INFO ] 24-10-30 14:58:39 [MyInterceptor:117] - running time: 44(ms)
+[INFO ] 24-10-30 15:24:39 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18172 (D:\jinsu_study\10_SpringBoot\09_restfulapi\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\09_restfulapi)
+[DEBUG] 24-10-30 15:24:39 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:24:39 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:24:40 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:24:40 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.jinsu.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:24:42 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.227 seconds (process running for 3.764)
+[INFO ] 24-10-30 15:24:44 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-10-30 15:24:44 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-10-30 15:24:44 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:24:44 [MyInterceptor:117] - running time: 214(ms)

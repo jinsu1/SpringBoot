@@ -1,0 +1,23 @@
+영화진흥위원회 API
+
+key : abeb353499360f3b88fdd6b34a1ef123
+
+
+http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json
+
+http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=abeb353499360f3b88fdd6b34a1ef123&targetDt=20240904
+
+
+주소기반산업지원서비스
+
+key : devU01TX0FVVEgyMDI0MDkwNTE3NDkxOTExNTA2Njc=
+
+https://business.juso.go.kr/addrlink/addrLinkApi.do
+
+카카오
+
+key : 48300ed01d5822f850073b1b4134187d
+
+https://dapi.kakao.com/v2/search/image
+
+메가스터디IT아카데미

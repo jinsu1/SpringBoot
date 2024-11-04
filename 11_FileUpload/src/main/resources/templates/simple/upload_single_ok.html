@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>단일 파일 업로드 결과 확인</h2>
+    
+    <h3 th:text="${subject}"></h3>
+    <ul>
+        <li>fieldName: <span th:text="${item.fieldName}"></span></li>
+        <li>originName: <span th:text="${item.originName}"></span></li>
+        <li>contentType: <span th:text="${item.contentType}"></span></li>
+        <li>fileSize: <span th:text="${item.fileSize}"></span></li>
+        <li>filePath: <span th:text="${item.filePath}"></span></li>
+        <li>fileUrl: <span th:text="${item.fileUrl}"></span></li>
+    </ul>
+    
+    <img th:src="${item.fileUrl}" width="320" alt="업로드 이미지" />
+</body>
+</html>

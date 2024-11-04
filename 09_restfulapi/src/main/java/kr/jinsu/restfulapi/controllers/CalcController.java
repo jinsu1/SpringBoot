@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class CalcController {
     
     @GetMapping("/calc")
-    public String calc() {
-        return "calc.html";
+    public void calc() {
     }
-    
 }

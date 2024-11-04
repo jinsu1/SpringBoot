@@ -1,4 +1,4 @@
-package kr.jinsu.restfulapi.helpers;
+package kr.jinsu.fileupload.helpers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
