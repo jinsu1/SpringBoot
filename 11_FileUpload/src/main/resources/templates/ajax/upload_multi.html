@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <style>
+        #preview {
+            display: flex;
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>Ajax 다중 업로드</h2>
+    <!-- Get방식은 업로드 불가, enctype="multipart/form-data"는 파일 업로드시 필수-->
+    <form id="upload-form" method="post" th:action="@{/ajax/upload_multi_ok}" enctype="multipart/form-data" >
+        <div class="file-wrapper">
+            <label for="profile-photo">파일 선택</label>
+            <input type="file" id="profile-photo" name="profile-photo" accept="image/*" multiple />
+        </div>
+
+        <button type="submit">업로드하기</button>
+    </form>
+
+    <hr />
+        
+    <div id="preview"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script th:src="@{/assets/js/axios_helper.js}"></script>
+    <script>
+       document.querySelector('#upload-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData =new FormData(e.currentTarget);
+            const data = await axiosHelper.postMultipart(e.currentTarget.action, formData);
+            
+            data?.item.forEach((v, i) => {
+                const img = document.createElement("img");
+                img.src = v.thumbnailUrl;
+                document.querySelector("#preview").appendChild(img);
+            });
+       });
+    </script>
+</body>
+</html>

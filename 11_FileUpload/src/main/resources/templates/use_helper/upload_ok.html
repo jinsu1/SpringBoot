@@ -8,9 +8,8 @@
 <body>
     <div th:replace="~{fragments/header :: my-header}"></div>
 
-    <h2>단일 파일 업로드 결과 확인</h2>
+    <h2>헬퍼 사용 업로드 결과 확인</h2>
     
-    <h3 th:text="${subject}"></h3>
     <ul>
         <li>fieldName: <span th:text="${item.fieldName}"></span></li>
         <li>originName: <span th:text="${item.originName}"></span></li>
@@ -18,8 +17,10 @@
         <li>fileSize: <span th:text="${item.fileSize}"></span></li>
         <li>filePath: <span th:text="${item.filePath}"></span></li>
         <li>fileUrl: <span th:text="${item.fileUrl}"></span></li>
+        <li>thumbnailPath: <span th:text="${item.thumbnailPath}" /></li>
+        <li>thumbnailUrl: <span th:text="${item.thumbnailUrl}" /></li>
     </ul>
     
-    <img th:src="${item.fileUrl}" width="320" alt="업로드 이미지" />
+    <img th:src="${item.thumbnailUrl}" width="320" alt="업로드 이미지" />
 </body>
 </html>

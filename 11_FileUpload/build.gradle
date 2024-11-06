@@ -39,6 +39,7 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'com.github.ua-parser:uap-java:1.6.1'
     implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+    implementation 'net.coobird:thumbnailator:0.4.20'
 
     //test에서 lombok인식되도록 추가
     testAnnotationProcessor 'org.projectlombok:lombok'

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .image-list {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .image-item {
+                width: 25%;
+                padding: 15px;
+                cursor: pointer;
+                
+                div {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 240px;
+                        object-fit: cover;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    background: #eee;
+
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+
+    <h2>멀티 업로드 결과 확인</h2>
+    
+    <div class="image-list">
+        <div class="image-item" th:each="item : ${uploadItemList}">
+            <div>
+                <a th:href="${item.fileUrl}" data-fslightbox="gallery">
+                    <img th:src="${item.thumbnailUrl}" />
+                </a>
+            </div>
+            <ul>
+                <li>fieldName: <span th:text="${item.fieldName}"></span></li>
+                <li>originName: <span th:text="${item.originName}"></span></li>
+                <li>contentType: <span th:text="${item.contentType}"></span></li>
+                <li>fileSize: <span th:text="${item.fileSize}"></span></li>
+                <li>filePath: <span th:text="${item.filePath}"></span></li>
+                <li>fileUrl: <span th:text="${item.fileUrl}"></span></li>
+                <li>thumbnailPath: <span th:text="${item.thumbnailPath}" /></li>
+                <li>thumbnailUrl: <span th:text="${item.thumbnailUrl}" /></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js" integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

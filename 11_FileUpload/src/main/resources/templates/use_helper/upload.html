@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <style>
+        .file-wrapper {
+            input[type='file'] {
+                display: none;
+            }
+
+            label {
+                cursor: pointer;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>단일 파일 업로드</h2>
+    <!-- Get방식은 업로드 불가, enctype="multipart/form-data"는 파일 업로드시 필수-->
+    <form method="post" th:action="@{/use_helper/upload_ok}" enctype="multipart/form-data">
+        <div class="file-wrapper">
+            <label for="profile-photo"><img th:src="@{/assets/img/noimage.jpg}" class="preview" /></label>
+            <input type="file" name="profile-photo" id="profile-photo" accept="image/*" />
+        </div>
+
+        <button type="submit">업로드하기</button>
+    </form>
+        
+    <script>
+        document.querySelector('#profile-photo').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const imgUrl = URL.createObjectURL(file);
+            document.querySelector(".preview").src = imgUrl;
+        });
+    </script>
+</body>
+</html>
+

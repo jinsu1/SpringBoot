@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <style>
+        #file-input {
+            display : none;
+        }
+
+        .image-upload label {
+            cursor: pointer;
+        }
+
+        #preview-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #preview-container .preview {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #555;
+            box-sizing : border-box;
+            margin: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    <h2>다중 파일 업로드</h2>
+    <!-- Get방식은 업로드 불가, enctype="multipart/form-data"는 파일 업로드시 필수-->
+    <form method="post" th:action="@{/multi/upload_ok}" enctype="multipart/form-data">
+        <div class="image-upload">
+            <label for="file-input">
+                <img th:src="@{/assets/img/upload.jpg}" width="200" />
+            </label>
+
+            <input type="file" id="file-input" name="photo" multiple />
+        </div>
+
+        <button type="submit">업로드하기</button>
+    </form>
+        
+    <div id="preview-container"></div>
+    <script>
+       document.querySelector('#file-input').addEventListener('change', (e) => {
+        const previewContainer = document.querySelector('#preview-container');
+
+        previewContainer.innerHTML = '';
+
+        const files = e.currentTarget.files;
+        console.log(files);
+
+        Array.from(files).forEach((v, i) => {
+            console.log(v);
+
+            const imgUrl = URL.createObjectURL(v);
+            console.log(imgUrl);
+
+            const imgTag = document.createElement('img');
+            imgTag.classList.add('preview');
+            imgTag.setAttribute('src', imgUrl);
+
+            previewContainer.appendChild(imgTag);
+        });
+       });
+    </script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+[INFO ] 24-10-17 10:27:39 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 10:27:39 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 10:27:39 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 10:27:41 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.799 seconds (process running for 3.383)
+[INFO ] 24-10-17 10:27:45 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:27:45 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:27:45 [MyInterceptor:75] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 10:27:45 [MyInterceptor:112] - running time: 199(ms)
+[INFO ] 24-10-17 10:27:46 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:27:46 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:27:46 [MyInterceptor:75] - [GET] http://localhost:8080/
+[INFO ] 24-10-17 10:27:46 [MyInterceptor:112] - running time: 78(ms)
+[INFO ] 24-10-17 10:27:47 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:27:47 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:27:47 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:27:47 [MyInterceptor:91] -  - REFERER : time = 1220, url = http://localhost:8080/ 
+[INFO ] 24-10-17 10:27:47 [MyInterceptor:112] - running time: 91(ms)
+[INFO ] 24-10-17 10:27:53 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:27:53 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:27:53 [MyInterceptor:75] - [POST] http://localhost:8080/session/save;jsessionid=2AD09DBC0B8EACB08DF78BDD8A3FF7DE
+[INFO ] 24-10-17 10:27:53 [MyInterceptor:82] - (param) <-- user_name = zz
+[INFO ] 24-10-17 10:27:53 [MyInterceptor:82] - (param) <-- user_age = zzz
+[INFO ] 24-10-17 10:27:53 [MyInterceptor:91] -  - REFERER : time = 5745, url = http://localhost:8080/session/home 
+[WARN ] 24-10-17 10:27:53 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "zzz"]
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:75] - [POST] http://localhost:8080/session/save;jsessionid=2AD09DBC0B8EACB08DF78BDD8A3FF7DE
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:82] - (param) <-- user_name = zz
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:82] - (param) <-- user_age = 213132
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:91] -  - REFERER : time = 13164, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:112] - running time: 52(ms)
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:91] -  - REFERER : time = 7, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 10:28:00 [MyInterceptor:112] - running time: 25(ms)
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:91] -  - REFERER : time = 2227, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:112] - running time: 26(ms)
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:91] -  - REFERER : time = 623, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 10:28:03 [MyInterceptor:112] - running time: 24(ms)
+[INFO ] 24-10-17 10:35:37 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 10:35:37 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 10:35:37 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 10:35:37 [MyInterceptor:91] -  - REFERER : time = 453971, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 10:35:37 [MyInterceptor:112] - running time: 25(ms)
+[INFO ] 24-10-17 12:21:22 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 12:21:22 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 12:21:22 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 12:21:23 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.798 seconds (process running for 6825.226)
+[INFO ] 24-10-17 12:43:46 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 12:43:46 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 12:43:46 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 12:43:46 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.438 seconds (process running for 8168.748)
+[INFO ] 24-10-17 12:46:14 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 12:46:14 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 12:46:14 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 12:46:15 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.941 seconds (process running for 8317.152)
+[INFO ] 24-10-17 12:46:35 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 12:46:35 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 12:46:35 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 12:46:36 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.416 seconds (process running for 8338.387)
+[INFO ] 24-10-17 12:47:12 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 12:47:12 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 12:47:12 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 12:47:12 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.446 seconds (process running for 8374.729)
+[INFO ] 24-10-17 12:53:21 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:53:21 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:53:21 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 12:53:21 [MyInterceptor:112] - running time: 28(ms)
+[INFO ] 24-10-17 12:53:22 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:53:22 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:53:22 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 12:53:22 [MyInterceptor:91] -  - REFERER : time = 855, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 12:53:22 [MyInterceptor:112] - running time: 30(ms)
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:82] - (param) <-- user_id = jisnu11
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:53:32 [MyInterceptor:91] -  - REFERER : time = 9564, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:82] - (param) <-- user_id = jisnu
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:53:41 [MyInterceptor:91] -  - REFERER : time = 18172, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:55:38 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 12:55:38 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 12:55:38 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 12:55:39 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.403 seconds (process running for 8881.139)
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:82] - (param) <-- user_id = jisnu
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:55:44 [MyInterceptor:112] - running time: 25(ms)
+[INFO ] 24-10-17 12:55:47 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:82] - (param) <-- user_id = jisnu
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:91] -  - REFERER : time = 3680, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:55:48 [MyInterceptor:112] - running time: 23(ms)
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:91] -  - REFERER : time = 9450, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:112] - running time: 23(ms)
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:91] -  - REFERER : time = 4, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:55:57 [MyInterceptor:112] - running time: 29(ms)
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:82] - (param) <-- user_id = jisnu
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:91] -  - REFERER : time = 5175, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:56:02 [MyInterceptor:112] - running time: 18(ms)
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:91] -  - REFERER : time = 4869, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:112] - running time: 22(ms)
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:91] -  - REFERER : time = 7, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:56:07 [MyInterceptor:112] - running time: 19(ms)
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:91] -  - REFERER : time = 31448, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:112] - running time: 22(ms)
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:91] -  - REFERER : time = 9, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:56:39 [MyInterceptor:112] - running time: 25(ms)
+[INFO ] 24-10-17 12:56:49 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:56:49 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:56:49 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 12:56:49 [MyInterceptor:91] -  - REFERER : time = 10493, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:56:49 [MyInterceptor:112] - running time: 28(ms)
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:91] -  - REFERER : time = 27863, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:112] - running time: 20(ms)
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:91] -  - REFERER : time = 11, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 12:57:17 [MyInterceptor:112] - running time: 24(ms)
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:91] -  - REFERER : time = 737894, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:112] - running time: 17(ms)
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:91] -  - REFERER : time = 4, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:09:35 [MyInterceptor:112] - running time: 19(ms)
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:91] -  - REFERER : time = 31835, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:112] - running time: 21(ms)
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:91] -  - REFERER : time = 4, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:10:07 [MyInterceptor:112] - running time: 21(ms)
+[INFO ] 24-10-17 13:11:49 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10804 (D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session\bin\main started by user in D:\jinsu_study\10_SpringBoot\05_cookie_session\cookie_session)
+[DEBUG] 24-10-17 13:11:49 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-17 13:11:49 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-17 13:11:49 [CookieSessionApplication:56] - Started CookieSessionApplication in 0.392 seconds (process running for 9851.494)
+[INFO ] 24-10-17 13:11:58 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:11:58 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:11:58 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:11:58 [MyInterceptor:112] - running time: 22(ms)
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:91] -  - REFERER : time = 4956, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:112] - running time: 28(ms)
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:91] -  - REFERER : time = 4, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:03 [MyInterceptor:112] - running time: 17(ms)
+[INFO ] 24-10-17 13:12:08 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:08 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:08 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:12:08 [MyInterceptor:91] -  - REFERER : time = 4268, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:08 [MyInterceptor:112] - running time: 29(ms)
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:75] - [GET] http://localhost:8080/session/logout
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:91] -  - REFERER : time = 4349, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:112] - running time: 17(ms)
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:91] -  - REFERER : time = 9, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:12 [MyInterceptor:112] - running time: 21(ms)
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:82] - (param) <-- user_id = jisnu11
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:91] -  - REFERER : time = 12554, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:25 [MyInterceptor:112] - running time: 20(ms)
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:91] -  - REFERER : time = 5540, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:112] - running time: 28(ms)
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:91] -  - REFERER : time = 9, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:30 [MyInterceptor:112] - running time: 29(ms)
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:75] - [GET] http://localhost:8080/session/logout
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:91] -  - REFERER : time = 3878, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:112] - running time: 24(ms)
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:91] -  - REFERER : time = 5, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:12:34 [MyInterceptor:112] - running time: 16(ms)
+[INFO ] 24-10-17 13:16:36 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:16:36 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:16:36 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:16:36 [MyInterceptor:91] -  - REFERER : time = 242116, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:16:36 [MyInterceptor:112] - running time: 19(ms)
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:91] -  - REFERER : time = 4163, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:112] - running time: 19(ms)
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:91] -  - REFERER : time = 11, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 13:16:41 [MyInterceptor:112] - running time: 22(ms)
+[INFO ] 24-10-17 14:21:23 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:23 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:23 [MyInterceptor:75] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 14:21:23 [MyInterceptor:112] - running time: 37(ms)
+[INFO ] 24-10-17 14:21:24 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:24 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:24 [MyInterceptor:75] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 14:21:24 [MyInterceptor:91] -  - REFERER : time = 1203, url = http://localhost:8080/cookie/home 
+[INFO ] 24-10-17 14:21:24 [MyInterceptor:112] - running time: 26(ms)
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:75] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:82] - (param) <-- cookie_name = name
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:82] - (param) <-- cookie_time = 10
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:82] - (param) <-- cookie_var = 21312
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:91] -  - REFERER : time = 8114, url = http://localhost:8080/cookie/home 
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:112] - running time: 35(ms)
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:75] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:91] -  - REFERER : time = 10, url = http://localhost:8080/cookie/home 
+[INFO ] 24-10-17 14:21:32 [MyInterceptor:112] - running time: 31(ms)
+[INFO ] 24-10-17 14:21:34 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:34 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:34 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 14:21:34 [MyInterceptor:91] -  - REFERER : time = 2139, url = http://localhost:8080/cookie/home 
+[INFO ] 24-10-17 14:21:34 [MyInterceptor:112] - running time: 23(ms)
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:75] - [POST] http://localhost:8080/session/save
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:82] - (param) <-- user_name = qwe
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:82] - (param) <-- user_age = 12
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:91] -  - REFERER : time = 3705, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:112] - running time: 28(ms)
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:91] -  - REFERER : time = 4, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 14:21:38 [MyInterceptor:112] - running time: 23(ms)
+[INFO ] 24-10-17 14:21:41 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:41 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:41 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 14:21:41 [MyInterceptor:91] -  - REFERER : time = 2664, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 14:21:41 [MyInterceptor:112] - running time: 29(ms)
+[INFO ] 24-10-17 14:21:43 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:21:43 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:21:43 [MyInterceptor:75] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-17 14:21:43 [MyInterceptor:91] -  - REFERER : time = 2412, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 14:21:43 [MyInterceptor:112] - running time: 23(ms)
+[INFO ] 24-10-17 14:22:08 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:22:08 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:22:08 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 14:22:08 [MyInterceptor:91] -  - REFERER : time = 24297, url = http://localhost:8080/session/home 
+[INFO ] 24-10-17 14:22:08 [MyInterceptor:112] - running time: 23(ms)
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:75] - [POST] http://localhost:8080/session/login_ok
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:82] - (param) <-- user_id = jinsu
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:82] - (param) <-- user_password = 1234
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:82] - (param) <-- remember_id = Y
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:91] -  - REFERER : time = 6282, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:112] - running time: 17(ms)
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:91] -  - REFERER : time = 10, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 14:22:14 [MyInterceptor:112] - running time: 22(ms)
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:75] - [GET] http://localhost:8080/session/logout
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:91] -  - REFERER : time = 2702, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:112] - running time: 18(ms)
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:40] - -------- new client connect ----------
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:57] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 129.0
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:75] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:91] -  - REFERER : time = 10, url = http://localhost:8080/session/login 
+[INFO ] 24-10-17 14:22:17 [MyInterceptor:112] - running time: 19(ms)

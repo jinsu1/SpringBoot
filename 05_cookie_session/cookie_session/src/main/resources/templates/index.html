@@ -6,6 +6,13 @@
     <title>Hello Spring</title>
 </head>
 <body>
-    <div th:replace="~{fragments/header :: my-header}"></div>
+    <header th:fragment="my-header">
+        <link rel="stylesheet" th:href="@{/assets/css/header.css}">
+        <h1>04-Params</h1>
+        <nav class="gnb">
+            <a th:href= "@{/}">aa</a>
+
+        </nav>
+    </header>
 </body>
 </html>
