@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="~{/_fragments/_head :: my-head('회원탈퇴')}" />
+    <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
+</head>
+<body>
+
+    <div class="account-container">
+        <h2 class="page-title">회원탈퇴</h2>
+        <p>정말로 회원탈퇴를 진행하시겠습니까? 탈퇴를 위해 비밀번호를 입력해주세요.</p>
+
+        <form id="delete-account-form">
+            <!-- 비밀번호 입력 -->
+            <div class="input-container">
+                <input type="password" id="user_pw" class="input-field" placeholder="비밀번호" required />
+            </div>
+
+            <!-- 회원탈퇴 버튼 -->
+            <button type="submit" class="btn">회원탈퇴</button>
+        </form>
+
+        <div class="form-footer">
+            <p>계정을 유지하고 싶으신가요? <a th:href="@{/account}">돌아가기</a></p>
+        </div>
+    </div>
+
+    <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
+    <script>
+        document.getElementById('delete-account-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const confirmation = confirm("정말로 탈퇴하시겠습니까? 탈퇴 후에는 복구할 수 없습니다.");
+            if (confirmation) {
+                alert("회원탈퇴가 처리되었습니다.");
+                // 실제 회원탈퇴 처리 로직을 여기에 추가
+            } else {
+                alert("회원탈퇴가 취소되었습니다.");
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+:root {
+    /* 색상 변수 */
+    --background-color: #f4f6f9;
+    --container-bg-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --primary-color: #4CAF50;
+    --primary-color-hover: #45a049;
+    --border-color: #ccc;
+    --text-color: #333;
+    --link-color: #4CAF50;
+
+    /* 크기 및 패딩 변수 */
+    --container-padding: 40px;
+    --container-border-radius: 10px;
+    --input-padding: 12px;
+    --button-padding: 14px;
+    --border-radius-small: 4px;
+    --border-radius-large: 10px;
+    --gap-size: 20px;
+    --margin-bottom: 20px;
+
+    /* 글꼴 크기 변수 */
+    --font-size-base: 16px;
+    --font-size-heading: 24px;
+
+    /* 미디어 쿼리 */
+    --media-container-padding: 20px;
+}
+
+/* 기본 설정 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.account-container {
+    background-color: var(--container-bg-color);
+    padding: var(--container-padding);
+    border-radius: var(--container-border-radius);
+    box-shadow: 0 6px 15px var(--box-shadow-color);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding-left: var(--media-container-padding);
+    padding-right: var(--media-container-padding);
+
+    /* 공통 - 페이지 제목 */
+    .page-title {
+        text-align: center;
+        color: var(--primary-color);
+        font-size: var(--font-size-heading);
+        margin-bottom: var(--margin-bottom);
+    }
+
+    /* 공통 - 하단부 */
+    .form-footer {
+        text-align: center;
+        margin-top: var(--margin-bottom);
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    /* 공통 - 버튼 */
+    .btn {
+        width: 100%;
+        padding: var(--button-padding);
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: var(--border-radius-small);
+        cursor: pointer;
+        font-size: var(--font-size-base);
+        margin-top: var(--margin-bottom);
+
+        &:hover {
+            background-color: var(--primary-color-hover);
+        }
+    }
+
+    /* before.html, after.html - 로그인 전,후 화면 */
+    &.account {
+        text-align: center;
+        padding: 20px;
+
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    /* join.html */
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+        display: flex;
+
+        /* 입력 필드 */
+        .input-field {
+            flex: 1;
+            padding: var(--input-padding);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
+            box-sizing: border-box;
+            font-size: var(--font-size-base);
+
+            &:focus {
+                border-color: var(--primary-color);
+                outline: none;
+            }
+        }
+
+        .inline-btn {
+            padding: var(--input-padding);
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+            cursor: pointer;
+            font-size: var(--font-size-base);
+
+            &:hover {
+                background-color: var(--primary-color-hover);
+            }
+        }
+
+        /* 성별 라디오 버튼 스타일 */
+        &.gender-container {
+            display: flex;
+            align-items: center;
+            gap: var(--gap-size);
+            padding: 10px 0;
+
+            .gender-label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-size: var(--font-size-base);
+                color: var(--text-color);
+
+                .gender-input {
+                    display: none;
+                }
+
+                .gender-input + .gender-custom {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                    border: 2px solid var(--border-color);
+                    border-radius: 50%;
+                    position: relative;
+                }
+
+                .gender-input:checked + .gender-custom {
+                    border-color: var(--primary-color);
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 미디어 쿼리: 화면 너비가 400px 이하일 때 */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding-left: var(--media-container-padding);
+        padding-right: var(--media-container-padding);
+    }
+}
