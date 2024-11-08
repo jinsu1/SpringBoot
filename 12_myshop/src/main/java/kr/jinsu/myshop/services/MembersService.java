@@ -65,4 +65,6 @@ public interface MembersService {
     public void isUniqueUserId(String userId) throws Exception;
 
     public void isUniqueEmail(String email) throws Exception;
+
+    public Members findId(Members input) throws Exception;
 } 

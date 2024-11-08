@@ -116,4 +116,9 @@ public interface MembersMapper {
             "</where>\n" +
             "</script>")
     public int selectCount(Members input);
+
+    @Select("select user_id from members " +
+            "where user_name = #{userName} and email = #{email}")
+    @ResultMap("membersMap")
+    public Members findId(Members input);
 }

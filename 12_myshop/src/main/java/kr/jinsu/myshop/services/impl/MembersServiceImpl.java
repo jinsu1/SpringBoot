@@ -111,4 +111,22 @@ public class MembersServiceImpl implements MembersService {
             throw e;
         }
     }
+
+    @Override
+    public Members findId(Members input) throws Exception {
+        
+        Members output = null;
+
+        try {
+            output = membersMapper.findId(input);
+
+            if(output == null) {
+                throw new Exception("Members 조회된 데이터가 없습니다.");
+            }
+        } catch (Exception e) {
+            log.error("아이디 검색에 실패했습니다.", e);
+            throw e;
+        }
+        return output;
+    }
 }

@@ -8,46 +8,51 @@
 
     <div class="account-container">
         <h2 class="page-title">회원가입</h2>
-        <form id="signup-form">
+        <form id="signup_form">
             <!-- 아이디 -->
             <div class="input-container">
-                <input type="text" id="user_id" class="input-field" placeholder="아이디" required />
-                <button type="button" class="inline-btn" id="id-unique-check">중복 검사</button>
-                <input type="hidden" id="id-check" value="N" />
+                <input type="text" name="user_id" id="user_id" class="input-field" placeholder="아이디" />
+                <button type="button" class="inline-btn" id="id_unique_check">중복 검사</button>
+                <input type="hidden" name="id_check" id="id_check" value="N" />
             </div>
 
             <!-- 비밀번호 -->
             <div class="input-container">
-                <input type="password" id="user_pw" class="input-field" placeholder="비밀번호" required />
+                <input type="password" name="user_pw" id="user_pw" class="input-field" placeholder="비밀번호" />
+            </div>
+
+            <!-- 비밀번호 확인 -->
+            <div class="input-container">
+                <input type="password" name="user_pw_confirm" id="user_pw_confirm" class="input-field" placeholder="비밀번호 확인" />
             </div>
 
             <!-- 이름 -->
             <div class="input-container">
-                <input type="text" id="user_name" class="input-field" placeholder="이름" required />
+                <input type="text" name="user_name" id="user_name" class="input-field" placeholder="이름" />
             </div>
 
             <!-- 이메일 -->
             <div class="input-container">
-                <input type="email" id="email" class="input-field" placeholder="이메일" required />
-                <button type="button" class="inline-btn" id="email-unique-check">중복 검사</button>
-                <input type="hidden" id="email-check" value="N" />
+                <input type="email" name="email" id="email" class="input-field" placeholder="이메일" />
+                <button type="button" class="inline-btn" id="email_unique_check">중복 검사</button>
+                <input type="hidden" name="email_check" id="email_check" value="N" />
             </div>
 
             <!-- 전화번호 -->
             <div class="input-container">
-                <input type="tel" id="phone" class="input-field" placeholder="전화번호" required />
+                <input type="tel" name="phone" id="phone" class="input-field" placeholder="전화번호" />
             </div>
 
             <!-- 생년월일 -->
             <div class="input-container">
-                <input type="date" id="birthday" class="input-field" placeholder="생년월일" required />
+                <input type="date" name="birthday" id="birthday" class="input-field" placeholder="생년월일" />
             </div>
 
             <!-- 성별 (라디오 버튼 형태) -->
             <div class="input-container gender-container">
                 <span>성별:</span>
                 <label class="gender-label">
-                    <input type="radio" name="gender" value="M" class="gender-input" required />
+                    <input type="radio" name="gender" value="M" class="gender-input" />
                     <span class="gender-custom"></span>남성
                 </label>
                 <label class="gender-label">
@@ -58,21 +63,21 @@
 
             <!-- 우편번호 -->
             <div class="input-container">
-                <input type="text" id="postcode" class="input-field" placeholder="우편번호" required readonly />
-                <button type="button" class="inline-btn" id="find-postcode">우편번호 찾기</button>
+                <input type="text" name="postcode" id="postcode" class="input-field" placeholder="우편번호" readonly />
+                <button type="button" class="inline-btn" id="find_postcode">우편번호 찾기</button>
             </div>
 
             <!-- 주소 -->
             <div class="input-container">
-                <input type="text" id="addr1" class="input-field" placeholder="주소" required  readonly />
+                <input type="text" name="addr1" id="addr1" class="input-field" placeholder="주소"  readonly />
             </div>
             <div class="input-container">
-                <input type="text" id="addr2" class="input-field" placeholder="상세 주소" />
+                <input type="text" name="addr2" id="addr2" class="input-field" placeholder="상세 주소" />
             </div>
 
             <!-- 사진 -->
             <div class="input-container">
-                <input type="file" id="photo" class="input-field" />
+                <input type="file" name="photo" id="photo" class="input-field" />
             </div>
 
             <!-- 회원가입 버튼 -->
@@ -87,13 +92,20 @@
     <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script>
-        document.querySelector("#id-unique-check").addEventListener("click", async (e) => {
+
+        document.querySelector("#find_postcode").addEventListener("click", async (e) =>{
+            e.preventDefault();
+            utilHelper.findPostCode();
+        });
+
+        document.querySelector("#id_unique_check").addEventListener("click", async (e) => {
             e.preventDefault();
 
             try{
                 regexHelper.value("#user_id", "아이디를 입력하세요");
             } catch (e) {
                 await utilHelper.alertDanger(e.message);
+                // e.element.focus();
                 return;
             }
 
@@ -104,21 +116,22 @@
 
             if(data) {
                 await utilHelper.alertSuccess("사용 가능한 아이디 입니다.");
-                document.querySelector("#id-check").value = "Y";
+                document.querySelector("#id_check").value = "Y";
             }
         });
 
         document.querySelector("#user_id").addEventListener("change", e => {
-            document.querySelector("#id-check").value = "N";
+            document.querySelector("#id_check").value = "N";
         })
 
-        document.querySelector("#email-unique-check").addEventListener("click", async (e) => {
+        document.querySelector("#email_unique_check").addEventListener("click", async (e) => {
             e.preventDefault();
 
             try{
                 regexHelper.value("#email", "이메일을 입력하세요.");
             } catch (e) {
                 await utilHelper.alertDanger(e.message);
+                // e.element.focus();
                 return;
             }
 
@@ -129,25 +142,62 @@
 
             if(data) {
                 await utilHelper.alertSuccess("사용 가능한 이메일 입니다.");
-                document.querySelector("#email-check").value = "Y";
+                document.querySelector("#email_check").value = "Y";
             }
         });
 
-        document.querySelector("#emaul").addEventListener("change", e => {
-            document.querySelector("#email-check").value = "N";
+        document.querySelector("#email").addEventListener("change", e => {
+            document.querySelector("#email_check").value = "N";
         })
 
-
-        document.querySelector("#find-postcode").addEventListener("click", (e) =>{
+        document.getElementById('signup_form').addEventListener('submit', async (e) => {
             e.preventDefault();
-            utilHelper.findPostCode();
-        });
 
-        document.getElementById('signup-form').addEventListener('submit', async (event) => {
-            event.preventDefault();
+            /** 입력값 유효성 검사 */
 
-            const idCheck = document.querySelector("#id-check").value;
-            const emailCheck = document.querySelector("#email-check").value;
+            try {
+                regexHelper.value("#user_id", "아이디를 입력하세요.");
+                regexHelper.maxLength("#user_id", 20, "아이디는 4자 이상 20자 이하로 입력하세요.");
+                regexHelper.minLength("#user_id", 4, "아이디는 4자 이상 20자 이하로 입력하세요.");
+                regexHelper.engNum("#user_id", "아이디는 영어와 숫자로만 입력 가능합니다.");
+
+                regexHelper.value("#user_pw", "비밀번호를 입력하세요.");
+                regexHelper.maxLength("#user_pw", 20, "비밀번호는 4자 이상 20자 이하로 입력하세요.");
+                regexHelper.minLength("#user_pw", 4, "비밀번호는 4자 이상 20자 이하로 입력하세요.");
+                regexHelper.compareTo("#user_pw", "#user_pw_confirm", "비밀번호 확인이 잘못되었습니다.");
+
+                regexHelper.value("#user_name", "이름을 입력하세요.");
+                regexHelper.kor("#user_name", "이름은 한글로만 입력할 수 있습니다.");
+                regexHelper.maxLength("#user_name", 20, "이름은 2자 이상 20자 이하로 입력하세요.");
+                regexHelper.minLength("#user_name", 2, "이름은 2자 이상 20자 이하로 입력하세요.");
+                
+                regexHelper.value("#email", "이메일 주소를 입력하세요.");
+                regexHelper.email("#email", "이메일 주소가 잘못되었습니다.");
+
+                regexHelper.value("#phone", "전화번호를 입력하세요.");
+                regexHelper.phone("#phone", "전화번호 형식이 잘못되었습니다.");
+
+                regexHelper.value("#birthday", "생일을 입력하세요.");
+
+                regexHelper.check(".gender-input", "성별을 선택하세요.");
+
+                regexHelper.value("#postcode", "우편번호를 검색하세요.");
+                regexHelper.maxLength("#postcode", 5, "우편번호는 5자로 입력하세요.");
+                regexHelper.minLength("#postcode", 5, "우편번호는 5자로 입력하세요.");
+                regexHelper.num("#postcode", "우편번호는 숫자로만 입력할 수 있습니다.");
+
+                regexHelper.value("#addr1", "주소를 입력하세요.");
+                regexHelper.value("#addr2", "상세주소를 입력하세요.");
+
+            } catch (e) {
+                await utilHelper.alertDanger(e.message);
+
+                // setTimeout(() => e.element.focus(), 1);
+                return;
+            }
+
+            const idCheck = document.querySelector("#id_check").value;
+            const emailCheck = document.querySelector("#email_check").value;
 
             if(idCheck === "N") {
                 utilHelper.alertWarning("아이디 중복 검사를 진행해주세요.");
@@ -158,8 +208,15 @@
                 utilHelper.alertWarning("이메일 중복 검사를 진행해주세요.");
                 return;
             }
-            
-            alert('회원가입 처리 기능이 실행됩니다.');
+
+
+            const formData = new FormData(e.currentTarget);
+
+            const data = await axiosHelper.postMultipart("[[@{/api/account/join}]]", formData);
+
+            if(data) {
+                window.location = "[[@{/account/join_result}]]";
+            }
         });
     </script>
 

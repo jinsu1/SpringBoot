@@ -3,6 +3,25 @@
 <head>
     <th:block th:replace="~{/_fragments/_head :: my-head('아이디찾기')}" />
     <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
+
+    <style>
+        .find_result {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+
+            .user_name {
+                font-weight: bold;
+                color: #0066ff;
+            }
+
+            .user_id {
+                font-weight: bold;
+                color: #df1b1b;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -11,13 +30,15 @@
         <form id="find-id-form">
             <!-- 이름 -->
             <div class="input-container">
-                <input type="text" id="user_name" class="input-field" placeholder="이름" required />
+                <input type="text" name="user_name" id="user_name" class="input-field" placeholder="이름" />
             </div>
 
             <!-- 이메일 -->
             <div class="input-container">
-                <input type="email" id="email" class="input-field" placeholder="이메일" required />
+                <input type="email" name="email" id="email" class="input-field" placeholder="이메일" />
             </div>
+
+            <p class="find_result"><span class="user_name">000</span>님의 아이디는<span class="user_id">00000</span>입니다.</p>
 
             <!-- 아이디 찾기 버튼 -->
             <button type="submit" class="btn">아이디 찾기</button>
@@ -31,9 +52,31 @@
 
     <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
     <script>
-        document.getElementById('find-id-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('아이디 찾기 기능이 실행됩니다.');
+        document.getElementById('find-id-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            /** 입력값 유효성 검사*/
+            try {
+                regexHelper.value("#user_name", "이름을 입력하세요.");
+                regexHelper.value("#email", "이메일 주소를 입력하세요.");
+            } catch (err) {
+                await utilHelper.alertDanger(err.message);
+
+                // setTimeout(() => err.element.focus(), 1);
+                return;
+            }
+
+            const data = await axiosHelper.post('[[@{/api/account/find_id}]]', new FormData(e.currentTarget));
+
+            if(data) {
+                const userName = document.querySelector("#user_name").value;
+                const userId = data.item;
+
+                document.querySelector(".user_name").innerHTML = userName;
+                document.querySelector(".user_id").innerHTML = userId;
+
+                document.querySelector(".find_result").style.display = 'block';
+            }
         });
     </script>
     

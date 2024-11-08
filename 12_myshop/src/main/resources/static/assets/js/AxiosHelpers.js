@@ -11,7 +11,7 @@ const axiosHelper = {
                         let data = null;
 
                         try {
-                            formData = Object.fromEntries(formData);
+                            data = Object.fromEntries(formData);
                         } catch (e) {
                             data = formData;
                         }
