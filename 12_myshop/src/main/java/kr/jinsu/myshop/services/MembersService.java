@@ -67,4 +67,12 @@ public interface MembersService {
     public void isUniqueEmail(String email) throws Exception;
 
     public Members findId(Members input) throws Exception;
+
+    public int resetPw(Members input) throws Exception;
+
+    public Members login(Members input) throws Exception;
+    
+    public int out (Members input) throws Exception;
+
+    public List<Members> processOutMembers() throws Exception;
 } 

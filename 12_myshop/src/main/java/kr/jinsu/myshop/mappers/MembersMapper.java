@@ -121,4 +121,39 @@ public interface MembersMapper {
             "where user_name = #{userName} and email = #{email}")
     @ResultMap("membersMap")
     public Members findId(Members input);
+
+    @Update("update members set user_pw = MD5(#{userPw})" +
+            "where user_id = #{userId} and email = #{email}")
+    public int resetPw(Members input);
+
+    @Select("select \n" +
+            "id, user_id, user_pw, user_name, email, phone, birthday, gender, \n" + 
+            "postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date \n" +
+            "from members \n" +
+            "where user_id = #{userId} and user_pw = MD5(#{userPw})")
+    @ResultMap("membersMap")
+    public Members login(Members input);
+
+    @Update("update members set login_date = now() where id = #{id}")
+    public int updateLoginDate(Members input);
+
+     // 회원탈퇴
+     @Update("UPDATE members \n" +
+     "SET is_out = 'Y', edit_date = now() \n" +
+     "WHERE id = #{id} AND user_pw = MD5(#{userPw}) AND is_out = 'N'" )
+    public int out(Members input);
+
+    // 탈퇴한 회원 중 탈퇴 후 1분이 지난 회원 사진만 검색
+    @Select("SELECT photo FROM members \n" +
+        "WHERE is_out='Y' AND \n" +
+        "edit_date < DATE_ADD(NOW(), interval -1 minute) AND \n" +
+        "photo IS NOT NULL")
+    @ResultMap("membersMap")
+    public List<Members> selectOutMembersPhoto();
+
+    // 탈퇴한 회원 중 탈퇴 후 1분이 지난 회원 삭제
+    @Delete("DELETE FROM members \n" +
+        "WHERE is_out='Y' AND \n" +
+        "edit_date < DATE_ADD(NOW(), interval -1 minute)")
+    public int deleteOutMembers();
 }

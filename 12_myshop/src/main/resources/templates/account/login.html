@@ -10,25 +10,40 @@
         <h2 class="page-title">로그인</h2>
         <form id="login-form">
             <div class="input-container">
-                <input type="text" id="user_id" class="input-field" placeholder="아이디" />
+                <input type="text" name="user_id" id="user_id" class="input-field" placeholder="아이디" />
             </div>
             <div class="input-container">
-                <input type="password" id="user_pw" class="input-field" placeholder="비밀번호" />
+                <input type="password" name="user_pw" id="user_pw" class="input-field" placeholder="비밀번호" />
             </div>
             <button type="submit" class="btn">로그인</button>
         </form>
 
         <div class="form-footer">
             <p>계정이 없으신가요? <a th:href="@{/account/join}">회원가입</a></p>
+            <p>아이디를 잊으셨나요? <a th:href="@{/account/find_id}">아이디 검색</a></p>
             <p>비밀번호를 잊으셨나요? <a th:href="@{/account/reset_pw}">비밀번호 재발급</a></p>
         </div>
     </div>
 
     <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
     <script>
-        document.getElementById('login-form').addEventListener('submit', function(event) {
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
             event.preventDefault();
-            alert('로그인 처리 기능이 실행됩니다.');
+            
+            try {
+                regexHelper.value('#user_id', "아이디를 입력하세요.");
+                regexHelper.value('#user_pw', "비밀번호를 입력하세요.");
+            } catch (err) {
+                await utilHelper.alertDanger(err.message);
+                // setTimeout(() => err.element.focus(), 1);
+                return false;
+            }
+
+            const data = await axiosHelper.post('[[@{/api/account/login}]]', new FormData(e.currentTarget));
+
+            if(data) {
+                window.location = "[[@{/account}]]";
+            }
         });
     </script>
 

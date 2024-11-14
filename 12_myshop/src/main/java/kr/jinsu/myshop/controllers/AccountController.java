@@ -3,7 +3,6 @@ package kr.jinsu.myshop.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Controller
 public class AccountController {
     @GetMapping("/account/after")
@@ -46,4 +45,15 @@ public class AccountController {
     public String reset_pw() {
         return "account/reset_pw";
     }
+
+    @GetMapping("/account")
+    public String index() {
+        return "account/index";
+    }
+    
+    @GetMapping("/account/edit")
+    public String edit() {
+        return "account/edit";
+    }
+    
 }

@@ -129,4 +129,87 @@ public class MembersServiceImpl implements MembersService {
         }
         return output;
     }
+
+    @Override
+    public int resetPw(Members input) throws Exception {
+        int rows = 0;
+
+        try {
+            rows = membersMapper.resetPw(input);
+
+            if(rows == 0) {
+                throw new Exception("아이디와 이메일을 확인하세요.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다.", e);
+            throw e;
+        }
+     
+        return rows;
+    }
+
+    @Override
+    public Members login(Members input) throws Exception {
+        Members output = null;
+
+        try {
+            output = membersMapper.login(input);
+
+            if(output == null) {
+                throw new Exception("아이디 혹은 이메일을 확인하세요.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 조회에 실패했습니다.", e);
+            throw e;
+        }
+        // 데이터 조회에 성공했다면 마지막 로그인 시간 갱신
+        try {
+            int rows = membersMapper.updateLoginDate(output);
+
+            if(rows == 0) {
+                throw new Exception("존재하지 않는 회원에 대한 요청 입니다.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 갱신에 실패했습니다.", e);
+            throw e;
+        }
+
+        return output;
+    }
+
+    
+    @Override
+    public int out(Members input) throws Exception {
+        int rows = 0;
+
+        try {
+            rows = membersMapper.out(input);
+            if (rows == 0) {
+                throw new Exception("비밀번호 확인이 잘못되었거나 존재하지 않는 회원에 대한 요청입니다");
+            }
+        } catch (Exception e) {
+            log.error("Members 데이터 수정에 실패했습니다.", e);
+        }
+        
+
+        return rows;
+    }
+
+    @Override
+    public List<Members> processOutMembers() throws Exception {
+        List<Members> output = null;
+
+        try {
+            // 1) is_out이 Y인 상태로 특정 시간이 지난 데이터를 조회한다
+            output = membersMapper.selectOutMembersPhoto();
+
+            // 2) 탈퇴 요청된 데이터를 삭제한다
+            membersMapper.deleteOutMembers();
+        } catch (Exception e) {
+            throw new Exception("탈퇴 처리에 실패했습니다.");
+        }
+        
+        return output;
+
+    }
 }

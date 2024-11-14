@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="~{/_fragments/_head :: my-head('로그인')}"></th:block>
+    <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
+
+    <style>
+        .user_ico {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- View 세션 객체에 컨트롤러 도움 없이 직접 접근 가능-->
+    <div class="account-container account" th:if="${session.memberInfo == null}">
+        <h2 class="page-title">환영합니다!</h2>
+        <p>로그인 후 다양한 서비스를 이용하실 수 있습니다.</p>
+
+        <div class="btn-container">
+            <a th:href="@{/account/login}" class="btn">로그인</a>
+            <a th:href="@{/account/join}" class="btn">회원가입</a>
+        </div>
+    </div>
+
+    <!-- 주어진 조건이 맞지 않을 경우: else에 해당함 -->
+    <div class="account-container account" th:unless="${session.memberInfo == null }">
+        <img th:src="@{/assets/img/user.png}" alt="프로필 사진" class="user_ico" th:if="${session.memberInfo.photo == null or session.memberInfo.photo == ''}" />
+        <img th:src="${session.memberInfo.photo}" alt="프로필 사진" class="user_ico" th:unless="${session.memberInfo.photo == null or session.memberInfo.photo == ''}" />
+
+    <h2 class="page-title">환영합니다, [<span th:text="${session.memberInfo.userName}" />]님!</h2>
+    <p>계정을 통해 다양한 서비스를 이용하세요.</p>
+
+    <div class="btn-container">
+        <a th:href="@{account/edit}" class="btn">내 정보 수정</a>
+        <a th:href="@{/account/logout}" class="btn" id="btn-logout">로그아웃</a>
+    </div>
+
+    <div class="form-footer">
+        <p><a th:href="@{/account/out}">회원탈퇴</a></p>
+    </div>
+</div>
+
+    <script>
+        document.querySelector("#btn-logout").addEventListener('click', async (e) => {
+            e.preventDefault();
+
+            const data = await axiosHelper.get(e.currentTarget.getAttribute('href'));
+
+            if(data) {
+                window.location.reload();
+            }
+        });
+    </script>
+
+    <th:block th:replace="~{/_fragments/_scripts :: my-scripts}"></th:block>
+</body>
+</html>

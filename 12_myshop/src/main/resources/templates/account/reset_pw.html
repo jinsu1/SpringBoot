@@ -7,16 +7,16 @@
 <body>
 
     <div class="account-container">
-        <h2 class="page-title">비밀번호 찾기</h2>
+        <h2 class="page-title">비밀번호 재발급</h2>
         <form id="find-password-form">
             <!-- 아이디 -->
             <div class="input-container">
-                <input type="text" id="user_id" class="input-field" placeholder="아이디" required />
+                <input type="text" id="user_id" name="user_id" class="input-field" placeholder="아이디" required />
             </div>
 
             <!-- 이메일 -->
             <div class="input-container">
-                <input type="email" id="email" class="input-field" placeholder="이메일" required />
+                <input type="email" id="email" name="email" class="input-field" placeholder="이메일" required />
             </div>
 
             <!-- 비밀번호 찾기 버튼 -->
@@ -31,9 +31,25 @@
 
     <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
     <script>
-        document.getElementById('find-password-form').addEventListener('submit', function(event) {
+        document.getElementById('find-password-form').addEventListener('submit', async (e) => {
             event.preventDefault();
-            alert('비밀번호 찾기 기능이 실행됩니다.');
+            
+            /** 입력값 유효성 검사 */
+            try{
+                regexHelper.value("#user_id", "아이디를 입력하세요.");
+            } catch (err) {
+                await utilHelper.alertDanger(err.message);
+                // setTimeout(() => err.element.focus(), 1);
+                return false;
+            }
+
+            const data = await axiosHelper.put('[[@{/api/account/reset_pw}]]', new FormData(e.currentTarget));
+
+            if(data) {
+                const email = document.querySelector("#email").value;
+                await utilHelper.alertSuccess(`변경된 비밀번호를 ${email}로 보내드렸습니다. 메일함을 확인해 주세요.`);
+                window.location = "[[@{/account/login}]]";
+            }
         });
     </script>
 

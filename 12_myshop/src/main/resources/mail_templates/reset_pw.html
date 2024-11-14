@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, {{userId}}님!</h1>
+            <p>{{userId}}님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>

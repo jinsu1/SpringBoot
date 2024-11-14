@@ -1,0 +1,1408 @@
+[INFO ] 24-11-11 12:00:52 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 14780 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:00:52 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:00:52 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:00:53 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:00:54 [MembersMapperTest:56] - Started MembersMapperTest in 2.82 seconds (process running for 4.233)
+[DEBUG] 24-11-11 12:00:55 [update:135] - ==>  Preparing: update members set user_id=?, user_pw=?, user_name=?, email=?, phone=?, birthday=?, gender=?, postcode=?, addr1=?, addr2=?, photo=?, edit_date=now() where id=?
+[DEBUG] 24-11-11 12:00:55 [update:135] - ==> Parameters: null, 12341234(String), null, null, null, null, null, null, null, null, null, 0(Integer)
+[INFO ] 24-11-11 12:00:55 [sqlonly:228] - update members set user_id=NULL, user_pw='12341234', user_name=NULL, email=NULL, phone=NULL, birthday=NULL, gender=NULL, postcode=NULL, addr1=NULL, addr2=NULL, photo=NULL, edit_date=now() where id=0
+
+[DEBUG] 24-11-11 12:00:55 [update:135] - <==    Updates: 0
+[DEBUG] 24-11-11 12:00:55 [MembersMapperTest:26] - output: 0
+[INFO ] 24-11-11 12:05:02 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 3008 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:05:02 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:05:02 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:05:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:05:04 [MembersMapperTest:56] - Started MembersMapperTest in 2.823 seconds (process running for 4.259)
+[DEBUG] 24-11-11 12:05:05 [update:135] - ==>  Preparing: update members set user_id=?, user_pw=?, user_name=?, email=?, phone=?, birthday=?, gender=?, postcode=?, addr1=?, addr2=?, photo=?, edit_date=now() where id=?
+[DEBUG] 24-11-11 12:05:05 [update:135] - ==> Parameters: 1234(String), 12341234(String), null, www@q123.com (String), null, null, null, null, null, null, null, 0(Integer)
+[INFO ] 24-11-11 12:05:05 [sqlonly:228] - update members set user_id='1234', user_pw='12341234', user_name=NULL, email='www@q123.com ', phone=NULL, birthday=NULL, gender=NULL, postcode=NULL, addr1=NULL, addr2=NULL, photo=NULL, edit_date=now() where id=0
+
+[DEBUG] 24-11-11 12:05:05 [update:135] - <==    Updates: 0
+[DEBUG] 24-11-11 12:05:05 [MembersMapperTest:28] - output: 0
+[INFO ] 24-11-11 12:05:40 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 8684 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:05:40 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:05:40 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:05:41 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:05:43 [MembersMapperTest:56] - Started MembersMapperTest in 2.552 seconds (process running for 3.882)
+[DEBUG] 24-11-11 12:05:44 [update:135] - ==>  Preparing: update members set user_id=?, user_pw=?, user_name=?, email=?, phone=?, birthday=?, gender=?, postcode=?, addr1=?, addr2=?, photo=?, edit_date=now() where id=?
+[DEBUG] 24-11-11 12:05:44 [update:135] - ==> Parameters: 1234(String), 11111111(String), null, www@q123.com (String), null, null, null, null, null, null, null, 0(Integer)
+[INFO ] 24-11-11 12:05:44 [sqlonly:228] - update members set user_id='1234', user_pw='11111111', user_name=NULL, email='www@q123.com ', phone=NULL, birthday=NULL, gender=NULL, postcode=NULL, addr1=NULL, addr2=NULL, photo=NULL, edit_date=now() where id=0
+
+[DEBUG] 24-11-11 12:05:44 [update:135] - <==    Updates: 0
+[DEBUG] 24-11-11 12:05:44 [MembersMapperTest:28] - output: 0
+[INFO ] 24-11-11 12:14:32 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 8332 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:14:32 [MembersServiceTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:14:32 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:14:33 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:14:34 [MembersServiceTest:56] - Started MembersServiceTest in 2.736 seconds (process running for 4.043)
+[DEBUG] 24-11-11 12:14:36 [update:135] - ==>  Preparing: update members set user_id=?, user_pw=?, user_name=?, email=?, phone=?, birthday=?, gender=?, postcode=?, addr1=?, addr2=?, photo=?, edit_date=now() where id=?
+[DEBUG] 24-11-11 12:14:36 [update:135] - ==> Parameters: 1234(String), 11111111(String), null, www@q123.com (String), null, null, null, null, null, null, null, 0(Integer)
+[INFO ] 24-11-11 12:14:36 [sqlonly:228] - update members set user_id='1234', user_pw='11111111', user_name=NULL, email='www@q123.com ', phone=NULL, birthday=NULL, gender=NULL, postcode=NULL, addr1=NULL, addr2=NULL, photo=NULL, edit_date=now() where id=0
+
+[DEBUG] 24-11-11 12:14:36 [update:135] - <==    Updates: 0
+[ERROR] 24-11-11 12:14:36 [MembersServiceTest:32] - SQL문 처리 결과 없음
+kr.jinsu.myshop.exceptions.ServiceNoResultException: 수정된 데이터가 없습니다.
+	at kr.jinsu.myshop.services.impl.MembersServiceImpl.editItem(MembersServiceImpl.java:43)
+	at kr.jinsu.myshop.services.MembersServiceTest.updateMembers(MembersServiceTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+[INFO ] 24-11-11 12:15:06 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 13764 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:15:06 [MembersServiceTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:15:06 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:15:07 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:15:08 [MembersServiceTest:56] - Started MembersServiceTest in 2.635 seconds (process running for 3.868)
+[DEBUG] 24-11-11 12:15:09 [update:135] - ==>  Preparing: update members set user_id=?, user_pw=?, user_name=?, email=?, phone=?, birthday=?, gender=?, postcode=?, addr1=?, addr2=?, photo=?, edit_date=now() where id=?
+[DEBUG] 24-11-11 12:15:09 [update:135] - ==> Parameters: 12345(String), 11111111(String), null, www@q123.com (String), null, null, null, null, null, null, null, 0(Integer)
+[INFO ] 24-11-11 12:15:09 [sqlonly:228] - update members set user_id='12345', user_pw='11111111', user_name=NULL, email='www@q123.com ', phone=NULL, birthday=NULL, gender=NULL, postcode=NULL, addr1=NULL, addr2=NULL, photo=NULL, edit_date=now() where id=0
+
+[DEBUG] 24-11-11 12:15:09 [update:135] - <==    Updates: 0
+[ERROR] 24-11-11 12:15:09 [MembersServiceTest:32] - SQL문 처리 결과 없음
+kr.jinsu.myshop.exceptions.ServiceNoResultException: 수정된 데이터가 없습니다.
+	at kr.jinsu.myshop.services.impl.MembersServiceImpl.editItem(MembersServiceImpl.java:43)
+	at kr.jinsu.myshop.services.MembersServiceTest.updateMembers(MembersServiceTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+[INFO ] 24-11-11 12:26:58 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 14084 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:26:58 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:26:58 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:26:59 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:27:01 [MembersMapperTest:56] - Started MembersMapperTest in 2.934 seconds (process running for 4.327)
+[DEBUG] 24-11-11 12:27:02 [resetPw:135] - ==>  Preparing: update members set user_pw = ?where user_id = ? and email = ?
+[DEBUG] 24-11-11 12:27:02 [resetPw:135] - ==> Parameters: 11111111(String), 1234(String), www@q123.com (String)
+[INFO ] 24-11-11 12:27:02 [sqlonly:228] - update members set user_pw = '11111111'where user_id = '1234' and email = 'www@q123.com '
+
+[DEBUG] 24-11-11 12:27:02 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 12:27:02 [MembersMapperTest:28] - output: 1
+[INFO ] 24-11-11 12:29:14 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 10256 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:29:14 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:29:14 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:29:15 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:29:16 [MembersMapperTest:56] - Started MembersMapperTest in 2.876 seconds (process running for 3.833)
+[DEBUG] 24-11-11 12:29:18 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 12:29:18 [resetPw:135] - ==> Parameters: 11111111(String), 1234(String), www@q123.com (String)
+[INFO ] 24-11-11 12:29:18 [sqlonly:228] - update members set user_pw = MD5('11111111')where user_id = '1234' and email = 'www@q123.com '
+
+[DEBUG] 24-11-11 12:29:18 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 12:29:18 [MembersMapperTest:28] - output: 1
+[INFO ] 24-11-11 12:29:39 [MembersMapperTest:50] - Starting MembersMapperTest using Java 17.0.2 with PID 10512 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:29:39 [MembersMapperTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:29:39 [MembersMapperTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:29:40 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:29:42 [MembersMapperTest:56] - Started MembersMapperTest in 2.795 seconds (process running for 3.901)
+[DEBUG] 24-11-11 12:29:43 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 12:29:43 [resetPw:135] - ==> Parameters: 111111111(String), 1234(String), www@q123.com (String)
+[INFO ] 24-11-11 12:29:43 [sqlonly:228] - update members set user_pw = MD5('111111111')where user_id = '1234' and email = 'www@q123.com '
+
+[DEBUG] 24-11-11 12:29:43 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 12:29:43 [MembersMapperTest:28] - output: 1
+[INFO ] 24-11-11 12:44:48 [MembersServiceTest:50] - Starting MembersServiceTest using Java 17.0.2 with PID 784 (started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 12:44:48 [MembersServiceTest:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 12:44:48 [MembersServiceTest:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 12:44:49 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 12:44:50 [MembersServiceTest:56] - Started MembersServiceTest in 2.706 seconds (process running for 3.969)
+[DEBUG] 24-11-11 12:44:52 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 12:44:52 [resetPw:135] - ==> Parameters: 111121111(String), 1234(String), www@q123.com (String)
+[INFO ] 24-11-11 12:44:52 [sqlonly:228] - update members set user_pw = MD5('111121111')where user_id = '1234' and email = 'www@q123.com '
+
+[DEBUG] 24-11-11 12:44:52 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 12:44:52 [MembersServiceTest:39] - output: 1
+[INFO ] 24-11-11 14:34:02 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 16068 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:34:02 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:34:02 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:34:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:34:05 [MyshopApplication:56] - Started MyshopApplication in 3.431 seconds (process running for 3.997)
+[INFO ] 24-11-11 14:34:14 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:34:14 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:34:14 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:34:14 [MyInterceptor:117] - running time: 222(ms)
+[INFO ] 24-11-11 14:36:26 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 14448 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:36:26 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:36:26 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:36:27 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:36:29 [MyshopApplication:56] - Started MyshopApplication in 3.07 seconds (process running for 3.722)
+[INFO ] 24-11-11 14:36:30 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:36:30 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:36:30 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:36:30 [MyInterceptor:117] - running time: 182(ms)
+[INFO ] 24-11-11 14:37:04 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 14188 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:37:04 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:37:04 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:37:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:37:06 [MyshopApplication:56] - Started MyshopApplication in 3.247 seconds (process running for 3.899)
+[INFO ] 24-11-11 14:37:07 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:37:07 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:37:07 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:37:07 [MyInterceptor:117] - running time: 181(ms)
+[INFO ] 24-11-11 14:37:52 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:37:52 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:37:52 [MyInterceptor:80] - [GET] http://localhost:8080/account/join
+[INFO ] 24-11-11 14:37:52 [MyInterceptor:117] - running time: 69(ms)
+[INFO ] 24-11-11 14:38:01 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:02 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:02 [MyInterceptor:80] - [GET] http://localhost:8080/api/account/id_unique_check?user_id=jinsu4205
+[INFO ] 24-11-11 14:38:02 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:38:02 [MyInterceptor:96] -  - REFERER : time = 9100, url = http://localhost:8080/account/join 
+[DEBUG] 24-11-11 14:38:02 [selectCount:135] - ==>  Preparing: select count(*) from members WHERE user_id = ?
+[DEBUG] 24-11-11 14:38:02 [selectCount:135] - ==> Parameters: jinsu4205(String)
+[INFO ] 24-11-11 14:38:02 [sqlonly:228] - select count(*) from members
+ WHERE user_id = 'jinsu4205'
+
+[INFO ] 24-11-11 14:38:02 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-11 14:38:02 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-11 14:38:02 [MyInterceptor:117] - running time: 509(ms)
+[INFO ] 24-11-11 14:38:17 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:17 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:17 [MyInterceptor:80] - [GET] http://localhost:8080/api/account/email_unique_check?email=wlstn4205%40naver.com
+[INFO ] 24-11-11 14:38:17 [MyInterceptor:87] - (param) <-- email = wlstn4205@naver.com
+[INFO ] 24-11-11 14:38:17 [MyInterceptor:96] -  - REFERER : time = 14985, url = http://localhost:8080/account/join 
+[DEBUG] 24-11-11 14:38:17 [selectCount:135] - ==>  Preparing: select count(*) from members WHERE email = ?
+[DEBUG] 24-11-11 14:38:17 [selectCount:135] - ==> Parameters: wlstn4205@naver.com(String)
+[INFO ] 24-11-11 14:38:17 [sqlonly:228] - select count(*) from members
+ WHERE email = 'wlstn4205@naver.com'
+
+[INFO ] 24-11-11 14:38:17 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|5        |
+|---------|
+
+[DEBUG] 24-11-11 14:38:17 [selectCount:135] - <==      Total: 1
+[ERROR] 24-11-11 14:38:17 [MembersServiceImpl:110] - 이메일 중복 검사에 실패했습니다.
+java.lang.Exception: 사용할 수 없는 이메일 입니다.
+	at kr.jinsu.myshop.services.impl.MembersServiceImpl.isUniqueEmail(MembersServiceImpl.java:107)
+	at kr.jinsu.myshop.controllers.AccountRestController.emailUniqueCheck(AccountRestController.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-11 14:38:17 [MyInterceptor:117] - running time: 62(ms)
+[INFO ] 24-11-11 14:38:26 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:26 [MyInterceptor:80] - [GET] http://localhost:8080/api/account/email_unique_check?email=jinsu4205%40gmail.com
+[INFO ] 24-11-11 14:38:26 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:38:26 [MyInterceptor:96] -  - REFERER : time = 8937, url = http://localhost:8080/account/join 
+[DEBUG] 24-11-11 14:38:26 [selectCount:135] - ==>  Preparing: select count(*) from members WHERE email = ?
+[DEBUG] 24-11-11 14:38:26 [selectCount:135] - ==> Parameters: jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:38:26 [sqlonly:228] - select count(*) from members
+ WHERE email = 'jinsu4205@gmail.com'
+
+[INFO ] 24-11-11 14:38:26 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-11 14:38:26 [selectCount:135] - <==      Total: 1
+[INFO ] 24-11-11 14:38:26 [MyInterceptor:117] - running time: 39(ms)
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:80] - [POST] http://localhost:8080/api/account/join
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- id_check = Y
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- user_pw = 1234
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- user_pw_confirm = 1234
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- user_name = 박진수입니다
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- email_check = Y
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- phone = 01033064205
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- birthday = 2024-11-13
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- gender = M
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- postcode = 02830
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- addr1 = 서울 성북구 아리랑로 3 (동소문동6가)
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:87] - (param) <-- addr2 = 1234
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:96] -  - REFERER : time = 14092, url = http://localhost:8080/account/join 
+[DEBUG] 24-11-11 14:38:40 [selectCount:135] - ==>  Preparing: select count(*) from members WHERE user_id = ?
+[DEBUG] 24-11-11 14:38:40 [selectCount:135] - ==> Parameters: jinsu4205(String)
+[INFO ] 24-11-11 14:38:40 [sqlonly:228] - select count(*) from members
+ WHERE user_id = 'jinsu4205'
+
+[INFO ] 24-11-11 14:38:40 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-11 14:38:40 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-11 14:38:40 [selectCount:135] - ==>  Preparing: select count(*) from members WHERE email = ?
+[DEBUG] 24-11-11 14:38:40 [selectCount:135] - ==> Parameters: jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:38:40 [sqlonly:228] - select count(*) from members
+ WHERE email = 'jinsu4205@gmail.com'
+
+[INFO ] 24-11-11 14:38:40 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 24-11-11 14:38:40 [selectCount:135] - <==      Total: 1
+[ERROR] 24-11-11 14:38:40 [FileHelper:153] - 업로드 실패
+java.lang.NullPointerException: 업로드 된 파일이 없습니다.
+	at kr.jinsu.myshop.helpers.FileHelper.saveMultipartFile(FileHelper.java:152)
+	at kr.jinsu.myshop.controllers.AccountRestController.join(AccountRestController.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[DEBUG] 24-11-11 14:38:40 [insert:135] - ==>  Preparing: insert into members (user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date ) values (?, MD5(?), ?, ?, ?, ?, ?, ?, ?, ?, ?, 'N', 'N', now(), now(), now())
+[DEBUG] 24-11-11 14:38:40 [insert:135] - ==> Parameters: jinsu4205(String), 1234(String), 박진수입니다(String), jinsu4205@gmail.com(String), 01033064205(String), 2024-11-13(String), M(String), 02830(String), 서울 성북구 아리랑로 3 (동소문동6가)(String), 1234(String), null
+[INFO ] 24-11-11 14:38:40 [sqlonly:228] - insert into members (user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date ) values ('jinsu4205', MD5('1234'), '박진수입니다', 'jinsu4205@gmail.com', '01033064205', '2024-11-13', 'M', '02830', '서울 성북구 아리랑로 3 (동소문동6가)', '1234', NULL, 'N', 'N', now(), now(), now())
+
+[DEBUG] 24-11-11 14:38:40 [insert:135] - <==    Updates: 1
+[INFO ] 24-11-11 14:38:40 [resultsettable:610] - 
+|--------------|
+|generated_key |
+|--------------|
+|14            |
+|--------------|
+
+[DEBUG] 24-11-11 14:38:40 [selectItem:135] - ==>  Preparing: select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=?
+[DEBUG] 24-11-11 14:38:40 [selectItem:135] - ==> Parameters: 14(Integer)
+[INFO ] 24-11-11 14:38:40 [sqlonly:228] - select user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date from members where id=14
+
+[INFO ] 24-11-11 14:38:40 [resultsettable:610] - 
+|----------|---------------------------------|----------|--------------------|------------|-----------|-------|---------|-----------------------|------|------|-------|---------|--------------------|--------------------|--------------------|
+|user_id   |user_pw                          |user_name |email               |phone       |birthday   |gender |postcode |addr1                  |addr2 |photo |is_out |is_admin |login_date          |reg_date            |edit_date           |
+|----------|---------------------------------|----------|--------------------|------------|-----------|-------|---------|-----------------------|------|------|-------|---------|--------------------|--------------------|--------------------|
+|jinsu4205 |81dc9bdb52d04dc20036dbd8313ed055 |박진수입니다    |jinsu4205@gmail.com |01033064205 |2024-11-13 |M      |02830    |서울 성북구 아리랑로 3 (동소문동6가) |1234  |null  |N      |N        |2024-11-11 14:38:40 |2024-11-11 14:38:40 |2024-11-11 14:38:40 |
+|----------|---------------------------------|----------|--------------------|------------|-----------|-------|---------|-----------------------|------|------|-------|---------|--------------------|--------------------|--------------------|
+
+[DEBUG] 24-11-11 14:38:40 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:117] - running time: 100(ms)
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:80] - [GET] http://localhost:8080/account/join_result
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:96] -  - REFERER : time = 19, url = http://localhost:8080/account/join 
+[INFO ] 24-11-11 14:38:40 [MyInterceptor:117] - running time: 35(ms)
+[INFO ] 24-11-11 14:38:43 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:43 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:43 [MyInterceptor:80] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 14:38:43 [MyInterceptor:96] -  - REFERER : time = 2799, url = http://localhost:8080/account/join_result 
+[INFO ] 24-11-11 14:38:43 [MyInterceptor:117] - running time: 35(ms)
+[INFO ] 24-11-11 14:38:44 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:38:44 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:38:44 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:38:44 [MyInterceptor:96] -  - REFERER : time = 1296, url = http://localhost:8080/account/login 
+[INFO ] 24-11-11 14:38:44 [MyInterceptor:117] - running time: 28(ms)
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:96] -  - REFERER : time = 17274, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:39:02 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:39:02 [resetPw:135] - ==> Parameters: cP58%43I(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:39:02 [sqlonly:228] - update members set user_pw = MD5('cP58%43I')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:39:02 [resetPw:135] - <==    Updates: 1
+[INFO ] 24-11-11 14:39:02 [MyInterceptor:117] - running time: 40(ms)
+[INFO ] 24-11-11 14:42:14 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 15100 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:42:14 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:42:14 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:42:16 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:42:17 [MyshopApplication:56] - Started MyshopApplication in 3.301 seconds (process running for 4.0)
+[INFO ] 24-11-11 14:42:17 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:42:17 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:42:17 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:42:17 [MyInterceptor:117] - running time: 159(ms)
+[INFO ] 24-11-11 14:42:26 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:42:26 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:42:26 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:42:26 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:42:26 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:42:26 [MyInterceptor:96] -  - REFERER : time = 8872, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:42:27 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:42:27 [resetPw:135] - ==> Parameters: saPpxt6P(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:42:27 [sqlonly:228] - update members set user_pw = MD5('saPpxt6P')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:42:27 [resetPw:135] - <==    Updates: 1
+[INFO ] 24-11-11 14:42:27 [MyInterceptor:117] - running time: 415(ms)
+[INFO ] 24-11-11 14:44:33 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 2292 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:44:33 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:44:33 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:44:34 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:44:36 [MyshopApplication:56] - Started MyshopApplication in 3.18 seconds (process running for 3.801)
+[INFO ] 24-11-11 14:44:39 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:44:39 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:44:39 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:44:39 [MyInterceptor:117] - running time: 178(ms)
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:96] -  - REFERER : time = 2813, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:44:42 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:44:42 [resetPw:135] - ==> Parameters: NhjCtLEI(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:44:42 [sqlonly:228] - update members set user_pw = MD5('NhjCtLEI')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:44:42 [resetPw:135] - <==    Updates: 1
+[INFO ] 24-11-11 14:44:42 [MyInterceptor:117] - running time: 422(ms)
+[INFO ] 24-11-11 14:47:04 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 2248 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:47:04 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:47:04 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:47:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:47:06 [MyshopApplication:56] - Started MyshopApplication in 3.365 seconds (process running for 4.05)
+[INFO ] 24-11-11 14:47:06 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:07 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:07 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:47:07 [MyInterceptor:117] - running time: 163(ms)
+[INFO ] 24-11-11 14:47:09 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:09 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:09 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:47:09 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:47:09 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:47:09 [MyInterceptor:96] -  - REFERER : time = 2749, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:47:10 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:47:10 [resetPw:135] - ==> Parameters: ggzaU9%i(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:47:10 [sqlonly:228] - update members set user_pw = MD5('ggzaU9%i')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:47:10 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:47:10 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:47:10 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:47:10 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:47:10 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:47:10 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:47:10 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:96] -  - REFERER : time = 5859, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==> Parameters: 7kZ@U!I5(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:47:13 [sqlonly:228] - update members set user_pw = MD5('7kZ@U!I5')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:47:13 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:47:13 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:47:13 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:47:13 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:47:13 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:47:13 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:96] -  - REFERER : time = 6068, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==> Parameters: PSfGqK&Z(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:47:13 [sqlonly:228] - update members set user_pw = MD5('PSfGqK&Z')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:47:13 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:47:13 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:47:13 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:47:13 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:47:13 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:47:13 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:96] -  - REFERER : time = 6627, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==> Parameters: GDNGIFGD(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:47:13 [sqlonly:228] - update members set user_pw = MD5('GDNGIFGD')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:47:13 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:47:13 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:47:13 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:47:13 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:47:13 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:47:13 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:62] - [Client] 127.0.0.1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:47:13 [MyInterceptor:96] -  - REFERER : time = 6804, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:47:13 [resetPw:135] - ==> Parameters: 12KX$1H@(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:47:13 [sqlonly:228] - update members set user_pw = MD5('12KX$1H@')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:47:14 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:47:14 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:47:14 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:47:14 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:47:14 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:47:14 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:47:14 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:47:14 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:14 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:14 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:47:14 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:47:14 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:47:14 [MyInterceptor:96] -  - REFERER : time = 6947, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:47:14 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:47:14 [resetPw:135] - ==> Parameters: 9mh!4Qxk(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:47:14 [sqlonly:228] - update members set user_pw = MD5('9mh!4Qxk')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:47:14 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:47:14 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:47:14 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:47:14 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:47:14 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:47:14 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">{{password}}</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:47:14 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:47:15 [MyInterceptor:117] - running time: 999(ms)
+[INFO ] 24-11-11 14:47:16 [MyInterceptor:117] - running time: 2318(ms)
+[INFO ] 24-11-11 14:47:16 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:47:16 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:47:16 [MyInterceptor:80] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 14:47:16 [MyInterceptor:96] -  - REFERER : time = 14, url = http://localhost:8080/account/reset_pw 
+[INFO ] 24-11-11 14:47:16 [MyInterceptor:117] - running time: 36(ms)
+[INFO ] 24-11-11 14:47:17 [MyInterceptor:117] - running time: 681(ms)
+[INFO ] 24-11-11 14:47:18 [MyInterceptor:117] - running time: 1866(ms)
+[INFO ] 24-11-11 14:47:18 [MyInterceptor:117] - running time: 2524(ms)
+[INFO ] 24-11-11 14:47:20 [MyInterceptor:117] - running time: 4102(ms)
+[INFO ] 24-11-11 14:48:10 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 2248 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:48:10 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:48:10 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-11-11 14:48:13 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 14088 (D:\jinsu_study\10_SpringBoot\12_myshop\build\classes\java\main started by user in D:\jinsu_study\10_SpringBoot\12_myshop)
+[DEBUG] 24-11-11 14:48:13 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-11 14:48:13 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-11 14:48:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-11 14:48:15 [MyshopApplication:56] - Started MyshopApplication in 3.174 seconds (process running for 4.02)
+[INFO ] 24-11-11 14:48:15 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:48:16 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:48:16 [MyInterceptor:80] - [GET] http://localhost:8080/account/reset_pw
+[INFO ] 24-11-11 14:48:16 [MyInterceptor:117] - running time: 164(ms)
+[INFO ] 24-11-11 14:48:21 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:48:22 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:48:22 [MyInterceptor:80] - [PUT] http://localhost:8080/api/account/reset_pw
+[INFO ] 24-11-11 14:48:22 [MyInterceptor:87] - (param) <-- user_id = jinsu4205
+[INFO ] 24-11-11 14:48:22 [MyInterceptor:87] - (param) <-- email = jinsu4205@gmail.com
+[INFO ] 24-11-11 14:48:22 [MyInterceptor:96] -  - REFERER : time = 5905, url = http://localhost:8080/account/reset_pw 
+[DEBUG] 24-11-11 14:48:22 [resetPw:135] - ==>  Preparing: update members set user_pw = MD5(?)where user_id = ? and email = ?
+[DEBUG] 24-11-11 14:48:22 [resetPw:135] - ==> Parameters: T!ZKLxDc(String), jinsu4205(String), jinsu4205@gmail.com(String)
+[INFO ] 24-11-11 14:48:22 [sqlonly:228] - update members set user_pw = MD5('T!ZKLxDc')where user_id = 'jinsu4205' and email = 'jinsu4205@gmail.com'
+
+[DEBUG] 24-11-11 14:48:22 [resetPw:135] - <==    Updates: 1
+[DEBUG] 24-11-11 14:48:22 [MailHelper:39] - ------------------------------------
+[DEBUG] 24-11-11 14:48:22 [MailHelper:40] - receiverName: null
+[DEBUG] 24-11-11 14:48:22 [MailHelper:41] - receiverEmail: jinsu4205@gmail.com
+[DEBUG] 24-11-11 14:48:22 [MailHelper:42] - subject: jinsu4205님의 비밀번호가 재설정 되었습니다.
+[DEBUG] 24-11-11 14:48:22 [MailHelper:43] - content: <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>비밀번호가 변경되었습니다.</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, jinsu4205님!</h1>
+            <p>jinsu4205님의 비밀번호가 다음과 같이 변경되었습니다.</p>
+            <p class="newpw">T!ZKLxDc</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-11-11 14:48:22 [MailHelper:44] - ------------------------------------
+[INFO ] 24-11-11 14:48:25 [MyInterceptor:117] - running time: 3799(ms)
+[INFO ] 24-11-11 14:48:26 [MyInterceptor:44] - -------- new client connect ----------
+[INFO ] 24-11-11 14:48:27 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Other, Windows 10, Chrome 130.0
+[INFO ] 24-11-11 14:48:27 [MyInterceptor:80] - [GET] http://localhost:8080/account/login
+[INFO ] 24-11-11 14:48:27 [MyInterceptor:96] -  - REFERER : time = 1202, url = http://localhost:8080/account/reset_pw 
+[INFO ] 24-11-11 14:48:27 [MyInterceptor:117] - running time: 59(ms)
