@@ -28,6 +28,9 @@ public class Members implements Serializable {
     private String regDate;
     private String editDate;
 
+    // 여기 추가 후 재로그인 필요
+    private String newUserPw; // 회원정보 수정에서 사용할 신규 비밀번호
+
     @Getter
     @Setter
     private static int listCount = 0;

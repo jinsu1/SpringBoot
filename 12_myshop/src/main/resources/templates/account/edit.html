@@ -54,7 +54,8 @@
         <form id="signup_form">
             <!-- 아이디 -->
             <div class="input-container">
-                <input th:value="${session.memberInfo.userId}" type="text" name="user_id" id="user_id" class="input-field" placeholder="아이디" disabled />
+                <input th:value="${session.memberInfo.userId}" disabled type="text"
+                 name="user_id" id="user_id" class="input-field" placeholder="아이디" />
             </div>
 
             <!-- 비밀번호 -->
@@ -82,7 +83,9 @@
             <div class="input-container">
                 <input th:value="${session.memberInfo.email}" type="email" name="email" id="email" class="input-field" placeholder="이메일" />
                 <button type="button" class="inline-btn" id="email_unique_check">중복 검사</button>
-                <input type="hidden" name="email_check" id="email_check" value="N" />
+                <!-- 기존 이메일은 중복검사가 필요 없으므로, 중복검사가 완료된 상태로 시작 : Y
+                     이메일 입력값이 변경되면 JS에 의해서 값이 N으로 변경되므로 중복검사가 필요하게 된다.-->
+                <input type="hidden" name="email_check" id="email_check" value="Y" />
             </div>
 
             <!-- 전화번호 -->
@@ -100,11 +103,11 @@
             <div class="input-container gender-container">
                 <span>성별:</span>
                 <label class="gender-label">
-                    <input th:value="${session.memberInfo.gender == 'M'}" type="radio" name="gender" value="M" class="gender-input" />
+                    <input th:checked="${session.memberInfo.gender == 'M'}" type="radio" name="gender" value="M" class="gender-input" />
                     <span class="gender-custom"></span>남성
                 </label>
                 <label class="gender-label">
-                    <input th:value="${session.memberInfo.gender == 'F'}" type="radio" name="gender" value="F" class="gender-input" />
+                    <input th:checked="${session.memberInfo.gender == 'F'}" type="radio" name="gender" value="F" class="gender-input" />
                     <span class="gender-custom"></span>여성
                 </label>
             </div>

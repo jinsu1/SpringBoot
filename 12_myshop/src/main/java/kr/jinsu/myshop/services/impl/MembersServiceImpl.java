@@ -37,10 +37,18 @@ public class MembersServiceImpl implements MembersService {
 
     @Override
     public Members editItem(Members input) throws ServiceNoResultException, Exception {
-        int rows = membersMapper.update(input);
+        int rows = 0;
 
-        if(rows == 0) {
-            throw new ServiceNoResultException("수정된 데이터가 없습니다.");
+        try {
+            rows = membersMapper.update(input);
+
+            //wherw절 조건에 맞는 데이터가 없는 경우 --> 비밀번호 잘못됨
+            if(rows == 0) {
+                throw new Exception("현재 비밀번호를 확인하세요.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다.", e);
+            throw e;
         }
 
         return membersMapper.selectItem(input);
@@ -94,9 +102,9 @@ public class MembersServiceImpl implements MembersService {
     }
 
     @Override
-    public void isUniqueEmail(String email) throws Exception {
-        Members input = new Members();
-        input.setEmail(email);
+    public void isUniqueEmail(Members input) throws Exception {
+        // Members input = new Members();
+        // input.setEmail(email);
 
         int output = 0;
 
@@ -131,7 +139,7 @@ public class MembersServiceImpl implements MembersService {
     }
 
     @Override
-    public int resetPw(Members input) throws Exception {
+    public void resetPw(Members input) throws Exception {
         int rows = 0;
 
         try {
@@ -144,8 +152,7 @@ public class MembersServiceImpl implements MembersService {
             log.error("Member 데이터 수정에 실패했습니다.", e);
             throw e;
         }
-     
-        return rows;
+    
     }
 
     @Override

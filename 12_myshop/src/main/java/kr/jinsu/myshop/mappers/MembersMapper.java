@@ -38,17 +38,21 @@ public interface MembersMapper {
     // --> keyProperty : 파라미터로 전달되는 model 객체에서 PK에 대응되는 멤버변수
     // --> keyColumn : 테이블의 PK 컬럼 명
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
-    int insert(Members input);
+    public int insert(Members input);
 
     /**
      * 
      * @param input -   수정할 데이터에 대한 모델 객체
      * @return  수정된 데이터 수
      */
-    @Update("update members set " +
-            "user_id=#{userId}, " + 
-            "user_pw=#{userPw}, " +
+    @Update("<script>" +
+            "update members set " +
+            // 아이디는 수정하지 않는다. 
             "user_name=#{userName}, " +
+
+            // 신규 비밀번호가 입력된 경우만 update절에 추가함
+            "<if test='newUserPw != null and newUserPw != \"\"'>user_pw = MD5(#{newUserPw}),</if>\n" +
+
             "email=#{email}, " + 
             "phone=#{phone}, " + 
             "birthday=#{birthday}, " + 
@@ -56,14 +60,16 @@ public interface MembersMapper {
             "postcode=#{postcode}, " + 
             "addr1=#{addr1}, " + 
             "addr2=#{addr2}, " + 
-            "photo=#{photo}, " + 
+            // "photo=#{photo}, " + 
             "edit_date=now() " + 
-            "where id=#{id}")
-    int update(Members input);
+            // 세션의 일련번호와 입력한 비밀번호가 일치할 경우만 수정
+            "where id=#{id} and user_pw = MD5(#{userPw})" +
+            "</script>")
+    public int update(Members input);
 
 
     @Delete("delete from members where id=#{id}")
-    int delete(Members input);
+    public int delete(Members input);
 
     @Select("select " + 
             "user_id, user_pw, user_name, email, phone, " + 
@@ -106,14 +112,15 @@ public interface MembersMapper {
             "from members " +
             "order by id desc")
     @ResultMap("membersMap")
-    List<Members> selectList(Members input);
+    public List<Members> selectList(Members input);
 
-    @Select("<script>" +
-            "select count(*) from members\n" +
-            "<where>\n" +
-            "<if test='userId != null'>user_id = #{userId}</if>\n" +
-            "<if test='email != null'>email = #{email}</if>\n" +
-            "</where>\n" +
+    @Select("<script>" + //
+            "select count(*) from members\n" + //
+            "<where>\n" + //
+            "<if test='userId != null'>user_id = #{userId}</if>\n" + //
+            "<if test='email != null'>email = #{email}</if>\n" + //
+            "<if test='id != 0'>and id != #{id}</if>\n" + //
+            "</where>\n" + //
             "</script>")
     public int selectCount(Members input);
 
@@ -156,4 +163,5 @@ public interface MembersMapper {
         "WHERE is_out='Y' AND \n" +
         "edit_date < DATE_ADD(NOW(), interval -1 minute)")
     public int deleteOutMembers();
+
 }
